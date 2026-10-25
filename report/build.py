@@ -308,7 +308,7 @@ def main() -> None:
                               ["Plain gpt-6-luna, no tools", ss["plain_llm"]], ["Always the biggest board", ss["biggest_board"]],
                               ["Safety: beginners flagged where expected", ss["safety_flags"]]])
                      + before_after_html(syn, rs_file)
-                     + table(["Persona", "Spot", "Waves", "Expected", "Quiver Match", "Plain LLM", "Safety"], syn_rows, syn_classes))
+                     + '<p class="small">Per-session persona results: <code>eval/results/synthetic_personas_results.json</code> in the repo.</p>')
         syn_ours, syn_llm = ss["quiver_match_top1"].split(" ")[0], ss["plain_llm"].split(" ")[0]
         bfile = RESULTS / "before_fix" / "synthetic_personas_results.json"
         syn_before = json.loads(bfile.read_text())["summary"]["quiver_match_top1"].split(" ")[0] if bfile.exists() else "n/a"

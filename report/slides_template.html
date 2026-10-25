@@ -63,6 +63,7 @@
     <tr><td>Real forecast for your trip dates</td><td class="no">No</td><td class="yes">Yes</td><td class="no">0/11</td><td class="yes">11/11</td></tr>
     <tr><td>Go / caution / no-go for your level</td><td class="no">No</td><td class="part">Spot guides</td><td class="part">Generic</td><td class="yes">Code-rated</td></tr>
     <tr><td>Safer spots from real data</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Safety Agent</td></tr>
+    <tr><td>Real shops nearby to rent or buy</td><td class="part">Brand dealers</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes, 52 spots</td></tr>
     <tr><td>Your boards on the forecast waves</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">3D + meters</td></tr>
   </table>
 </section>
@@ -82,6 +83,19 @@
 </section>
 
 <section>
+  <h2>Rent or buy it nearby</h2>
+  <div class="cols">
+    <img class="shot" src="{{IMG_shops}}">
+    <ul>
+      <li><b>Real surf shops near the break</b>, two per spot, with distance, address and a map link</li>
+      <li><b>Renting</b> puts rental shops first; <b>Buying</b> puts board makers first</li>
+      <li>52 of 54 spots covered (OpenStreetMap); Google Maps as a fallback</li>
+      <li>Idea from the <b>owner of Jack's Surfboards</b>, our first Tier 3 pilot partner</li>
+    </ul>
+  </div>
+</section>
+
+<section>
   <h2>Safety from data, not guesses</h2>
   <div class="cols">
     <img class="shot" src="{{IMG_safety_trip}}">
@@ -90,6 +104,7 @@
       <li>Beginner at Black's: <b>no-go</b> all 3 days, so "Skip"</li>
       <li>The <b>Safety Agent</b> finds Pacific Beach on days its own forecast rates "go"</li>
       <li>The validator fixed the agent's board thickness live (yellow box)</li>
+      <li><b>{{SAFETY_PASSED}} attack and malfunction tests pass</b>: prompt injection blocked, invented spots removed, no-go days forced to "Skip", loops and overspending stopped</li>
     </ul>
   </div>
 </section>
@@ -107,19 +122,6 @@
   </ul>
 </section>
 
-<section>
-  <h2>Safety: {{SAFETY_PASSED}} defenses held</h2>
-  <div class="cols">
-    <img class="shot" src="{{IMG_blocked}}">
-    <ul>
-      <li><b>Prompt injection</b> blocked before any AI call</li>
-      <li><b>Unsafe plan</b>: a session on a no-go day is forced to "Skip"</li>
-      <li><b>Invented safer spot</b> ("Totally Safe Beach") removed</li>
-      <li><b>Invented numbers</b> overwritten with the calculator's</li>
-      <li><b>Loops and overspending</b> stopped by limits and budgets</li>
-    </ul>
-  </div>
-</section>
 
 <section>
   <h2>Evidence</h2>

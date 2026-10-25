@@ -141,8 +141,12 @@ Honest caveat: a plain ChatGPT answer costs about {{RATIO}}x fewer tokens than a
 {{TRACE_TABLE}}
 <figure><img src="{{IMG_safety_trip}}" alt="Safety plan">
 <figcaption>Figure 3. What that surfer sees. Every day at Black's Beach is no-go (powerful canyon break, waves above a beginner's 3 ft limit), so each day is "Skip". The Safety Agent proposes Pacific Beach on the days its own forecast rates "go". The yellow box at the top is the validator correcting the agent's board thickness to the calculator's value on this live run.</figcaption></figure>
-<figure class="half"><img src="{{IMG_trip_plan}}" alt="Trip plan">
-<figcaption>Figure 4. A "go" trip: an intermediate at El Porto with a fish, a mid-length and a log. The plan rides the mid all three days (small, soft surf), shows each day's fit score, and packs one board.</figcaption></figure>
+<div class="pair" style="grid-template-columns: 1.8fr 1fr">
+  <figure><img src="{{IMG_trip_plan}}" alt="Trip plan"><figcaption>Figure 4a. A "go" trip: an intermediate at El Porto with a fish, a mid-length and a log. The plan rides the mid all three days (small, soft surf), shows each day's fit score, and packs one board.</figcaption></figure>
+  <figure><img src="{{IMG_shops}}" alt="Where to rent nearby"><figcaption>Figure 4b. "Where to rent nearby": the app lists real surf shops near the break
+  from OpenStreetMap, here Spyder Surfboards and Jack's Surfboards for El Porto, with distance and a map link. Switching to "Buying" lists board shops instead.
+  The owner of Jack's Surfboards suggested this feature.</figcaption></figure>
+</div>
 <figure><img src="{{IMG_viz}}" alt="3D visualizer">
 <figcaption>Figure 5. "Your boards on this week's waves": three.js waves shaped by each day's forecast height, period and spot power, with the surfer's boards (real outline, thickness and rocker) side by side, plus meters. It's labeled "illustrative, not a physics sim", and the meter formula is explained under it.</figcaption></figure>
 <div class="callout"><b>The meter formula.</b> r = board liters ÷ ideal liters for this surfer and day; lx = how much longer than ideal.
@@ -201,6 +205,7 @@ Reference ranges were set by the author from common volume charts: a sanity chec
   <tr><td>Matches the board that actually worked</td><td>{{RS_TOP1}} (top pick), {{RS_TOP2}} (top two)</td><td>Real surfers' sessions</td></tr>
   <tr><td>Risky trips flagged by code</td><td>{{EV_trip_flagged_agent_low}}</td><td>Own tests</td></tr>
   <tr><td>Uses the real forecast</td><td>{{EV_uses_live_forecast_agent_low}} vs. {{EV_uses_live_forecast_baseline}} for plain ChatGPT</td><td>Own tests</td></tr>
+  <tr><td>Real shops near the break to rent or buy</td><td>52 of 54 spots (2 nearby shops each)</td><td>OpenStreetMap snapshot in the app</td></tr>
   <tr><td>Time to a plan</td><td>{{AVG_LATENCY}} s</td><td>Own tests</td></tr>
   <tr><td>Cost per plan</td><td>{{COST_RUN}}</td><td>Measured tokens x price</td></tr>
 </table>
