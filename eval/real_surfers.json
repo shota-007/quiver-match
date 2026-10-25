@@ -1,0 +1,88 @@
+{
+ "surfers": [
+  {
+   "id": "S1",
+   "who": "A.L.",
+   "weight_kg": 74.84268,
+   "height_cm": 175.26,
+   "skill": "advanced",
+   "fitness": "average",
+   "quiver": [
+    {
+     "name": "5'10\" quad fin",
+     "board_type": "fish",
+     "length_in": 70.0,
+     "volume_l": null
+    },
+    {
+     "name": "6'2\" shortboard",
+     "board_type": "performance shortboard",
+     "length_in": 74.0,
+     "volume_l": null
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-12",
+     "spot": "El Porto",
+     "face_ft": 3.0,
+     "period_s": null,
+     "best_board": "5'10\" quad fin",
+     "note": ""
+    },
+    {
+     "date": "2026-10-05",
+     "spot": "El Porto",
+     "face_ft": 6.0,
+     "period_s": null,
+     "best_board": "6'2\" shortboard",
+     "note": "punchy"
+    }
+   ],
+   "review_note": "Entered from a text. Please confirm: (1) he owns the 6'2\" shortboard (added because he rode it Oct 5); (2) the quad's shape (guessed: fish). Liters are estimated from type and length.",
+   "source": "survey form, edited"
+  },
+  {
+   "id": "S2",
+   "who": "M L",
+   "weight_kg": 80.739376,
+   "height_cm": 175.26,
+   "skill": "advanced",
+   "fitness": "average",
+   "quiver": [
+    {
+     "name": "Blue Ripper",
+     "board_type": "hybrid shortboard",
+     "length_in": 66.0,
+     "volume_l": 12.0
+    },
+    {
+     "name": "",
+     "board_type": "longboard",
+     "length_in": 108.0,
+     "volume_l": 15.0
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-09-09",
+     "spot": "San Onofre (Old Man's)",
+     "face_ft": null,
+     "period_s": null,
+     "best_board": "9'0\" longboard",
+     "note": ""
+    },
+    {
+     "date": "2026-10-18",
+     "spot": "Hermosa Beach Pier",
+     "face_ft": null,
+     "period_s": null,
+     "best_board": "Blue Ripper",
+     "note": ""
+    }
+   ],
+   "review_note": "",
+   "source": "survey form"
+  }
+ ]
+}

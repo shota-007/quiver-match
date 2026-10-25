@@ -1,0 +1,18 @@
+{
+  "_how_to": "Copy to eval/real_surfers.json and fill in with real surfers (initials are fine). One entry per surfer; list the boards they own and a few recent sessions with the board that actually worked best. face_ft/period_s are optional: if missing and the session is within the last ~90 days, the script fetches them from Open-Meteo.",
+  "surfers": [
+    {
+      "id": "S1", "who": "A.B., surfs El Porto 3x/week",
+      "weight_kg": 77, "height_cm": 180, "skill": "intermediate", "fitness": "high",
+      "quiver": [
+        {"name": "5'10 fish", "board_type": "fish", "length_in": 70, "volume_l": 34},
+        {"name": "6'2 shortboard", "board_type": "hybrid shortboard", "length_in": 74, "volume_l": 31},
+        {"name": "9'0 log", "board_type": "longboard", "length_in": 108, "volume_l": 66}
+      ],
+      "sessions": [
+        {"date": "2026-10-12", "spot": "El Porto", "face_ft": 3, "period_s": 11, "best_board": "5'10 fish", "note": "soft and fat"},
+        {"date": "2026-10-05", "spot": "El Porto", "face_ft": 6, "period_s": 14, "best_board": "6'2 shortboard", "note": "punchy"}
+      ]
+    }
+  ]
+}

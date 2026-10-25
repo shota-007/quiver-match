@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiver Match: the right surfboard for you and your waves</title>
+<style>
+  :root {
+    --sand: #fff7ec; --sand2: #fdebd3; --line: #f1dcc2; --card: #ffffff;
+    --coral: #ff6b4a; --sunset: #ff9a52; --gold: #ffc65c;
+    --teal: #0f8a94; --deep: #0b4f5c; --sea: #e3f6f4;
+    --ink: #3b2618; --head: #5a2e14; --muted: #8a6b55;
+    --ok: #1f7a52; --warn: #b4560f; --bad: #c4372a;
+    --radius: 18px; --shadow: 0 10px 30px rgba(122, 64, 24, 0.10);
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--sand); }
+  body { margin: 0; font-family: "Avenir Next", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         color: var(--ink); background: linear-gradient(180deg, #ffe9cf 0, var(--sand) 520px); }
+
+  /* ---------- hero ---------- */
+  .hero { position: relative; height: clamp(230px, 25vw, 340px); overflow: hidden; background: #ffc27a; }
+  .hero svg.scene { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .brand { position: absolute; left: clamp(18px, 4vw, 56px); top: clamp(18px, 3vw, 38px); display: flex; gap: 14px; align-items: center; z-index: 2; }
+  .brand h1 { font-size: clamp(28px, 3.6vw, 46px); margin: 0; color: #4a1f0c; letter-spacing: -0.5px; }
+  .brand p { margin: 4px 0 0; color: #6b3416; font-size: clamp(13px, 1.3vw, 17px); max-width: 520px; }
+  .testlink { display: inline-block; margin-top: 8px; background: rgba(255, 250, 240, 0.9); color: #4a1f0c; font-weight: 800; font-size: 13px;
+              padding: 6px 12px; border-radius: 999px; text-decoration: none; }
+  .ride-label { position: absolute; left: clamp(18px, 4vw, 56px); bottom: 54px; z-index: 2; background: rgba(255, 250, 240, 0.95);
+                color: var(--deep); font-weight: 700; font-size: 14px; padding: 7px 14px; border-radius: 999px; box-shadow: var(--shadow);
+                opacity: 0; transform: translateY(8px); transition: opacity 0.3s, transform 0.3s; }
+  .ride-label.show { opacity: 1; transform: none; }
+  .rays { transform-box: fill-box; transform-origin: center; animation: spin 140s linear infinite; }
+  .swell { animation: drift 10s ease-in-out infinite alternate; }
+  .front { animation: drift 7s ease-in-out infinite alternate-reverse; }
+  .spray { animation: twinkle 2.4s ease-in-out infinite alternate; }
+  .gull { animation: bob 3s ease-in-out infinite alternate; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-60px); } }
+  @keyframes twinkle { from { opacity: 0.35; } to { opacity: 1; } }
+  @keyframes bob { from { transform: translateY(0); } to { transform: translateY(-6px); } }
+
+  /* ---------- layout ---------- */
+  main { position: relative; max-width: 1180px; margin: -36px auto 48px; padding: 0 20px; display: grid; grid-template-columns: 370px 1fr; gap: 22px; align-items: start; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px 22px; }
+  .card h2 { font-size: 15px; margin: 0 0 14px; color: var(--head); text-transform: uppercase; letter-spacing: 1px; }
+  label, .lbl { display: block; font-size: 13px; font-weight: 700; color: var(--muted); margin: 13px 0 6px; }
+  input, select, textarea { width: 100%; padding: 11px 13px; border: 1.5px solid var(--line); border-radius: 12px; font: inherit; color: var(--ink); background: #fffdf9; }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--sunset); box-shadow: 0 0 0 3px rgba(255, 154, 82, 0.25); }
+  textarea { resize: vertical; min-height: 56px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .seg { display: flex; border: 1.5px solid var(--line); border-radius: 12px; overflow: hidden; background: #fffdf9; }
+  .seg button { flex: 1; border: 0; background: transparent; padding: 9px 6px; font: inherit; font-size: 13px; color: var(--muted); cursor: pointer; font-weight: 600; }
+  .seg button + button { border-left: 1.5px solid var(--line); }
+  .seg button.on { background: linear-gradient(180deg, var(--sunset), var(--coral)); color: #fff; }
+  .styles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .styles button { border: 1.5px solid var(--line); background: #fffdf9; border-radius: 14px; padding: 8px 4px 7px; cursor: pointer; font: inherit;
+                   font-size: 12px; font-weight: 700; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .styles button svg { width: 100%; height: 26px; }
+  .styles button.on { border-color: var(--coral); background: #fff1e8; color: var(--coral); box-shadow: 0 0 0 3px rgba(255, 107, 74, 0.15); }
+  .hint { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .go { margin-top: 20px; width: 100%; padding: 14px; border: 0; border-radius: 999px; background: linear-gradient(90deg, var(--sunset), var(--coral));
+        color: #fff; font-size: 17px; font-weight: 800; cursor: pointer; box-shadow: 0 8px 20px rgba(255, 107, 74, 0.35); transition: transform 0.15s; }
+  .go:hover { transform: translateY(-1px); }
+  .go:disabled { background: #f3b9a4; box-shadow: none; cursor: wait; }
+
+  /* ---------- spot picker ---------- */
+  .combo { position: relative; }
+  .combo ul { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 6px); margin: 0; padding: 6px; list-style: none; max-height: 330px; overflow-y: auto;
+              background: #ffffff; border: 1.5px solid var(--line); border-radius: 14px; box-shadow: 0 18px 40px rgba(90, 46, 20, 0.22); }
+  .combo li.group { font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--coral); padding: 10px 10px 4px; cursor: default; }
+  .combo li.opt { padding: 8px 10px; border-radius: 10px; cursor: pointer; display: flex; justify-content: space-between; gap: 8px; align-items: center; }
+  .combo li.opt.active, .combo li.opt:hover { background: #fff1e3; }
+  .combo .nm { font-weight: 700; color: var(--ink); font-size: 14px; }
+  .combo .mt { font-size: 12px; color: var(--muted); }
+  .combo li.none { padding: 10px; font-size: 13px; color: var(--muted); }
+  .badge { font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+  .b-beginner { background: #e2f6ea; color: #1f7a52; } .b-novice { background: #e0f4f4; color: #0b6b6b; }
+  .b-intermediate { background: #fff3d1; color: #8a5a00; } .b-advanced { background: #ffe5d6; color: #b4470f; }
+  .b-expert { background: #fde0dc; color: #b02a1e; } .b-above { background: #c4372a; color: #fff; }
+
+  /* ---------- results ---------- */
+  .empty { text-align: center; padding: 50px 30px; color: var(--muted); }
+  .empty h3 { color: var(--head); font-size: 22px; margin: 12px 0 6px; }
+  .pipeline { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+  .stage { padding: 8px 14px; border-radius: 999px; background: var(--sand2); color: var(--muted); font-size: 13px; font-weight: 700; }
+  .stage.active { background: var(--coral); color: #fff; animation: pulse 1.2s infinite; }
+  .stage.done { background: var(--sea); color: var(--ok); }
+  @keyframes pulse { 50% { opacity: 0.6; } }
+  .banner { padding: 12px 16px; border-radius: 14px; margin-bottom: 14px; font-size: 14px; font-weight: 600; }
+  .banner.bad { background: #fdecea; color: var(--bad); border: 1px solid #f5c2bd; }
+  .banner.ok { background: #e4f6ee; color: var(--ok); border: 1px solid #bfe5d2; }
+  .banner.warn { background: #fff1e0; color: var(--warn); border: 1px solid #f6d2a8; }
+  .board-title { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+  .board-title h2 { font-size: 28px; text-transform: capitalize; letter-spacing: 0; margin: 0; color: var(--head); }
+  .board-title .spot { color: var(--muted); font-size: 14px; }
+  .svgwrap { background: linear-gradient(180deg, #e3f6f4, #fff3e2); border-radius: 14px; margin: 14px 0; padding: 8px; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  @media (max-width: 600px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+  .stat { background: #fffaf3; border: 1px solid var(--line); border-radius: 14px; padding: 12px; text-align: center; }
+  .stat .v { font-size: 27px; font-weight: 800; color: var(--deep); }
+  .stat .k { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; }
+  .chip { background: var(--sand2); color: var(--ink); border-radius: 999px; padding: 6px 12px; font-size: 13px; }
+  .chip b { color: var(--coral); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  @media (max-width: 760px) { .grid2, .grid3 { grid-template-columns: 1fr; } }
+  ul.list { margin: 0; padding-left: 20px; } ul.list li { margin: 6px 0; line-height: 1.45; }
+  .math { font-family: ui-monospace, Menlo, monospace; font-size: 12.5px; background: #fff3e2; padding: 8px 10px; border-radius: 10px; color: #6b3416; margin-top: 10px; }
+  .days { display: flex; gap: 8px; margin-top: 10px; }
+  .day { flex: 1; text-align: center; font-size: 12px; color: var(--muted); }
+  .bar { height: 70px; display: flex; align-items: flex-end; justify-content: center; }
+  .bar span { width: 28px; background: linear-gradient(180deg, var(--gold), var(--coral)); border-radius: 8px 8px 0 0; }
+  .day b { display: block; color: var(--head); font-size: 13px; }
+  .stack > .card, .stack > .banner, .stack > .grid2 { margin-bottom: 16px; }
+  .qcard { border: 1.5px solid var(--line); border-radius: 16px; padding: 12px 14px; background: #fffdf9; }
+  .qcard.best { border-color: var(--teal); background: #f2fbfa; box-shadow: 0 0 0 3px rgba(15, 138, 148, 0.12); }
+  .qcard.locked { opacity: 0.6; }
+  .qcard h4 { margin: 0; font-size: 15px; color: var(--head); text-transform: capitalize; }
+  .qcard .ty { font-size: 12px; color: var(--muted); text-transform: capitalize; }
+  .qcard .dims { font-weight: 800; color: var(--deep); font-size: 13px; margin: 6px 0; }
+  .f-best { background: #dff4f2; color: #0b6b6b; } .f-good { background: #fff3d1; color: #8a5a00; }
+  .f-meh { background: #ffe5d6; color: #b4470f; } .f-locked { background: #efe7de; color: #7a6a5c; }
+  .shop { border: 1.5px solid var(--line); border-radius: 12px; padding: 9px 11px; margin-top: 8px; background: #fffdf9; }
+  .shop b { color: var(--head); } .shop a { color: var(--teal); font-weight: 700; }
+  .shop .mt { font-size: 12px; color: var(--muted); }
+  .meta { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 14px; }
+  .meta b { color: var(--head); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+  td, th { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 700; }
+
+
+
+  /* ---------- spot photo, live preview, background scene, motion ---------- */
+  .spotphoto { position: relative; margin: -50px -30px 18px; height: 300px; overflow: hidden; border-radius: 18px 18px 0 0; background: #17a2a8; }
+  .spotphoto img { width: 100%; height: 100%; object-fit: cover; display: block; animation: kenburns 24s ease-in-out infinite alternate; transition: opacity 0.6s; }
+  .spotphoto img.fading { opacity: 0; }
+  .spotphoto .spotname { position: absolute; left: 18px; top: 14px; color: #fff; font-weight: 800; font-size: 24px; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }
+  .spotphoto figcaption { position: absolute; right: 10px; bottom: 10px; background: rgba(59, 38, 24, 0.62); color: #fff; font-size: 11.5px; padding: 4px 10px; border-radius: 999px; }
+  .spotphoto figcaption a { color: #ffe2ad; }
+  @keyframes kenburns { from { transform: scale(1.02); } to { transform: scale(1.12) translate(-1.5%, -1%); } }
+  .preview { margin: 18px 0 6px; text-align: left; }
+  #out { align-self: stretch; }
+  #empty { position: sticky; top: 18px; }
+  .pv-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; color: var(--head); }
+  .pv-days { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; }
+  .pv-day { background: #fffaf3; border: 1.5px solid var(--line); border-radius: 14px; padding: 10px; text-align: center; animation: rise 0.5s both; }
+  .pv-day.r-caution { border-color: #f6c58f; } .pv-day.r-no-go { border-color: #f0a99f; background: #fff1ef; }
+  .pv-bar { height: 60px; display: flex; align-items: flex-end; justify-content: center; }
+  .pv-bar span { width: 26px; border-radius: 8px 8px 0 0; background: linear-gradient(180deg, var(--gold), var(--coral)); }
+  .bgdeco { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+  .bgdeco svg { width: 100%; height: 100%; }
+  .hero, main, .toast { position: relative; z-index: 1; }
+  .toast { position: fixed; z-index: 50; }
+  .floaty { transform-box: fill-box; transform-origin: center; animation: floaty 13s ease-in-out infinite alternate; }
+  .floaty.f2 { animation-duration: 17s; animation-delay: -4s; } .floaty.f3 { animation-duration: 21s; animation-delay: -9s; }
+  .sway { transform-box: fill-box; transform-origin: 30% 100%; animation: sway 16s ease-in-out infinite alternate; }
+  .flock { animation: fly 70s linear infinite; }
+  .bubble { animation: bubble 16s linear infinite; } .bubble.b2 { animation-duration: 22s; animation-delay: -7s; } .bubble.b3 { animation-duration: 19s; animation-delay: -12s; }
+  @keyframes floaty { from { transform: translateY(0) rotate(0deg); } to { transform: translateY(-26px) rotate(6deg); } }
+  @keyframes sway { from { transform: rotate(-1.5deg); } to { transform: rotate(1.5deg); } }
+  @keyframes fly { from { transform: translateX(-260px); } to { transform: translateX(1700px); } }
+  @keyframes bubble { from { transform: translateY(0); opacity: 0; } 10% { opacity: 0.5; } to { transform: translateY(-900px); opacity: 0; } }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  #result > * { animation: rise 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  #result > *:nth-child(2) { animation-delay: 0.08s; } #result > *:nth-child(3) { animation-delay: 0.16s; } #result > *:nth-child(4) { animation-delay: 0.24s; }
+  #result > *:nth-child(5) { animation-delay: 0.32s; } #result > *:nth-child(n+6) { animation-delay: 0.4s; }
+  #result .card { transition: box-shadow 0.2s; } #result .card:hover { box-shadow: 0 16px 38px rgba(122, 64, 24, 0.16); }
+  @media (prefers-reduced-motion: reduce) { .floaty, .sway, .flock, .bubble, .spotphoto img, #result > *, .pv-day { animation: none !important; } }
+  /* ---------- trip, quiver, 3D ---------- */
+  .qrow { display: grid; grid-template-columns: 1fr 1fr 30px; gap: 6px; padding: 8px; border: 1.5px solid var(--line); border-radius: 12px; margin-bottom: 8px; background: #fffdf9; }
+  .qrow input, .qrow select { padding: 7px 9px; font-size: 13px; border-radius: 9px; }
+  .qrow .dims { grid-column: 1 / 3; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .qrow .mini { padding: 4px 0; }
+  .headline { font-size: 17px; font-weight: 800; color: var(--deep); margin: 4px 0 12px; }
+  .days-plan { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .dplan { border: 1.5px solid var(--line); border-radius: 14px; padding: 10px 12px; background: #fffdf9; }
+  .dplan.r-caution { border-color: #f6c58f; background: #fff7ec; } .dplan.r-no-go { border-color: #f0a99f; background: #fff1ef; }
+  .dplan .pick { font-weight: 800; color: var(--deep); margin-top: 6px; }
+  .dplan .mt, .mrow .mt { font-size: 12px; color: var(--muted); }
+  .bring { margin-top: 12px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .daychips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .daychips .mini.on { background: var(--coral); color: #fff; border-color: var(--coral); }
+  .viz { position: relative; height: 340px; border-radius: 14px; overflow: hidden; background: linear-gradient(#ffd6a0, #17a2a8); }
+  .viz-label { position: absolute; right: 10px; top: 10px; z-index: 2; background: rgba(255, 250, 240, 0.9); color: var(--head); font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 999px; }
+  .meters { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; margin-top: 12px; }
+  .mrow { border: 1.5px solid var(--line); border-radius: 14px; padding: 10px 12px; background: #fffdf9; cursor: pointer; }
+  .mrow.best { border-color: var(--teal); background: #f2fbfa; } .mrow.ideal { border-style: dashed; cursor: default; }
+  .mbar { display: grid; grid-template-columns: 62px 1fr 26px; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); margin-top: 5px; }
+  .mtrack { height: 8px; border-radius: 999px; background: var(--sand2); overflow: hidden; }
+  .mfill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--gold), var(--coral)); }
+  .mv { font-weight: 800; color: var(--head); text-align: right; }
+  /* ---------- board viewer, swatches, compare, extras ---------- */
+  .viewer-tools { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+  .swatches { display: flex; gap: 8px; align-items: center; }
+  .swatches::before { content: "Glassing color"; font-size: 12px; font-weight: 700; color: var(--muted); margin-right: 2px; }
+  .swatch { width: 26px; height: 26px; border-radius: 50%; border: 3px solid; cursor: pointer; padding: 0; }
+  .swatch.on { outline: 3px solid var(--coral); outline-offset: 2px; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .mini { border: 1.5px solid var(--line); background: #fffdf9; color: var(--head); font: inherit; font-size: 12.5px; font-weight: 700;
+          padding: 7px 12px; border-radius: 999px; cursor: pointer; }
+  .mini:hover { border-color: var(--coral); color: var(--coral); }
+  .qcard { cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; }
+  .qcard:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(122, 64, 24, 0.12); }
+  .qcard.viewing { outline: 3px solid var(--coral); outline-offset: 2px; }
+  details.more { margin-top: 14px; border: 1.5px dashed var(--line); border-radius: 14px; padding: 10px 12px; background: #fffaf3; }
+  details.more summary { cursor: pointer; font-weight: 700; color: var(--head); font-size: 13.5px; }
+  .row2 { display: grid; grid-template-columns: 1.3fr 1fr; gap: 10px; }
+  .cmp { margin: 10px 0; }
+  .cmp-l { font-size: 12px; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+  .cmp-bar { border-radius: 999px; padding: 5px 10px; font-size: 12.5px; font-weight: 800; margin: 4px 0; white-space: nowrap; min-width: 120px; }
+  .cmp-bar.mine { background: #ffe1d3; color: #a1401d; }
+  .cmp-bar.ours { background: #d9f2ef; color: #0b5f5f; }
+  .wet { margin-top: 10px; padding: 10px 12px; border-radius: 12px; background: #e9f7f5; color: var(--deep); font-size: 14px; }
+  .wet b { font-size: 16px; }
+  .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%) translateY(20px); background: var(--deep); color: #fff; padding: 10px 18px;
+           border-radius: 999px; font-size: 13.5px; font-weight: 700; opacity: 0; transition: 0.25s; z-index: 50; max-width: 90vw; overflow: hidden; text-overflow: ellipsis; }
+  .toast.show { opacity: 1; transform: translateX(-50%); }
+  @media print {
+    .hero, #form, .noprint, .toast { display: none !important; }
+    body, html { background: #fff; }
+    main { display: block; margin: 0; max-width: none; }
+    .card { box-shadow: none; break-inside: avoid; }
+  }
+  .hidden { display: none !important; }
+  @media (prefers-reduced-motion: reduce) { .rays, .swell, .front, .spray, .gull, .stage.active { animation: none; } }
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+<script type="module" src="/static/viz.js"></script>
+</head>
+<body>
+<div class="bgdeco" aria-hidden="true">
+  <svg viewBox="0 0 1440 1800" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <g id="bgboard"><path d="M-70,0 C-70,-13 40,-17 78,0 C40,17 -70,13 -70,0 Z"/><line x1="-64" y1="0" x2="72" y2="0" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+        <path d="M-58,0 l-8,-10 l2,10 z" fill="#5a2e14" opacity="0.6"/></g>
+      <g id="bglog"><path d="M-110,0 C-112,-15 80,-19 116,-4 C120,0 120,0 116,4 C80,19 -112,15 -110,0 Z"/><line x1="-104" y1="0" x2="112" y2="0" stroke="#fff" stroke-width="1.5" opacity="0.7"/></g>
+      <g id="palm"><path d="M0,0 C6,-60 2,-120 14,-180" stroke="#5a2e14" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <path d="M14,-180 C-30,-200 -70,-185 -95,-160 C-60,-178 -25,-182 14,-180 Z M14,-180 C50,-210 95,-200 115,-175 C80,-192 45,-190 14,-180 Z M14,-180 C10,-225 35,-250 60,-255 C35,-235 22,-210 14,-180 Z M14,-180 C-15,-215 -50,-225 -75,-215 C-45,-212 -18,-200 14,-180 Z" fill="#5a2e14"/></g>
+    </defs>
+    <g class="sway" opacity="0.07" transform="translate(760 1160) scale(1.5)">
+      <path d="M0,300 L0,236 C160,230 330,222 470,204 C610,186 720,150 800,112 C860,84 920,62 990,56 C1070,50 1140,74 1178,116 C1206,148 1204,190 1176,212 C1168,220 1160,232 1170,244 C1230,250 1330,248 1440,250 L1440,300 Z" fill="#0f8a94"/>
+      <path d="M1000,92 C1060,88 1112,110 1140,146 C1160,172 1158,200 1140,214 C1110,224 1068,214 1040,192 C1010,168 992,128 1000,92 Z" fill="#0b4f5c"/>
+    </g>
+    <g transform="translate(70 640) rotate(-32)"><g class="floaty"><use href="#bgboard" fill="#ff9a52" opacity="0.16"/></g></g>
+    <g transform="translate(1360 520) rotate(62)"><g class="floaty f2"><use href="#bglog" fill="#17a2a8" opacity="0.13"/></g></g>
+    <g transform="translate(1320 1120) rotate(-14)"><g class="floaty f3"><use href="#bgboard" fill="#ffc65c" opacity="0.18"/></g></g>
+    <g transform="translate(140 1380) rotate(18)"><g class="floaty f2"><use href="#bglog" fill="#ff6b4a" opacity="0.10"/></g></g>
+    <g transform="translate(1180 1640) rotate(-48)"><g class="floaty"><use href="#bgboard" fill="#9a7fd1" opacity="0.10"/></g></g>
+    <g opacity="0.07"><use href="#palm" transform="translate(40 1800) scale(1.6)"/><use href="#palm" transform="translate(150 1800) scale(1.15) rotate(8)"/></g>
+    <g class="flock" opacity="0.28" stroke="#7a4326" stroke-width="2.2" fill="none" stroke-linecap="round">
+      <path d="M0,420 q8,-8 16,0 q8,-8 16,0"/><path d="M40,400 q6,-6 12,0 q6,-6 12,0"/><path d="M70,436 q5,-5 10,0 q5,-5 10,0"/>
+    </g>
+    <g fill="#17a2a8" opacity="0.35">
+      <circle class="bubble" cx="380" cy="1820" r="6"/><circle class="bubble b2" cx="980" cy="1840" r="4"/><circle class="bubble b3" cx="1240" cy="1830" r="5"/>
+      <circle class="bubble b2" cx="620" cy="1860" r="3"/>
+    </g>
+  </svg>
+</div>
+<header class="hero">
+  <svg class="scene" viewBox="0 0 1440 300" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9e6d"/><stop offset="0.4" stop-color="#ffc27a"/><stop offset="0.75" stop-color="#ffe2ad"/><stop offset="1" stop-color="#fff1d8"/></linearGradient>
+      <radialGradient id="glow"><stop offset="0" stop-color="#fffbe6"/><stop offset="0.45" stop-color="#ffe08a" stop-opacity="0.9"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>
+      <linearGradient id="face" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fd6cc"/><stop offset="0.5" stop-color="#17a2a8"/><stop offset="1" stop-color="#0b5f6e"/></linearGradient>
+      <linearGradient id="tube" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a4652"/><stop offset="1" stop-color="#0f6470"/></linearGradient>
+    </defs>
+    <rect width="1440" height="300" fill="url(#sky)"/>
+    <g class="rays" opacity="0.55">
+      <circle cx="1250" cy="70" r="430" fill="none"/>
+      <g fill="#fff4cf" opacity="0.6">
+        <polygon points="1250,70 1680,40 1680,100"/><polygon points="1250,70 1550,-240 1610,-190"/>
+        <polygon points="1250,70 1250,-360 1300,-360"/><polygon points="1250,70 950,-240 1010,-280"/>
+        <polygon points="1250,70 820,40 820,100"/><polygon points="1250,70 950,380 890,340"/>
+        <polygon points="1250,70 1550,380 1610,330"/><polygon points="1250,70 1680,230 1660,280"/>
+        <polygon points="1250,70 820,-90 840,-140"/><polygon points="1250,70 1100,480 1150,490"/>
+      </g>
+    </g>
+    <circle cx="1250" cy="70" r="92" fill="url(#glow)"/>
+    <circle cx="1250" cy="70" r="38" fill="#ffe27a"/>
+    <circle cx="1250" cy="70" r="30" fill="#fff3b8"/>
+    <g class="gull" stroke="#7a4326" stroke-width="2.4" fill="none" stroke-linecap="round">
+      <path d="M860,46 q8,-8 16,0 q8,-8 16,0"/><path d="M910,26 q6,-6 12,0 q6,-6 12,0"/><path d="M960,58 q5,-5 10,0 q5,-5 10,0"/>
+    </g>
+    <g class="swell" opacity="0.6" fill="none" stroke="#ffffff" stroke-width="2">
+      <path d="M-60,178 C120,170 260,184 420,176 S700,168 860,178"/>
+      <path d="M-60,196 C160,188 320,202 520,192 S820,186 980,196"/>
+    </g>
+    <path d="M0,300 L0,236 C160,230 330,222 470,204 C610,186 720,150 800,112 C860,84 920,62 990,56 C1070,50 1140,74 1178,116 C1206,148 1204,190 1176,212 C1168,220 1160,232 1170,244 C1230,250 1330,248 1440,250 L1440,300 Z" fill="url(#face)"/>
+    <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.3">
+      <path d="M300,222 C420,212 540,196 640,176"/><path d="M520,214 C640,196 740,160 820,128"/><path d="M700,208 C790,188 860,150 930,110"/>
+    </g>
+    <path d="M1000,92 C1060,88 1112,110 1140,146 C1160,172 1158,200 1140,214 C1110,224 1068,214 1040,192 C1010,168 992,128 1000,92 Z" fill="url(#tube)"/>
+    <path d="M1010,110 C1030,150 1052,182 1090,206" stroke="#5fd6cc" stroke-width="3" fill="none" opacity="0.45"/>
+    <g stroke="#ffffff" stroke-linecap="round" fill="none">
+      <path d="M900,70 C960,54 1060,46 1130,84 C1176,110 1206,150 1192,196" stroke="#c9f3ee" stroke-width="10" opacity="0.75"/>
+      <path d="M830,100 C900,64 1000,46 1090,62 C1150,74 1196,112 1200,160" stroke-width="4"/>
+    </g>
+    <g fill="#ffffff" class="spray">
+      <circle cx="1150" cy="66" r="3"/><circle cx="1182" cy="82" r="2.5"/><circle cx="1208" cy="108" r="2"/><circle cx="1118" cy="54" r="2"/><circle cx="1222" cy="134" r="1.6"/><circle cx="1170" cy="58" r="1.6"/>
+    </g>
+    <path d="M1140,250 C1150,228 1180,224 1192,236 C1204,222 1232,226 1238,240 C1254,232 1278,238 1274,250 Z" fill="#ffffff"/>
+    <!-- the rider: rides in on page load and every time you pick a spot -->
+    <g id="rider">
+      <ellipse cx="-10" cy="2" rx="16" ry="4" fill="#ffffff" opacity="0.7"/>
+      <ellipse id="riderBoard" cx="0" cy="0" rx="18" ry="3.6" fill="#ffd9a0" stroke="#ff6b4a" stroke-width="1.6"/>
+      <g stroke="#fff6e8" stroke-width="3.6" stroke-linecap="round" fill="none">
+        <path d="M-6,-2 L0,-13 L6,-2 M0,-13 L-2,-25 M-2,-21 L-14,-17 M-2,-21 L12,-26"/>
+      </g>
+      <circle cx="-3" cy="-30" r="4.6" fill="#fff6e8"/>
+      <animateMotion id="ride" dur="3.4s" begin="0.4s" fill="freeze" rotate="auto" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.4 1"
+        path="M-60,262 C200,252 420,228 580,198 C720,172 830,140 930,128 C990,122 1040,186 1082,200"/>
+    </g>
+    <path class="front" d="M0,300 L0,272 C120,264 240,280 360,272 C480,264 600,280 720,272 C840,264 960,280 1080,272 C1200,264 1320,280 1440,272 C1480,268 1500,270 1520,272 L1520,300 Z" fill="#0b4f5c" opacity="0.95"/>
+  </svg>
+  <div class="brand">
+    <svg width="54" height="54" viewBox="0 0 40 40" aria-hidden="true">
+      <circle cx="20" cy="20" r="20" fill="#ff6b4a"/>
+      <path d="M6 25c4-6 9-6 13-1s9 5 15-2v9H6z" fill="#fff"/>
+      <ellipse cx="22" cy="14" rx="11" ry="3" transform="rotate(-25 22 14)" fill="#ffd9a0"/>
+    </svg>
+    <div>
+      <h1>Quiver Match</h1>
+      <p>The right surfboard for your body, your skill, and the waves at your spot this week.</p>
+      <a class="testlink" href="/survey">Help us test: share your sessions →</a>
+    </div>
+  </div>
+  <div class="ride-label" id="rideLabel"></div>
+</header>
+<div class="toast" id="toast"></div>
+
+<main>
+  <form class="card" id="form" autocomplete="off">
+    <h2>About you</h2>
+    <span class="lbl">Units</span>
+    <div class="seg" id="units">
+      <button type="button" data-v="imperial" class="on">lb / ft</button>
+      <button type="button" data-v="metric">kg / cm</button>
+    </div>
+    <div id="imp">
+      <div class="row">
+        <div><label for="lb">Weight (lb)</label><input id="lb" type="number" min="55" max="400" value="165" required></div>
+        <div><span class="lbl">Height</span>
+          <div class="row"><input id="ft" type="number" min="4" max="7" value="5" aria-label="feet"><input id="inch" type="number" min="0" max="11" value="10" aria-label="inches"></div>
+        </div>
+      </div>
+    </div>
+    <div id="met" class="hidden">
+      <div class="row">
+        <div><label for="kg">Weight (kg)</label><input id="kg" type="number" min="25" max="180" value="75"></div>
+        <div><label for="cm">Height (cm)</label><input id="cm" type="number" min="120" max="220" value="178"></div>
+      </div>
+    </div>
+
+    <label for="skill">Skill level</label>
+    <select id="skill">
+      <option value="beginner">Beginner: learning to stand up</option>
+      <option value="novice">Novice: catching green waves, going straight</option>
+      <option value="intermediate" selected>Intermediate: riding the face, basic turns</option>
+      <option value="advanced">Advanced: cutbacks, top turns, most conditions</option>
+      <option value="expert">Expert: high performance in heavy surf</option>
+    </select>
+
+    <span class="lbl">Paddle fitness</span>
+    <div class="seg" id="fitness">
+      <button type="button" data-v="low">Low</button>
+      <button type="button" data-v="average" class="on">Average</button>
+      <button type="button" data-v="high">High</button>
+    </div>
+    <div class="hint">Surf less than once a week = low, 3+ times a week = high.</div>
+
+    <h2 style="margin-top:24px">Where and what</h2>
+    <label for="spot">Your spot</label>
+    <div class="combo">
+      <input id="spot" value="El Porto, Manhattan Beach, CA" maxlength="80" required role="combobox" aria-expanded="false" aria-controls="spotlist" aria-autocomplete="list">
+      <ul id="spotlist" role="listbox" class="hidden"></ul>
+    </div>
+    <div class="hint">Pick from 40+ California spots, Bali, Mexico and more, or type any beach (forecast only).</div>
+    <div class="row">
+      <div><label for="start">Trip starts</label><input id="start" type="date"></div>
+      <div><label for="days">Days</label><select id="days"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+    </div>
+
+    <span class="lbl">Board style for a rental or new board</span>
+    <div class="styles" id="board_pref">
+      <button type="button" data-v="auto" class="on"><svg viewBox="0 0 60 26"><path d="M30 3 l3 7 7 1 -5 5 1.5 7 -6.5 -3.5 -6.5 3.5 1.5 -7 -5 -5 7 -1z" fill="currentColor"/></svg>Let us pick</button>
+      <button type="button" data-v="shortboard"><svg viewBox="0 0 60 26"><path d="M8 13 C14 6 30 5 52 13 C30 21 14 20 8 13 Z" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>Shortboard</button>
+      <button type="button" data-v="funboard"><svg viewBox="0 0 60 26"><path d="M5 13 C9 5 34 4 55 11 C56 13 56 13 55 15 C34 22 9 21 5 13 Z" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>Funboard</button>
+      <button type="button" data-v="longboard"><svg viewBox="0 0 60 26"><path d="M2 13 C3 7 40 6 57 10 C59 12 59 14 57 16 C40 20 3 19 2 13 Z" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>Longboard</button>
+    </div>
+
+    <span class="lbl">Your quiver (boards you own)</span>
+    <div id="quiverRows"></div>
+    <button type="button" class="mini" id="addBoard">+ Add a board</button>
+    <div class="hint">Optional. Add the boards you own and we'll pick which one to ride each day (type and length are enough). No boards? We'll size what to rent or buy and find shops near the break.</div>
+
+    <span class="lbl">Renting or buying?</span>
+    <div class="seg" id="intent">
+      <button type="button" data-v="rent">Renting</button>
+      <button type="button" data-v="buy" class="on">Buying</button>
+    </div>
+
+    <label for="notes">Anything else? (optional)</label>
+    <textarea id="notes" maxlength="300" placeholder="e.g. coming back from a long break, I mostly surf dawn patrol"></textarea>
+
+    <button class="go" id="go" type="submit">Find my board</button>
+  </form>
+
+  <section id="out">
+    <div class="card empty" id="empty">
+      <figure class="spotphoto"><img id="spotImg" alt="Surf photo"><div class="spotname" id="spotName">Find your wave</div><figcaption id="spotCap"></figcaption></figure>
+      <h3>Tell us about you and your break</h3>
+      <p>Two AI agents check the live forecast for your spot, then size your board with a fixed calculator.
+         Code double-checks every number before you see it.</p>
+      <div id="preview" class="preview"></div>
+      <div class="pipeline">
+        <span class="stage" data-s="0">1. Conditions Agent</span>
+        <span class="stage" data-s="1">2. Shaper Agent</span>
+        <span class="stage" data-s="2">3. Validator</span>
+      </div>
+    </div>
+    <div id="result" class="stack hidden"></div>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const state = { units: "imperial", fitness: "average", intent: "buy", board_pref: "auto", color: 0 };
+const SKILLS = ["beginner", "novice", "intermediate", "advanced", "expert"];
+const REDUCE = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// Build DOM safely: all model text goes in via textContent, never innerHTML.
+function el(tag, attrs = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) k === "class" ? (n.className = v) : n.setAttribute(k, v);
+  for (const kid of kids) if (kid != null) n.append(kid instanceof Node ? kid : document.createTextNode(String(kid)));
+  return n;
+}
+
+document.querySelectorAll(".seg, .styles").forEach((seg) => seg.addEventListener("click", (e) => {
+  const b = e.target.closest("button"); if (!b) return;
+  seg.querySelectorAll("button").forEach((x) => x.classList.toggle("on", x === b));
+  state[seg.id] = b.dataset.v;
+  if (seg.id === "units") { $("imp").classList.toggle("hidden", b.dataset.v !== "imperial"); $("met").classList.toggle("hidden", b.dataset.v !== "metric"); }
+}));
+
+// ---------------------------------------------------------------- trip + quiver form
+const TYPES = ["foam longboard", "longboard", "funboard", "mid-length", "fish", "groveler", "hybrid shortboard", "performance shortboard", "step-up"];
+const iso = (d) => new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+(() => { const t = new Date(); $("start").value = $("start").min = iso(t); t.setDate(t.getDate() + 14); $("start").max = iso(t); })();
+function addBoardRow(b = {}) {
+  if ($("quiverRows").children.length >= 6) return;
+  const type = el("select", { class: "q-type", "aria-label": "board type" }, ...TYPES.map((t) => el("option", { value: t }, t)));
+  type.value = b.board_type || "fish";
+  const x = el("button", { type: "button", class: "mini", "aria-label": "remove board" }, "✕");
+  const row = el("div", { class: "qrow" },
+    el("input", { class: "q-name", placeholder: "Name (optional)", maxlength: 40, value: b.name || "" }), type, x,
+    el("div", { class: "dims" },
+      el("input", { class: "q-ft", type: "number", min: 4, max: 12, placeholder: "ft", "aria-label": "feet", value: b.length_in ? Math.floor(b.length_in / 12) : "" }),
+      el("input", { class: "q-in", type: "number", min: 0, max: 11, placeholder: "in", "aria-label": "inches", value: b.length_in ? Math.round(b.length_in % 12) : "" })));
+  x.addEventListener("click", () => row.remove());
+  $("quiverRows").append(row);
+}
+$("addBoard").addEventListener("click", () => addBoardRow());
+function quiverInput() {
+  return [...document.querySelectorAll(".qrow")].map((r) => {
+    const ft = +r.querySelector(".q-ft").value, inch = +r.querySelector(".q-in").value || 0;
+    return ft ? { name: r.querySelector(".q-name").value.trim(), board_type: r.querySelector(".q-type").value, length_in: ft * 12 + inch, volume_l: null } : null;
+  }).filter(Boolean);
+}
+
+// ---------------------------------------------------------------- the rider
+let labelTimer, rideLoop;
+function showLabel(text) {
+  $("rideLabel").textContent = text; $("rideLabel").classList.add("show");
+  clearTimeout(labelTimer); labelTimer = setTimeout(() => $("rideLabel").classList.remove("show"), 3400);
+}
+function ride(text) { if (text) showLabel(text); if (!REDUCE) $("ride").beginElement(); }
+function setRiderBoard(style) { $("riderBoard").setAttribute("rx", { shortboard: 14, funboard: 20, longboard: 27 }[style] || 18); }
+
+// ---------------------------------------------------------------- spot photo + live preview (no AI tokens)
+let photoSeq = 0, pvTimer;
+async function loadSpotPhoto(spot) {
+  const n = ++photoSeq;
+  try {
+    const r = await (await fetch("/api/spot_photo?spot=" + encodeURIComponent(spot || ""))).json();
+    if (n !== photoSeq) return;
+    const img = $("spotImg"); img.classList.add("fading");
+    const pre = new Image();
+    pre.onload = () => { img.src = r.image; img.alt = r.title; img.classList.remove("fading"); };
+    pre.onerror = () => img.classList.remove("fading");
+    pre.src = r.image;
+    $("spotName").textContent = r.is_default ? "Find your wave" : r.spot;
+    $("spotCap").replaceChildren("Photo: ", el("a", { href: r.page, target: "_blank", rel: "noopener" }, r.title), " · Wikipedia / Wikimedia Commons");
+  } catch (e) { /* photo is decoration; ignore */ }
+}
+function schedulePreview() { clearTimeout(pvTimer); pvTimer = setTimeout(loadPreview, 250); }
+async function loadPreview() {
+  const spot = $("spot").value.trim(), box = $("preview");
+  if (!spot) return box.replaceChildren();
+  box.replaceChildren(el("div", { class: "hint" }, "Checking this week's waves..."));
+  try {
+    const q = new URLSearchParams({ spot, skill: $("skill").value, start: $("start").value, days: $("days").value });
+    const r = await (await fetch("/api/preview?" + q)).json();
+    if (!r.ok) return box.replaceChildren(el("div", { class: "hint" }, r.error || ""));
+    const top = Math.max(4, ...r.days.map((d) => d.face_ft_max || 0));
+    box.replaceChildren(
+      el("div", { class: "pv-head" }, el("b", {}, `Live preview: ${r.spot}`), el("span", { class: "hint", style: "margin:0" }, `${r.break_type} · power ${r.power}/5`)),
+      el("div", { class: "pv-days" }, ...r.days.map((d, i) => {
+        const [lbl, cls] = RATING[d.rating];
+        return el("div", { class: "pv-day r-" + d.rating, style: `animation-delay:${i * 0.07}s` },
+          el("div", { class: "pv-bar" }, el("span", { style: `height:${Math.max(6, ((d.face_ft_max || 0) / top) * 60)}px` })),
+          el("b", {}, d.face_ft_max != null ? `${d.face_ft_min}-${d.face_ft_max} ft` : "no data"),
+          el("div", { class: "hint", style: "margin:2px 0 6px" }, `${dayName(d.date)} · ${d.avg_period_s ?? "?"}s`),
+          el("span", { class: "badge " + cls }, `${lbl} for you`));
+      })),
+      el("div", { class: "hint" }, (r.water ? `Water ~${r.water.temp_f}°F → ${r.water.suit}. ` : "") + "Live forecast, no AI yet. Hit Find my board for the full plan."));
+  } catch (e) { box.replaceChildren(); }
+}
+["skill", "start", "days"].forEach((id) => $(id).addEventListener("change", schedulePreview));
+
+// ---------------------------------------------------------------- spot picker
+let SPOTS = [], picked = $("spot").value, active = -1, shown = [];
+const label = (s) => `${s.name}, ${s.region}`;
+const group = (s) => s.region.endsWith(", CA") ? "California, north to south" : s.region.endsWith(", HI") ? "Hawaii" : "East Coast";
+fetch("/api/spots").then((r) => r.json()).then((spots) => { SPOTS = spots; if (params.get("picker") === "open") openList(true); });
+
+function openList(all) {
+  const q = all ? "" : $("spot").value.toLowerCase().trim();
+  shown = SPOTS.filter((s) => !q || [s.name, s.region, ...s.aliases].some((t) => t.toLowerCase().includes(q)));
+  const skillIdx = SKILLS.indexOf($("skill").value);
+  const ul = $("spotlist"); ul.replaceChildren(); active = -1;
+  let last = "";
+  shown.forEach((s, i) => {
+    if (group(s) !== last) { last = group(s); ul.append(el("li", { class: "group" }, last)); }
+    const above = SKILLS.indexOf(s.skill_floor) > skillIdx;
+    ul.append(el("li", { class: "opt", role: "option", "data-i": i },
+      el("div", {}, el("div", { class: "nm" }, s.name), el("div", { class: "mt" }, `${s.region} · ${s.break_type}`)),
+      el("span", { class: "badge " + (above ? "b-above" : "b-" + s.skill_floor) }, above ? "above your level" : s.skill_floor + "+")));
+  });
+  if (!shown.length) ul.append(el("li", { class: "none" }, "Not in our list. We'll look it up and use its live forecast."));
+  ul.classList.remove("hidden"); $("spot").setAttribute("aria-expanded", "true");
+}
+function closeList() { $("spotlist").classList.add("hidden"); $("spot").setAttribute("aria-expanded", "false"); }
+function choose(i) {
+  const s = shown[i]; if (!s) return;
+  $("spot").value = picked = label(s); closeList();
+  ride(`Dropping in at ${s.name}!`);
+  loadSpotPhoto(s.name); schedulePreview();
+}
+function highlight(i) {
+  const opts = [...$("spotlist").querySelectorAll(".opt")];
+  if (!opts.length) return;
+  active = (i + opts.length) % opts.length;
+  opts.forEach((o, k) => o.classList.toggle("active", k === active));
+  opts[active].scrollIntoView({ block: "nearest" });
+}
+$("spot").addEventListener("focus", () => openList($("spot").value === picked));
+$("spot").addEventListener("input", () => openList(false));
+$("spot").addEventListener("blur", () => setTimeout(closeList, 120));
+$("spot").addEventListener("change", () => { loadSpotPhoto($("spot").value); schedulePreview(); });
+setTimeout(() => { loadSpotPhoto($("spot").value); schedulePreview(); }, 0);
+$("spot").addEventListener("keydown", (e) => {
+  const open = !$("spotlist").classList.contains("hidden");
+  if (e.key === "ArrowDown") { e.preventDefault(); open ? highlight(active + 1) : openList(true); }
+  else if (e.key === "ArrowUp") { e.preventDefault(); highlight(active - 1); }
+  else if (e.key === "Enter" && open && active >= 0) { e.preventDefault(); choose(+$("spotlist").querySelectorAll(".opt")[active].dataset.i); }
+  else if (e.key === "Escape") closeList();
+});
+$("spotlist").addEventListener("mousedown", (e) => {
+  const li = e.target.closest(".opt"); if (!li) return;
+  e.preventDefault(); choose(+li.dataset.i);
+});
+
+// ---------------------------------------------------------------- form
+const ft = (inches) => `${Math.floor(inches / 12)}'${Math.round(inches % 12)}"`;
+function frac(x) {
+  const whole = Math.floor(x), f = Math.round((x - whole) * 16);
+  if (f === 0) return `${whole}"`;
+  if (f === 16) return `${whole + 1}"`;
+  let n = f, d = 16; while (n % 2 === 0) { n /= 2; d /= 2; }
+  return `${whole} ${n}/${d}"`;
+}
+function profile() {
+  const metric = state.units === "metric";
+  return {
+    weight_kg: metric ? +$("kg").value : +$("lb").value * 0.453592,
+    height_cm: metric ? +$("cm").value : (+$("ft").value * 12 + +$("inch").value) * 2.54,
+    skill: $("skill").value, fitness: state.fitness, intent: state.intent, board_pref: state.board_pref,
+    spot: $("spot").value.trim(), notes: $("notes").value.trim(),
+    quiver: quiverInput(), start_date: $("start").value || null, days: +$("days").value,
+  };
+}
+function stages(activeStage) {
+  document.querySelectorAll(".stage").forEach((s) => {
+    const i = +s.dataset.s;
+    s.classList.toggle("active", i === activeStage); s.classList.toggle("done", i < activeStage);
+  });
+}
+$("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  closeList();
+  $("go").disabled = true; $("go").textContent = "Reading the waves...";
+  $("result").classList.add("hidden"); $("empty").classList.remove("hidden");
+  let s = 0; stages(0);
+  const timer = setInterval(() => stages(Math.min(++s, 2)), 8000);   // rough timing; the run is not streamed
+  ride(`Paddling out at ${$("spot").value.split(",")[0]}...`);
+  rideLoop = setInterval(() => ride(), 3800);
+  try {
+    const r = await fetch("/api/recommend", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(profile()) });
+    render(await r.json());
+  } catch (err) {
+    render({ ok: false, error: "Could not reach the server. Is it still running?" });
+  } finally {
+    clearInterval(timer); clearInterval(rideLoop);
+    $("go").disabled = false; $("go").textContent = "Find my board";
+  }
+});
+
+// Shareable links: ?run=<id> re-shows a saved result; ?spot=..&skill=..&notes=..&autorun=1 pre-fills the form.
+function fillForm(p) {
+  $("lb").value = Math.round(p.weight_kg / 0.453592);
+  const totalIn = Math.round(p.height_cm / 2.54);
+  $("ft").value = Math.floor(totalIn / 12); $("inch").value = totalIn % 12;
+  $("kg").value = Math.round(p.weight_kg); $("cm").value = Math.round(p.height_cm);
+  for (const k of ["skill", "spot", "notes"]) if (p[k] != null) $(k).value = p[k];
+  picked = $("spot").value;
+  if (p.quiver) { $("quiverRows").replaceChildren(); p.quiver.forEach((b) => addBoardRow(b)); }
+  if (p.start_date) $("start").value = p.start_date;
+  if (p.days) $("days").value = p.days;
+  for (const k of ["fitness", "intent", "board_pref"]) if (p[k]) $(k).querySelector(`[data-v="${p[k]}"]`)?.click();
+}
+const params = new URLSearchParams(location.search);
+if (params.get("run")) {
+  fetch("/api/replay/" + encodeURIComponent(params.get("run"))).then((r) => r.json()).then((res) => {
+    if (res.profile) fillForm(res.profile);
+    if (params.get("color")) state.color = Math.min(COLORS.length - 1, Math.max(0, +params.get("color") || 0));
+    render(res);
+    const q = (res.quiver || []).find((x) => x.style === params.get("view"));
+    if (q && q.board_type !== res.recommendation.primary.board_type) setView(q, `${q.style} from your quiver`);
+  });
+} else if ([...params.keys()].length) {
+  const p = {}; for (const k of ["skill", "spot", "notes", "fitness", "intent", "board_pref"]) if (params.get(k)) p[k] = params.get(k);
+  fillForm({ weight_kg: +params.get("kg") || 75, height_cm: +params.get("cm") || 178, ...p });
+  if (params.get("autorun") === "1") setTimeout(() => $("form").requestSubmit(), 0);
+}
+
+// ---------------------------------------------------------------- board drawing (true scale)
+const LONGISH = ["foam longboard", "longboard", "funboard", "mid-length"];
+function boardPath(b, pxPerIn, x0, cy) {
+  const L = b.length_in * pxPerIn, W = b.width_in * pxPerIn, t = b.board_type;
+  const longish = LONGISH.includes(t);
+  const wide = t === "fish" ? 0.42 : longish ? 0.5 : 0.47;
+  const tailFrac = { "foam longboard": 0.62, longboard: 0.6, funboard: 0.5, "mid-length": 0.38, fish: 0.6, groveler: 0.5, "step-up": 0.22 }[t] ?? 0.4;
+  const noseRound = longish ? 3.2 : t === "fish" ? 2.2 : 1.7;
+  const half = (u) => {
+    if (u <= wide) return (W / 2) * (tailFrac + (1 - tailFrac) * Math.sin((Math.PI / 2) * (u / wide)));
+    const v = (u - wide) / (1 - wide);
+    return (W / 2) * Math.pow(Math.max(0, 1 - Math.pow(v, noseRound)), 0.6);
+  };
+  const top = [], bot = [];
+  for (let i = 0; i <= 80; i++) { const u = i / 80; top.push([x0 + u * L, cy - half(u)]); bot.push([x0 + u * L, cy + half(u)]); }
+  let d = `M ${top[0][0]} ${top[0][1]} ` + top.map((p) => `L ${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(" ");
+  d += " " + bot.reverse().map((p) => `L ${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(" ");
+  d += /swallow/.test(b.tail || "") ? ` L ${x0 + W * 0.18} ${cy} Z` : " Z";
+  return { d, L, W, half };
+}
+const NS = "http://www.w3.org/2000/svg";
+function svgEl(w, h, label) {
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${w} ${h}`); svg.setAttribute("width", "100%"); svg.setAttribute("role", "img"); svg.setAttribute("aria-label", label);
+  svg.add = (tag, attrs, text) => { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (text) n.textContent = text; svg.append(n); return n; };
+  return svg;
+}
+const COLORS = [["Classic white", "#fffaf0", "#d9c7ad"], ["Sunset coral", "#ffb199", "#e2583a"], ["Sea glass", "#bfeee5", "#4fb7a6"],
+                ["Golden hour", "#ffe2a0", "#e0a032"], ["Deep teal", "#7fd0d3", "#0b6f7a"], ["Lilac dusk", "#e2d4f7", "#9a7fd1"]];
+const SHORT = ["fish", "groveler", "hybrid shortboard", "performance shortboard", "step-up"];
+// Typical rocker (inches) by shape; drawn as an illustration, not a measured spec.
+const ROCKER = { "foam longboard": [3.5, 1.8], longboard: [4.2, 2.4], funboard: [4.4, 2.0], "mid-length": [4.0, 1.8], fish: [3.8, 1.6],
+                 groveler: [3.9, 1.7], "hybrid shortboard": [4.6, 2.0], "performance shortboard": [5.2, 2.3], "step-up": [5.6, 2.5] };
+function finLayout(b) {
+  const f = (b.fins || "").toLowerCase();
+  const first = ["thruster", "2+1", "single", "twin", "quad", "5-fin"].map((k) => [k, f.indexOf(k)]).filter(([, i]) => i >= 0).sort((a, c) => a[1] - c[1])[0];
+  const key = first ? first[0] : "thruster";
+  return { name: key, fins: { thruster: [[3.5, 0], [11, 0.8]], "2+1": [[8, 0], [12, 0.78]], single: [[9, 0]], twin: [[7.5, 0.68]],
+                              quad: [[5.5, 0.62], [11, 0.8]], "5-fin": [[3.5, 0], [11, 0.8]] }[key] };
+}
+function renderBoard(b) {
+  const [, light, edge] = COLORS[state.color];
+  const s = 6.6, x0 = 40, cy = 92, { d, L, W, half } = boardPath(b, s, x0, cy);
+  const svg = svgEl(860, 322, `${b.board_type} render, top and side view, drawn to scale`);
+  const gid = "deck" + Math.random().toString(36).slice(2, 7);
+  const grad = document.createElementNS(NS, "linearGradient");
+  for (const [k, v] of [["id", gid], ["x1", 0], ["y1", 0], ["x2", 0], ["y2", 1]]) grad.setAttribute(k, v);
+  for (const [o, c] of [[0, edge], [0.3, light], [0.5, "#ffffff"], [0.7, light], [1, edge]]) {
+    const st = document.createElementNS(NS, "stop"); st.setAttribute("offset", o); st.setAttribute("stop-color", c); grad.append(st);
+  }
+  svg.add("defs", {}).append(grad);
+  const foam = b.board_type === "foam longboard", short = SHORT.includes(b.board_type), layout = finLayout(b);
+  // top view
+  svg.add("path", { d, fill: "#3b2618", opacity: 0.08, transform: "translate(5,7)" });
+  for (const [fromTail, lat] of layout.fins) {                      // fins, ghosted through the deck
+    const u = fromTail / b.length_in, hw = half(u);
+    for (const sign of lat === 0 ? [0] : [1, -1]) svg.add("ellipse", { cx: x0 + fromTail * s, cy: cy + sign * lat * hw, rx: 2.2 * s, ry: 0.42 * s, fill: "#3b2618", opacity: 0.22 });
+  }
+  svg.add("path", { d, fill: `url(#${gid})`, stroke: edge, "stroke-width": 2.5, "fill-opacity": 0.93 });
+  if (!foam) svg.add("line", { x1: x0 + 4, y1: cy, x2: x0 + L - 4, y2: cy, stroke: "#b48a5a", "stroke-width": 1.4, opacity: 0.75 });
+  if (short) {
+    const pw = Math.min(0.74 * W, 2 * half(0.06) * 0.95);
+    svg.add("rect", { x: x0 + 0.8 * s, y: cy - pw / 2, width: 11 * s, height: pw, rx: 9, fill: "#3b2618", opacity: 0.85 });
+    for (let k = 1; k < 4; k++) svg.add("line", { x1: x0 + (0.8 + k * 2.7) * s, y1: cy - pw / 2 + 5, x2: x0 + (0.8 + k * 2.7) * s, y2: cy + pw / 2 - 5, stroke: "#9b7b62", "stroke-width": 1.3 });
+  }
+  svg.add("circle", { cx: x0 + 2.4 * s, cy, r: 0.5 * s, fill: "none", stroke: short ? "#fff6e8" : "#5a2e14", "stroke-width": 1.5 });
+  svg.add("text", { x: x0 + L * 0.68, y: cy + 4, "text-anchor": "middle", "font-size": 11, "font-weight": 800, fill: edge, "letter-spacing": 2 }, foam ? "SOFT TOP" : "QUIVER MATCH");
+  svg.add("line", { x1: x0, y1: 184, x2: x0 + L, y2: 184, stroke: "#5a2e14", "stroke-width": 1.5 });
+  svg.add("text", { x: x0 + L / 2, y: 179, "text-anchor": "middle", "font-size": 18, fill: "#5a2e14", "font-weight": 800 }, `${ft(b.length_in)} long`);
+  const wx = x0 + L * 0.5;
+  svg.add("line", { x1: wx, y1: cy - W / 2, x2: wx, y2: cy + W / 2, stroke: "#5a2e14", "stroke-width": 1.2, "stroke-dasharray": "3 3" });
+  svg.add("text", { x: wx + 10, y: cy - W / 2 - 8, "font-size": 18, fill: "#5a2e14", "font-weight": 800 }, `${frac(b.width_in)} wide`);
+  svg.add("text", { x: 840, y: 18, "text-anchor": "end", "font-size": 13, fill: "#8a6b55" }, `top view · ${layout.name} fins shown through the deck`);
+  // side view (true scale)
+  const base = 262, [nr, tr] = ROCKER[b.board_type] || [4.4, 2.0];
+  const bot = (u) => (u < 0.4 ? tr * Math.pow((0.4 - u) / 0.4, 2) : u > 0.6 ? nr * Math.pow((u - 0.6) / 0.4, 2.2) : 0);
+  const th = (u) => b.thickness_in * (0.28 + 0.72 * Math.pow(Math.sin(Math.PI * u), 0.75));
+  const pts = [...Array(81).keys()].map((i) => i / 80);
+  for (const [fromTail] of layout.fins) {
+    const x = x0 + fromTail * s, yb = base - bot(fromTail / b.length_in) * s, h = (layout.name === "single" ? 7 : 4.4) * s;
+    svg.add("path", { d: `M ${x + 0.9 * s} ${yb} Q ${x + 0.2 * s} ${yb + 0.6 * h} ${x - 1.5 * s} ${yb + h} Q ${x - 0.9 * s} ${yb + 0.45 * h} ${x - 2 * s} ${yb} Z`, fill: "#5a2e14", opacity: 0.75 });
+  }
+  const deck = pts.map((u) => `${(x0 + u * L).toFixed(1)} ${(base - (bot(u) + th(u)) * s).toFixed(1)}`);
+  const hull = pts.slice().reverse().map((u) => `${(x0 + u * L).toFixed(1)} ${(base - bot(u) * s).toFixed(1)}`);
+  svg.add("path", { d: `M ${deck.join(" L ")} L ${hull.join(" L ")} Z`, fill: light, stroke: edge, "stroke-width": 2 });
+  svg.add("text", { x: 840, y: 214, "text-anchor": "end", "font-size": 13, fill: "#8a6b55" }, `side view · ${frac(b.thickness_in)} thick · typical rocker for this shape (nose ~${nr}", tail ~${tr}")`);
+  return svg;
+}
+let RES = null, VIEW = null, VIEW_LABEL = "";
+function btn(text, fn) { const b = el("button", { type: "button", class: "mini" }, text); b.addEventListener("click", fn); return b; }
+let toastTimer;
+function toast(text) { $("toast").textContent = text; $("toast").classList.add("show"); clearTimeout(toastTimer); toastTimer = setTimeout(() => $("toast").classList.remove("show"), 3200); }
+function copyLink() {
+  const url = `${location.origin}/?run=${RES.run_id}`;
+  (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => toast("Link copied: " + url), () => toast(url));
+}
+function setView(spec, label) {
+  VIEW = spec; VIEW_LABEL = label || "";
+  $("viewer").replaceWith(viewerCard());
+  document.querySelectorAll(".qcard").forEach((q) => q.classList.toggle("viewing", q.dataset.type === spec.board_type && spec !== RES.recommendation.primary));
+}
+function viewerCard() {
+  const b = VIEW, primary = RES.recommendation.primary, isPrimary = b === primary;
+  const stats = el("div", { class: "stats" },
+    ...[[ft(b.length_in), "Length"], [frac(b.width_in), b.volume_estimated ? "Width (est.)" : "Width"], [frac(b.thickness_in), b.volume_estimated ? "Thickness (est.)" : "Thickness"],
+        [`${b.volume_l} L`, b.volume_estimated ? "Volume (est.)" : "Volume"]]
+      .map(([val, k]) => el("div", { class: "stat" }, el("div", { class: "v" }, val), el("div", { class: "k" }, k))));
+  const chips = el("div", { class: "chips" },
+    ...[["Tail", b.tail], ["Fins", b.fins], ["Rocker", b.rocker]].filter(([, v]) => v).map(([k, val]) => el("span", { class: "chip" }, el("b", {}, k + ": "), val)));
+  const swatches = el("div", { class: "swatches" }, ...COLORS.map(([name, light, edge], i) => {
+    const sw = el("button", { type: "button", class: "swatch" + (i === state.color ? " on" : ""), title: name, "aria-label": name, style: `background:${light};border-color:${edge}` });
+    sw.addEventListener("click", () => { state.color = i; $("riderBoard").setAttribute("fill", light); setView(VIEW, VIEW_LABEL); });
+    return sw;
+  }));
+  const actions = el("div", { class: "actions" }, isPrimary ? null : btn("Back to my board", () => setView(primary)),
+    btn("Copy share link", copyLink), btn("Print shop card", () => window.print()));
+  return el("div", { class: "card", id: "viewer" },
+    el("div", { class: "board-title" }, el("h2", {}, isPrimary ? `${RES.ranking ? "Ideal board to rent or buy" : "Your board"}: ${b.board_type}` : `Viewing: ${b.board_type}`),
+      el("span", { class: "spot" }, isPrimary ? `for ${RES.conditions.spot_name}` : VIEW_LABEL)),
+    el("div", { class: "viewer-tools noprint" }, swatches, actions),
+    el("div", { class: "svgwrap" }, renderBoard(b)), stats, chips,
+    isPrimary && RES.volume_math ? el("div", { class: "math" }, "Volume math: " + RES.volume_math) : null);
+}
+const RATING = { go: ["Go", "f-best"], caution: ["Caution", "f-meh"], "no-go": ["No-go", "b-above"] };
+function dayName(d) { return new Date(d + "T12:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }); }
+function tripCard(res) {
+  const r = res.recommendation, t = res.trip, rk = res.ranking, s = res.safety;
+  const byDate = Object.fromEntries((rk?.days || []).map((d) => [d.date, d]));
+  const parts = [];
+  if (s) parts.push(el("div", { class: "banner " + (t.worst === "no-go" ? "bad" : "warn") }, el("b", {}, s.headline),
+    el("div", { style: "font-weight:500;margin-top:4px" }, s.message),
+    s.safer_spots.length ? el("div", { class: "chips" }, el("b", {}, "Safer options:"), ...s.safer_spots.map((x) => el("span", { class: "chip" }, `${x.name}, ${dayName(x.date)}: ${x.why}`))) : null,
+    s.safer_days.length ? el("div", { style: "margin-top:6px" }, "Better days here: " + s.safer_days.map(dayName).join(", ")) : null));
+  if (r.headline) parts.push(el("p", { class: "headline" }, r.headline));
+  parts.push(el("div", { class: "days-plan" }, ...t.assessments.map((a) => {
+    const plan = r.days.find((d) => d.date === a.date) || {}, rd = byDate[a.date];
+    const pick = rd && rd.ranked.find((b) => b.name === plan.board), [lbl, cls] = RATING[a.rating];
+    const what = plan.board === "Skip" ? "Skip this day" : plan.board === "Rent"
+      ? `Rent: ${rd ? rd.ideal.length_display + " " + rd.ideal.board_type : r.primary.board_type}` : plan.board || "-";
+    return el("div", { class: "dplan r-" + a.rating },
+      el("div", { class: "board-title" }, el("b", {}, dayName(a.date)), el("span", { class: "badge " + cls }, lbl)),
+      el("div", { class: "mt" }, a.face_ft_max != null ? `${a.face_ft_min}-${a.face_ft_max} ft · ${a.avg_period_s}s` : "no forecast yet"),
+      el("div", { class: "pick" }, what), pick ? el("div", { class: "mt" }, `fit ${pick.fit}/100`) : null,
+      el("div", { class: "hint", style: "margin:4px 0 0" }, plan.why || a.reasons.join("; ")));
+  })));
+  if (r.bring.length) parts.push(el("div", { class: "bring" }, el("b", {}, "Pack:"), ...r.bring.map((b) => el("span", { class: "chip" }, b))));
+  const end = new Date(t.start + "T12:00"); end.setDate(end.getDate() + t.days - 1);
+  return card(`Trip plan: ${res.conditions.spot_name}, ${dayName(t.start)}${t.days > 1 ? " to " + dayName(iso(end)) : ""}`, ...parts);
+}
+function whenViz(fn) {
+  if (window.QMViz) return fn();
+  let n = 0; const timer = setInterval(() => { if (window.QMViz || ++n > 60) { clearInterval(timer); if (window.QMViz) fn(); } }, 100);
+}
+function meterRow(b, best, onClick, est) {
+  const bar = (k, v) => el("div", { class: "mbar" }, el("span", {}, k), el("div", { class: "mtrack" }, el("div", { class: "mfill", style: `width:${v}%` })), el("span", { class: "mv" }, v));
+  const row = el("div", { class: "mrow" + (best ? " best" : "") + (b.ideal ? " ideal" : "") },
+    el("div", { class: "board-title" }, el("b", {}, b.name), el("span", { class: "badge " + (best ? "f-best" : b.allowed === false ? "f-locked" : "f-good") }, `fit ${b.fit}`)),
+    b.length_in ? el("div", { class: "mt" }, `${ft(b.length_in)} · ${b.volume_l} L${est ? " (estimated)" : ""}`) : null,
+    bar("Catching", b.catch), bar("Control", b.control), bar("Turning", b.turn));
+  if (onClick) row.addEventListener("click", onClick);
+  return row;
+}
+function vizCard(res) {
+  const own = res.ranking && res.ranking.boards.length, rk = own ? res.ranking : res.style_ranking, chips = el("div", { class: "daychips" }), meters = el("div", { class: "meters" });
+  const holder = el("div", { class: "viz", id: "viz" }, el("div", { class: "viz-label" }, "Illustrative, not a physics sim"));
+  function show(i) {
+    const d = rk.days[i], fc = (res.forecast_days || []).find((x) => x.date === d.date) || {};
+    chips.querySelectorAll("button").forEach((b, k) => b.classList.toggle("on", k === i));
+    meters.replaceChildren(...d.ranked.map((b) => meterRow(b, b.name === d.pick, () => {
+      const full = rk.boards.find((x) => x.name === b.name);
+      setView(full, own ? "from your quiver" : "board style sized for you"); $("viewer").scrollIntoView({ behavior: "smooth", block: "start" });
+    }, rk.boards.find((x) => x.name === b.name)?.volume_estimated)), meterRow({ name: `Ideal rental: ${d.ideal.length_display} ${d.ideal.board_type}`, ...d.ideal_meters, ideal: true }, false));
+    whenViz(() => QMViz.update({ face_ft: fc.face_ft_max ?? d.design_wave_ft, period_s: fc.avg_period_s ?? 10, power: res.conditions.wave_power,
+      boards: d.ranked.slice(0, 3).map((b) => ({ ...rk.boards.find((x) => x.name === b.name), label: `${b.name} · fit ${b.fit}` })), color: COLORS[state.color] }));
+  }
+  rk.days.forEach((d, i) => { const b = btn(`${dayName(d.date)} · ${d.design_wave_ft} ft`, () => show(i)); chips.append(b); });
+  setTimeout(() => { whenViz(() => QMViz.mount($("viz"))); show(0); }, 0);
+  return card(own ? "Your boards on this week's waves" : "Board styles on this week's waves (what to rent)", chips, holder, meters,
+    el("p", { class: "hint" }, "How the meters work (0-100): catching ease rises with volume and length compared with the ideal board for you and that day's waves. "
+      + "Control drops when a board is much bigger than ideal in powerful surf. Turning drops with length and volume. Fit weights the three by the day: "
+      + "small, soft waves weight catching; big, powerful waves weight control. Beginners weight catching more. Click a board to see it up close."));
+}
+
+function miniBoard(b) {
+  const [, light, edge] = COLORS[state.color];
+  const svg = svgEl(320, 70, `${b.board_type} to scale`);
+  const { d } = boardPath(b, 2.6, 10, 35);
+  svg.add("path", { d, fill: light, stroke: edge, "stroke-width": 2 });
+  return svg;
+}
+
+// ---------------------------------------------------------------- local shops (OpenStreetMap)
+let shopSeq = 0;
+async function loadShops(spot) {
+  const box = $("shops"); if (!box) return;
+  const n = ++shopSeq, mode = state.intent;
+  $("shopTitle").textContent = mode === "rent" ? "Renting near " + spot : "Buying near " + spot;
+  box.replaceChildren(el("div", { class: "hint" }, `Finding surf shops near ${spot}...`));
+  try {
+    const r = await (await fetch(`/api/shops?spot=${encodeURIComponent(spot)}&mode=${mode}`)).json();
+    if (n !== shopSeq) return;
+    if (!r.ok) return box.replaceChildren(el("div", { class: "hint" }, r.error));
+    const items = r.shops.map((x) => el("div", { class: "shop" },
+      el("div", { class: "board-title" }, x.website ? el("a", { href: x.website, target: "_blank", rel: "noopener" }, x.name) : el("b", {}, x.name),
+        el("span", { class: "mt" }, `${(x.distance_km * 0.621).toFixed(1)} mi`)),
+      el("div", { class: "mt" }, [x.address, x.phone].filter(Boolean).join(" · ") || "Address not listed"),
+      el("div", { class: "mt" }, mode === "rent" ? (x.rental_listed ? "Rentals listed" : "Surf shop: call ahead to confirm rentals") : "Surf shop",
+        " · ", el("a", { href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(x.name)}%20${x.lat},${x.lon}`, target: "_blank", rel: "noopener" }, "map"))));
+    box.replaceChildren(el("b", {}, mode === "rent" ? "Where to rent nearby" : "Where to buy nearby"),
+      ...(items.length ? items : [el("div", { class: "hint" }, "No surf shops listed on OpenStreetMap near this spot.")]),
+      el("div", { class: "hint" }, el("a", { href: r.more_url, target: "_blank", rel: "noopener" }, mode === "rent" ? "More rentals on Google Maps" : "More surf shops on Google Maps"),
+        " · Shops: © OpenStreetMap contributors. Call ahead for stock and rentals."));
+  } catch (e) { box.replaceChildren(); }
+}
+$("intent").addEventListener("click", () => { if (RES && $("shops")) loadShops(RES.conditions.spot_name); });
+
+// ---------------------------------------------------------------- render
+function card(title, ...kids) { return el("div", { class: "card" }, el("h2", {}, title), ...kids); }
+function list(items) { return el("ul", { class: "list" }, ...items.map((t) => el("li", {}, t))); }
+const STYLE = { "foam longboard": "longboard", longboard: "longboard", funboard: "funboard", "mid-length": "funboard" };
+
+function render(res) {
+  const out = $("result"); out.replaceChildren();
+  $("empty").classList.add("hidden"); out.classList.remove("hidden");
+  if (!res.ok) {
+    out.append(el("div", { class: "banner bad" }, (res.blocked ? "Blocked: " : "") + (res.error || "Unknown error")));
+    return;
+  }
+  const c = res.conditions, r = res.recommendation, b = r.primary, v = res.validation;
+  setRiderBoard(STYLE[b.board_type] || "shortboard");
+  $("riderBoard").setAttribute("fill", COLORS[state.color][1]);
+  ride(`Your ${b.board_type} is ready!`);
+
+  out.append(v.passed
+    ? el("div", { class: "banner ok" }, "Validator: every dimension matches the board calculator. No numbers were made up.")
+    : el("div", { class: "banner warn" }, "Validator corrected the AI: ", list(v.corrections)));
+  if (res.pref_note) out.append(el("div", { class: "banner warn" }, res.pref_note));
+
+  RES = res; VIEW = b; VIEW_LABEL = "";
+  if (res.trip) out.append(tripCard(res));
+  if ((res.ranking && res.ranking.boards.length) || res.style_ranking) out.append(vizCard(res));
+  out.append(viewerCard());
+  if (res.quiver && res.quiver.length) {
+    out.append(card("Your quiver at a glance (same scale)", el("div", { class: "grid3" }, ...res.quiver.map((q) =>
+      el("div", { class: "qcard " + q.fit, "data-type": q.board_type, title: "Click to view this board" },
+        el("div", { class: "board-title" }, el("h4", {}, q.style), el("span", { class: "badge f-" + q.fit }, q.fit === "locked" ? "not yet" : q.fit === "best" ? "best match" : q.fit === "good" ? "good" : "so-so")),
+        el("div", { class: "ty" }, q.board_type),
+        miniBoard(q),
+        el("div", { class: "dims" }, `${q.length_display} x ${frac(q.width_in)} x ${frac(q.thickness_in)} · ${q.volume_l} L`),
+        el("div", { class: "hint", style: "margin:0" }, q.fit_note))))));
+    out.querySelectorAll(".qcard").forEach((node, k) => node.addEventListener("click", () => {
+      const q = res.quiver[k];
+      if (q.board_type === b.board_type) setView(b); else setView(q, `${q.style} from your quiver`);
+      $("viewer").scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
+  }
+
+  const fc = res.forecast_days || [], top = Math.max(4, ...fc.map((d) => d.face_ft_max));
+  const days = fc.length ? el("div", { class: "days" }, ...fc.map((d) => el("div", { class: "day" },
+    el("div", { class: "bar" }, el("span", { style: `height:${Math.max(6, (d.face_ft_max / top) * 70)}px` })),
+    el("b", {}, `${d.face_ft_min}-${d.face_ft_max} ft`),
+    new Date(d.date + "T12:00").toLocaleDateString(undefined, { weekday: "short" }) + ` · ${d.avg_period_s}s`))) : null;
+  const cond = card("Conditions at " + c.spot_name,
+    el("p", { style: "margin:0 0 6px" }, `${c.break_type} over ${c.bottom}, power ${c.wave_power}/5`),
+    el("p", { style: "margin:0;color:var(--muted);font-size:14px" }, c.forecast_summary),
+    days,
+    el("div", { class: "math" }, `Designed for ${c.design_wave_ft} ft faces (range ${c.forecast_range_ft.join("-")} ft, source: ${c.data_source})`),
+    res.water ? el("div", { class: "wet" }, "Water ~", el("b", {}, `${res.water.temp_f}°F / ${res.water.temp_c}°C`), ` → ${res.water.suit}${res.water.extras ? ". " + res.water.extras : ""}`,
+      el("div", { class: "hint", style: "margin:4px 0 0" }, res.water.source)) : null,
+    c.hazards.length ? el("div", { style: "margin-top:10px" }, el("b", {}, "Heads up"), list(c.hazards)) : null);
+  out.append(el("div", { class: "grid2" }, card("Why this board", list(r.why)), cond));
+
+  const extras = [];
+  if (r.backup) {
+    const k = r.backup;
+    extras.push(card("Second board: " + k.board_type,
+      el("p", { style: "margin:0 0 8px;font-weight:800;color:var(--deep)" }, `${ft(k.length_in)} x ${frac(k.width_in)} x ${frac(k.thickness_in)}, ${k.volume_l} L`),
+      el("p", { style: "margin:0 0 10px;font-size:14px" }, r.backup_when),
+      btn("View this board", () => { setView(k, "your second board"); $("viewer").scrollIntoView({ behavior: "smooth", block: "start" }); })));
+  }
+  extras.push(el("div", { class: "card", id: "shopCard" }, el("h2", { id: "shopTitle" }, state.intent === "rent" ? "Renting" : "Buying"),
+    el("p", { style: "margin:0 0 8px;font-size:14px" }, r.rent_or_buy_advice),
+    r.catalog_matches.length ? el("div", {}, el("b", {}, "Models to look at"), list(r.catalog_matches)) : null,
+    el("div", { id: "shops" })));
+  setTimeout(() => loadShops(c.spot_name), 0);
+  out.append(el("div", { class: "grid2" }, ...extras));
+
+  if (r.safety_notes.length) out.append(card("Safety", list(r.safety_notes)));
+
+  const u = res.usage, rows = Object.entries(u.per_agent).map(([name, a]) =>
+    el("tr", {}, el("td", {}, name), el("td", {}, a.input_tokens), el("td", {}, a.cached_input_tokens), el("td", {}, a.output_tokens), el("td", {}, a.tool_calls)));
+  out.append(card("Under the hood",
+    el("div", { class: "meta" },
+      el("span", {}, "Run ", el("b", {}, res.run_id)), el("span", {}, "Time ", el("b", {}, res.latency_s + " s")),
+      el("span", {}, "Tokens ", el("b", {}, u.total.total_tokens)),
+      el("span", {}, "Cost ", el("b", {}, u.cost_usd == null ? "set prices in config" : "$" + u.cost_usd.toFixed(4))),
+      el("span", {}, "Model ", el("b", {}, "gpt-6-luna"))),
+    el("table", {}, el("tr", {}, ...["Agent", "Input", "Cached", "Output", "Tool calls"].map((h) => el("th", {}, h))), ...rows)));
+}
+</script>
+</body>
+</html>

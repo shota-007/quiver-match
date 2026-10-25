@@ -1,0 +1,433 @@
+{
+ "_label": "SYNTHETIC PERSONAS: not real people. A stress test written by the author, mixed like the author's surf friends (7 LA, 2 Orange County, 1 SF). Expected boards follow one rule written before running: smaller/softer days -> the higher-volume board, bigger/punchier days -> the shorter board, beginners stay on foam. expect_rating marks sessions the safety check must not call 'go'.",
+ "surfers": [
+  {
+   "id": "LA1",
+   "who": "Venice longboarder (synthetic)",
+   "region": "LA",
+   "weight_kg": 80,
+   "height_cm": 183,
+   "skill": "intermediate",
+   "fitness": "average",
+   "quiver": [
+    {
+     "name": "9'2 log",
+     "board_type": "longboard",
+     "length_in": 110,
+     "volume_l": null
+    },
+    {
+     "name": "7'0 mid",
+     "board_type": "mid-length",
+     "length_in": 84,
+     "volume_l": null
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-03",
+     "spot": "Venice Breakwater",
+     "face_ft": 2,
+     "period_s": 9,
+     "best_board": "9'2 log",
+     "note": "knee-high, soft"
+    },
+    {
+     "date": "2026-10-10",
+     "spot": "Venice Breakwater",
+     "face_ft": 5,
+     "period_s": 12,
+     "best_board": "7'0 mid",
+     "note": "head-high, steeper"
+    }
+   ]
+  },
+  {
+   "id": "LA2",
+   "who": "El Porto shortboarder (synthetic)",
+   "region": "LA",
+   "weight_kg": 72,
+   "height_cm": 175,
+   "skill": "advanced",
+   "fitness": "high",
+   "quiver": [
+    {
+     "name": "5'6 groveler",
+     "board_type": "groveler",
+     "length_in": 66,
+     "volume_l": 30
+    },
+    {
+     "name": "5'10 shortboard",
+     "board_type": "performance shortboard",
+     "length_in": 70,
+     "volume_l": 28
+    },
+    {
+     "name": "6'4 step-up",
+     "board_type": "step-up",
+     "length_in": 76,
+     "volume_l": 31
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-02",
+     "spot": "El Porto",
+     "face_ft": 2,
+     "period_s": 8,
+     "best_board": "5'6 groveler",
+     "note": ""
+    },
+    {
+     "date": "2026-10-09",
+     "spot": "El Porto",
+     "face_ft": 5,
+     "period_s": 13,
+     "best_board": "5'10 shortboard",
+     "note": ""
+    },
+    {
+     "date": "2026-10-16",
+     "spot": "El Porto",
+     "face_ft": 8,
+     "period_s": 15,
+     "best_board": "6'4 step-up",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "LA3",
+   "who": "Manhattan Beach novice (synthetic)",
+   "region": "LA",
+   "weight_kg": 68,
+   "height_cm": 165,
+   "skill": "novice",
+   "fitness": "low",
+   "quiver": [
+    {
+     "name": "8'0 soft-top",
+     "board_type": "foam longboard",
+     "length_in": 96,
+     "volume_l": null
+    },
+    {
+     "name": "7'6 funboard",
+     "board_type": "funboard",
+     "length_in": 90,
+     "volume_l": null
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-04",
+     "spot": "Manhattan Beach Pier",
+     "face_ft": 2,
+     "period_s": 8,
+     "best_board": "8'0 soft-top",
+     "note": "tiny and weak"
+    },
+    {
+     "date": "2026-10-11",
+     "spot": "Manhattan Beach Pier",
+     "face_ft": 4,
+     "period_s": 11,
+     "best_board": "7'6 funboard",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "LA4",
+   "who": "Hermosa intermediate (synthetic)",
+   "region": "LA",
+   "weight_kg": 82,
+   "height_cm": 180,
+   "skill": "intermediate",
+   "fitness": "average",
+   "quiver": [
+    {
+     "name": "6'4 hybrid",
+     "board_type": "hybrid shortboard",
+     "length_in": 76,
+     "volume_l": 38
+    },
+    {
+     "name": "7'2 mid",
+     "board_type": "mid-length",
+     "length_in": 86,
+     "volume_l": null
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-05",
+     "spot": "Hermosa Beach Pier",
+     "face_ft": 2,
+     "period_s": 9,
+     "best_board": "7'2 mid",
+     "note": ""
+    },
+    {
+     "date": "2026-10-12",
+     "spot": "Hermosa Beach Pier",
+     "face_ft": 5,
+     "period_s": 12,
+     "best_board": "6'4 hybrid",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "LA5",
+   "who": "Zuma heavy-day surfer (synthetic)",
+   "region": "LA",
+   "weight_kg": 85,
+   "height_cm": 188,
+   "skill": "advanced",
+   "fitness": "average",
+   "quiver": [
+    {
+     "name": "6'2 shortboard",
+     "board_type": "performance shortboard",
+     "length_in": 74,
+     "volume_l": 32
+    },
+    {
+     "name": "6'8 step-up",
+     "board_type": "step-up",
+     "length_in": 80,
+     "volume_l": 35
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-06",
+     "spot": "Zuma Beach",
+     "face_ft": 4,
+     "period_s": 11,
+     "best_board": "6'2 shortboard",
+     "note": ""
+    },
+    {
+     "date": "2026-10-13",
+     "spot": "Zuma Beach",
+     "face_ft": 8,
+     "period_s": 16,
+     "best_board": "6'8 step-up",
+     "note": "overhead, heavy shorebreak"
+    }
+   ]
+  },
+  {
+   "id": "LA6",
+   "who": "Malibu beginner (synthetic)",
+   "region": "LA",
+   "weight_kg": 60,
+   "height_cm": 160,
+   "skill": "beginner",
+   "fitness": "low",
+   "quiver": [
+    {
+     "name": "8'0 soft-top",
+     "board_type": "foam longboard",
+     "length_in": 96,
+     "volume_l": null
+    },
+    {
+     "name": "7'0 funboard",
+     "board_type": "funboard",
+     "length_in": 84,
+     "volume_l": null
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-07",
+     "spot": "Malibu",
+     "face_ft": 2,
+     "period_s": 14,
+     "best_board": "8'0 soft-top",
+     "note": "",
+     "expect_rating": "caution"
+    },
+    {
+     "date": "2026-10-14",
+     "spot": "Malibu",
+     "face_ft": 3,
+     "period_s": 15,
+     "best_board": "8'0 soft-top",
+     "note": "",
+     "expect_rating": "caution"
+    }
+   ]
+  },
+  {
+   "id": "LA7",
+   "who": "County Line intermediate (synthetic)",
+   "region": "LA",
+   "weight_kg": 70,
+   "height_cm": 175,
+   "skill": "intermediate",
+   "fitness": "high",
+   "quiver": [
+    {
+     "name": "5'8 fish",
+     "board_type": "fish",
+     "length_in": 68,
+     "volume_l": 32
+    },
+    {
+     "name": "6'0 hybrid",
+     "board_type": "hybrid shortboard",
+     "length_in": 72,
+     "volume_l": 30
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-08",
+     "spot": "County Line",
+     "face_ft": 2.5,
+     "period_s": 10,
+     "best_board": "5'8 fish",
+     "note": ""
+    },
+    {
+     "date": "2026-10-15",
+     "spot": "County Line",
+     "face_ft": 5,
+     "period_s": 13,
+     "best_board": "6'0 hybrid",
+     "note": "punchy"
+    }
+   ]
+  },
+  {
+   "id": "OC1",
+   "who": "Lowers regular (synthetic)",
+   "region": "OC",
+   "weight_kg": 75,
+   "height_cm": 178,
+   "skill": "advanced",
+   "fitness": "high",
+   "quiver": [
+    {
+     "name": "5'7 groveler",
+     "board_type": "groveler",
+     "length_in": 67,
+     "volume_l": 31
+    },
+    {
+     "name": "5'11 shortboard",
+     "board_type": "performance shortboard",
+     "length_in": 71,
+     "volume_l": 29
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-03",
+     "spot": "Lower Trestles",
+     "face_ft": 3,
+     "period_s": 14,
+     "best_board": "5'7 groveler",
+     "note": "waist-high"
+    },
+    {
+     "date": "2026-10-17",
+     "spot": "Lower Trestles",
+     "face_ft": 6,
+     "period_s": 15,
+     "best_board": "5'11 shortboard",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "OC2",
+   "who": "Huntington beginner (synthetic)",
+   "region": "OC",
+   "weight_kg": 70,
+   "height_cm": 170,
+   "skill": "beginner",
+   "fitness": "average",
+   "quiver": [
+    {
+     "name": "8'0 soft-top",
+     "board_type": "foam longboard",
+     "length_in": 96,
+     "volume_l": null
+    },
+    {
+     "name": "7'6 funboard",
+     "board_type": "funboard",
+     "length_in": 90,
+     "volume_l": null
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-04",
+     "spot": "Huntington Beach Pier",
+     "face_ft": 2,
+     "period_s": 9,
+     "best_board": "8'0 soft-top",
+     "note": "",
+     "expect_rating": "caution"
+    },
+    {
+     "date": "2026-10-18",
+     "spot": "Huntington Beach Pier",
+     "face_ft": 6,
+     "period_s": 13,
+     "best_board": "8'0 soft-top",
+     "note": "should stay on the sand",
+     "expect_rating": "no-go"
+    }
+   ]
+  },
+  {
+   "id": "SF1",
+   "who": "Ocean Beach charger (synthetic)",
+   "region": "SF",
+   "weight_kg": 80,
+   "height_cm": 183,
+   "skill": "advanced",
+   "fitness": "high",
+   "quiver": [
+    {
+     "name": "6'0 shortboard",
+     "board_type": "performance shortboard",
+     "length_in": 72,
+     "volume_l": 30
+    },
+    {
+     "name": "6'6 step-up",
+     "board_type": "step-up",
+     "length_in": 78,
+     "volume_l": 34
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-10-05",
+     "spot": "Ocean Beach SF",
+     "face_ft": 5,
+     "period_s": 12,
+     "best_board": "6'0 shortboard",
+     "note": ""
+    },
+    {
+     "date": "2026-10-19",
+     "spot": "Ocean Beach SF",
+     "face_ft": 10,
+     "period_s": 16,
+     "best_board": "6'6 step-up",
+     "note": "double overhead"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,310 @@
+{
+ "_source": "Reference ranges set by the author from common surfboard volume-chart guidance (liters per kg by skill level) and typical board types for each skill and wave. They are a sanity check, not ground truth.",
+ "profiles": [
+  {
+   "id": "P1",
+   "label": "Beginner, El Porto (spot above level)",
+   "weight_kg": 75,
+   "height_cm": 178,
+   "skill": "beginner",
+   "fitness": "average",
+   "spot": "El Porto",
+   "intent": "rent",
+   "ok_types": [
+    "foam longboard",
+    "funboard",
+    "longboard"
+   ],
+   "volume_range": [
+    75,
+    100
+   ],
+   "expect_skill_warning": true,
+   "quiver": [
+    {
+     "name": "Soft-top",
+     "board_type": "foam longboard",
+     "length_in": 96
+    }
+   ],
+   "expect_trip_flag": true
+  },
+  {
+   "id": "P2",
+   "label": "Light beginner, Doheny",
+   "weight_kg": 60,
+   "height_cm": 163,
+   "skill": "beginner",
+   "fitness": "low",
+   "spot": "Doheny State Beach",
+   "intent": "rent",
+   "ok_types": [
+    "foam longboard",
+    "funboard",
+    "longboard"
+   ],
+   "volume_range": [
+    60,
+    85
+   ],
+   "expect_skill_warning": false,
+   "quiver": [],
+   "expect_trip_flag": false
+  },
+  {
+   "id": "P3",
+   "label": "Heavy beginner, Waikiki",
+   "weight_kg": 100,
+   "height_cm": 188,
+   "skill": "beginner",
+   "fitness": "average",
+   "spot": "Waikiki",
+   "intent": "rent",
+   "ok_types": [
+    "foam longboard",
+    "longboard"
+   ],
+   "volume_range": [
+    100,
+    135
+   ],
+   "expect_skill_warning": false,
+   "quiver": [],
+   "expect_trip_flag": false
+  },
+  {
+   "id": "P4",
+   "label": "Novice, Malibu",
+   "weight_kg": 70,
+   "height_cm": 170,
+   "skill": "novice",
+   "fitness": "average",
+   "spot": "Malibu",
+   "intent": "buy",
+   "ok_types": [
+    "longboard",
+    "funboard",
+    "mid-length"
+   ],
+   "volume_range": [
+    50,
+    80
+   ],
+   "expect_skill_warning": false,
+   "quiver": [],
+   "expect_trip_flag": false
+  },
+  {
+   "id": "P5",
+   "label": "Novice, Biarritz (not in spot DB)",
+   "weight_kg": 85,
+   "height_cm": 183,
+   "skill": "novice",
+   "fitness": "average",
+   "spot": "Biarritz, France",
+   "intent": "rent",
+   "ok_types": [
+    "funboard",
+    "mid-length",
+    "longboard",
+    "foam longboard"
+   ],
+   "volume_range": [
+    60,
+    90
+   ],
+   "expect_skill_warning": false,
+   "quiver": [],
+   "expect_trip_flag": false
+  },
+  {
+   "id": "P6",
+   "label": "Intermediate, El Porto",
+   "weight_kg": 75,
+   "height_cm": 178,
+   "skill": "intermediate",
+   "fitness": "average",
+   "spot": "El Porto",
+   "intent": "buy",
+   "ok_types": [
+    "fish",
+    "hybrid shortboard",
+    "groveler",
+    "mid-length"
+   ],
+   "volume_range": [
+    34,
+    46
+   ],
+   "expect_skill_warning": false,
+   "quiver": [
+    {
+     "name": "Fish",
+     "board_type": "fish",
+     "length_in": 70,
+     "volume_l": 33
+    },
+    {
+     "name": "Mid",
+     "board_type": "mid-length",
+     "length_in": 86
+    }
+   ],
+   "expect_trip_flag": false
+  },
+  {
+   "id": "P7",
+   "label": "Light intermediate, low fitness, Pleasure Point",
+   "weight_kg": 65,
+   "height_cm": 168,
+   "skill": "intermediate",
+   "fitness": "low",
+   "spot": "Pleasure Point",
+   "intent": "buy",
+   "ok_types": [
+    "fish",
+    "hybrid shortboard",
+    "groveler",
+    "mid-length"
+   ],
+   "volume_range": [
+    32,
+    44
+   ],
+   "expect_skill_warning": false,
+   "quiver": [],
+   "expect_trip_flag": false
+  },
+  {
+   "id": "P8",
+   "label": "Intermediate, Ocean Beach SF (spot above level)",
+   "weight_kg": 78,
+   "height_cm": 180,
+   "skill": "intermediate",
+   "fitness": "average",
+   "spot": "Ocean Beach SF",
+   "intent": "buy",
+   "ok_types": [
+    "hybrid shortboard",
+    "mid-length",
+    "fish"
+   ],
+   "volume_range": [
+    33,
+    46
+   ],
+   "expect_skill_warning": true,
+   "quiver": [
+    {
+     "name": "Shortboard",
+     "board_type": "hybrid shortboard",
+     "length_in": 72,
+     "volume_l": 32
+    },
+    {
+     "name": "Mid",
+     "board_type": "mid-length",
+     "length_in": 88
+    }
+   ],
+   "expect_trip_flag": true
+  },
+  {
+   "id": "P9",
+   "label": "Advanced, Lower Trestles",
+   "weight_kg": 80,
+   "height_cm": 180,
+   "skill": "advanced",
+   "fitness": "high",
+   "spot": "Lower Trestles",
+   "intent": "buy",
+   "ok_types": [
+    "performance shortboard",
+    "hybrid shortboard",
+    "groveler"
+   ],
+   "volume_range": [
+    28,
+    38
+   ],
+   "expect_skill_warning": false,
+   "quiver": [
+    {
+     "name": "Shortboard",
+     "board_type": "performance shortboard",
+     "length_in": 72,
+     "volume_l": 30
+    },
+    {
+     "name": "Groveler",
+     "board_type": "groveler",
+     "length_in": 68,
+     "volume_l": 34
+    }
+   ],
+   "expect_trip_flag": false
+  },
+  {
+   "id": "P10",
+   "label": "Expert, Pipeline",
+   "weight_kg": 72,
+   "height_cm": 175,
+   "skill": "expert",
+   "fitness": "high",
+   "spot": "Pipeline",
+   "intent": "buy",
+   "ok_types": [
+    "step-up",
+    "performance shortboard"
+   ],
+   "volume_range": [
+    23,
+    32
+   ],
+   "expect_skill_warning": false,
+   "quiver": [
+    {
+     "name": "Step-up",
+     "board_type": "step-up",
+     "length_in": 76,
+     "volume_l": 28
+    },
+    {
+     "name": "Shortboard",
+     "board_type": "performance shortboard",
+     "length_in": 70,
+     "volume_l": 26
+    }
+   ],
+   "expect_trip_flag": false
+  },
+  {
+   "id": "P11",
+   "label": "Beginner, Uluwatu trip (heavy reef)",
+   "weight_kg": 70,
+   "height_cm": 175,
+   "skill": "beginner",
+   "fitness": "average",
+   "spot": "Uluwatu",
+   "intent": "rent",
+   "ok_types": [
+    "foam longboard",
+    "funboard",
+    "longboard"
+   ],
+   "volume_range": [
+    70,
+    100
+   ],
+   "expect_skill_warning": true,
+   "expect_trip_flag": true,
+   "quiver": [
+    {
+     "name": "Soft-top",
+     "board_type": "foam longboard",
+     "length_in": 96
+    }
+   ]
+  }
+ ]
+}

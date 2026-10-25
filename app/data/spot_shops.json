@@ -1,0 +1,3248 @@
+{
+ "South Beach (Crescent City)": [
+  {
+   "name": "Local Boys Surf & Skate",
+   "lat": 41.753278,
+   "lon": -124.193744,
+   "shop": "water_sports",
+   "address": "1175 2nd Street, Crescent City",
+   "website": "https://www.localboyssurfshop.com",
+   "phone": "+1 707-460-6060",
+   "rental_listed": false
+  }
+ ],
+ "Point Arena": [],
+ "Salmon Creek": [
+  {
+   "name": "Bodega Bay Surf Shack",
+   "lat": 38.3389861,
+   "lon": -123.0473284,
+   "shop": "sports",
+   "address": "1805 Bay Highway, Bodega Bay",
+   "website": "http://www.bodegabaysurf.com/",
+   "phone": "+1 707 875 3944",
+   "rental_listed": false
+  },
+  {
+   "name": "Northern Light Surf Shop",
+   "lat": 38.3459455,
+   "lon": -122.9738082,
+   "shop": "sports",
+   "address": "17191 Bodega Highway, Bodega",
+   "website": "https://northernlightsurf.com/",
+   "phone": "+1-707-876-3032",
+   "rental_listed": false
+  }
+ ],
+ "Bolinas": [
+  {
+   "name": "Mollusk Surf Shop",
+   "lat": 37.7624194,
+   "lon": -122.5062489,
+   "shop": "sports",
+   "address": "4500 Irving Street, San Francisco",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Aqua Surf Shop",
+   "lat": 37.7603776,
+   "lon": -122.5035252,
+   "shop": "sports",
+   "address": "Judah Street, San Francisco",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Proof Lab Surf Shop",
+   "lat": 37.8817615,
+   "lon": -122.5239145,
+   "shop": "water_sports",
+   "address": "Shoreline Highway",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Ocean Beach SF": [
+  {
+   "name": "Mollusk Surf Shop",
+   "lat": 37.7624194,
+   "lon": -122.5062489,
+   "shop": "sports",
+   "address": "4500 Irving Street, San Francisco",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Aqua Surf Shop",
+   "lat": 37.7603776,
+   "lon": -122.5035252,
+   "shop": "sports",
+   "address": "Judah Street, San Francisco",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Proof Lab Surf Shop",
+   "lat": 37.8817615,
+   "lon": -122.5239145,
+   "shop": "water_sports",
+   "address": "Shoreline Highway",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Linda Mar (Pacifica)": [
+  {
+   "name": "Nor Cal Surf Shop",
+   "lat": 37.5949641,
+   "lon": -122.5062681,
+   "shop": "surf",
+   "address": "5440 Cabrillo Highway, Pacifica",
+   "website": "https://norcalsurfshop.com/",
+   "phone": "+1-650-738-9283",
+   "rental_listed": false
+  },
+  {
+   "name": "Aqua Surf Shop",
+   "lat": 37.7603776,
+   "lon": -122.5035252,
+   "shop": "sports",
+   "address": "Judah Street, San Francisco",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Mollusk Surf Shop",
+   "lat": 37.7624194,
+   "lon": -122.5062489,
+   "shop": "sports",
+   "address": "4500 Irving Street, San Francisco",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Traveler Surf Club & Coastal Outpost",
+   "lat": 37.5949002,
+   "lon": -122.5063238,
+   "shop": "surf",
+   "address": "5440 Cabrillo Highway, Pacifica",
+   "website": "https://travelersurfclub.com/",
+   "phone": "+1-650-735-9192",
+   "rental_listed": false
+  },
+  {
+   "name": "Proof Lab Surf Shop",
+   "lat": 37.8817615,
+   "lon": -122.5239145,
+   "shop": "water_sports",
+   "address": "Shoreline Highway",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Mavericks": [
+  {
+   "name": "Traveler Surf Club & Coastal Outpost",
+   "lat": 37.5949002,
+   "lon": -122.5063238,
+   "shop": "surf",
+   "address": "5440 Cabrillo Highway, Pacifica",
+   "website": "https://travelersurfclub.com/",
+   "phone": "+1-650-735-9192",
+   "rental_listed": false
+  },
+  {
+   "name": "Nor Cal Surf Shop",
+   "lat": 37.5949641,
+   "lon": -122.5062681,
+   "shop": "surf",
+   "address": "5440 Cabrillo Highway, Pacifica",
+   "website": "https://norcalsurfshop.com/",
+   "phone": "+1-650-738-9283",
+   "rental_listed": false
+  }
+ ],
+ "Cowell's Beach": [
+  {
+   "name": "Rip Curl Surf Shop",
+   "lat": 36.9666601,
+   "lon": -122.0406789,
+   "shop": "sports",
+   "address": "1604 Mission Street, Santa Cruz",
+   "website": "https://www.ripcurl.com",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Santa Cruz Surf Shop",
+   "lat": 36.9648211,
+   "lon": -122.0176697,
+   "shop": "clothes",
+   "address": "601 Beach Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Life",
+   "lat": 36.9605396,
+   "lon": -122.0206668,
+   "shop": "clothes",
+   "address": "Municipal Wharf, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "O'Neill Surf Shop",
+   "lat": 36.9638429,
+   "lon": -122.0195143,
+   "shop": "clothes",
+   "address": "400 Beach Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Arrow Surf Shop",
+   "lat": 36.961512,
+   "lon": -122.0476619,
+   "shop": "sports",
+   "address": "Mission Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Saint Kris Surf Co.",
+   "lat": 36.9632523,
+   "lon": -122.0228543,
+   "shop": "clothes",
+   "address": "Beach Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "O'Neill Surf Shop",
+   "lat": 36.9682829,
+   "lon": -121.9651859,
+   "shop": "sports",
+   "address": "41st Avenue, Capitola",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "La Selva Beach Surf Shop",
+   "lat": 36.9371876,
+   "lon": -121.8627521,
+   "shop": "water_sports",
+   "address": "Playa Boulevard, La Selva Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "YB Quality Surfboards",
+   "lat": 36.9648682,
+   "lon": -121.9652139,
+   "shop": "sports",
+   "address": "885 41st Avenue, Pleasure Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Pleasure Point": [
+  {
+   "name": "Rip Curl Surf Shop",
+   "lat": 36.9666601,
+   "lon": -122.0406789,
+   "shop": "sports",
+   "address": "1604 Mission Street, Santa Cruz",
+   "website": "https://www.ripcurl.com",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Santa Cruz Surf Shop",
+   "lat": 36.9648211,
+   "lon": -122.0176697,
+   "shop": "clothes",
+   "address": "601 Beach Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Life",
+   "lat": 36.9605396,
+   "lon": -122.0206668,
+   "shop": "clothes",
+   "address": "Municipal Wharf, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "O'Neill Surf Shop",
+   "lat": 36.9638429,
+   "lon": -122.0195143,
+   "shop": "clothes",
+   "address": "400 Beach Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Arrow Surf Shop",
+   "lat": 36.961512,
+   "lon": -122.0476619,
+   "shop": "sports",
+   "address": "Mission Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Saint Kris Surf Co.",
+   "lat": 36.9632523,
+   "lon": -122.0228543,
+   "shop": "clothes",
+   "address": "Beach Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "O'Neill Surf Shop",
+   "lat": 36.9682829,
+   "lon": -121.9651859,
+   "shop": "sports",
+   "address": "41st Avenue, Capitola",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "La Selva Beach Surf Shop",
+   "lat": 36.9371876,
+   "lon": -121.8627521,
+   "shop": "water_sports",
+   "address": "Playa Boulevard, La Selva Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "YB Quality Surfboards",
+   "lat": 36.9648682,
+   "lon": -121.9652139,
+   "shop": "sports",
+   "address": "885 41st Avenue, Pleasure Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Steamer Lane": [
+  {
+   "name": "Rip Curl Surf Shop",
+   "lat": 36.9666601,
+   "lon": -122.0406789,
+   "shop": "sports",
+   "address": "1604 Mission Street, Santa Cruz",
+   "website": "https://www.ripcurl.com",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Santa Cruz Surf Shop",
+   "lat": 36.9648211,
+   "lon": -122.0176697,
+   "shop": "clothes",
+   "address": "601 Beach Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Life",
+   "lat": 36.9605396,
+   "lon": -122.0206668,
+   "shop": "clothes",
+   "address": "Municipal Wharf, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "O'Neill Surf Shop",
+   "lat": 36.9638429,
+   "lon": -122.0195143,
+   "shop": "clothes",
+   "address": "400 Beach Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Arrow Surf Shop",
+   "lat": 36.961512,
+   "lon": -122.0476619,
+   "shop": "sports",
+   "address": "Mission Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Saint Kris Surf Co.",
+   "lat": 36.9632523,
+   "lon": -122.0228543,
+   "shop": "clothes",
+   "address": "Beach Street, Santa Cruz",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "O'Neill Surf Shop",
+   "lat": 36.9682829,
+   "lon": -121.9651859,
+   "shop": "sports",
+   "address": "41st Avenue, Capitola",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "La Selva Beach Surf Shop",
+   "lat": 36.9371876,
+   "lon": -121.8627521,
+   "shop": "water_sports",
+   "address": "Playa Boulevard, La Selva Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "YB Quality Surfboards",
+   "lat": 36.9648682,
+   "lon": -121.9652139,
+   "shop": "sports",
+   "address": "885 41st Avenue, Pleasure Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Asilomar": [
+  {
+   "name": "On The Beach Surf Shop",
+   "lat": 36.6145446,
+   "lon": -121.9027629,
+   "shop": "sports",
+   "address": "Prescott Avenue, Monterey",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Sand Dollar Beach (Big Sur)": [],
+ "Morro Bay (The Rock)": [
+  {
+   "name": "Wavelengths Surf Outlet",
+   "lat": 35.3675956,
+   "lon": -120.8537041,
+   "shop": "water_sports",
+   "address": "988 Embarcadero, Morro Bay",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Wavelengths Surf Shop",
+   "lat": 35.3671512,
+   "lon": -120.8534342,
+   "shop": "water_sports",
+   "address": "940 Embarcadero, Morro Bay",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "TKD Surf Shop",
+   "lat": 35.3634261,
+   "lon": -120.8526347,
+   "shop": "sports",
+   "address": "Embarcadero, Morro Bay",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Pismo Beach Pier": [
+  {
+   "name": "Central Coast Surfboards",
+   "lat": 35.2791194,
+   "lon": -120.6616046,
+   "shop": "surf",
+   "address": "855 Marsh Street, San Luis Obispo",
+   "website": "https://ccsurf.com/",
+   "phone": "+1-805-541-1129",
+   "rental_listed": false
+  },
+  {
+   "name": "Pancho's Surf Shop",
+   "lat": 35.1398569,
+   "lon": -120.6426717,
+   "shop": "clothes",
+   "address": "181 Pomeroy Avenue, Pismo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Jalama Beach": [
+  {
+   "name": "Surf Connection",
+   "lat": 34.6588478,
+   "lon": -120.4580627,
+   "shop": "outdoor",
+   "address": "North H Street, Lompoc",
+   "website": "https://www.surfconnection.net/",
+   "phone": "+1 805-736-1730",
+   "rental_listed": false
+  }
+ ],
+ "Leadbetter Point": [
+  {
+   "name": "Mollusk Surf Shop",
+   "lat": 34.41595,
+   "lon": -119.690032,
+   "shop": "surf",
+   "address": "208 Gray Avenue, Santa Barbara",
+   "website": "https://mollusksurfshop.com/santa-barbara",
+   "phone": "+1 805-568-0908",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf N Wear's Beach House",
+   "lat": 34.4128096,
+   "lon": -119.6892702,
+   "shop": "outdoor",
+   "address": "10 State Street, Santa Barbara",
+   "website": "https://surfnwearbeachhouse.com/",
+   "phone": "+1-805-963-1281",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Country",
+   "lat": 34.4375603,
+   "lon": -119.8310012,
+   "shop": "surf",
+   "address": "109 South Fairview Avenue, Goleta",
+   "website": "https://www.surfcountrygoleta.com/",
+   "phone": "+1 805-683-4450",
+   "rental_listed": false
+  },
+  {
+   "name": "Rincon Designs Surf Shop",
+   "lat": 34.3968253,
+   "lon": -119.5212227,
+   "shop": "water_sports",
+   "address": "659 Linden Avenue, Carpinteria",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Progressive Surfboards",
+   "lat": 34.4351014,
+   "lon": -119.8304332,
+   "shop": "surf",
+   "address": "286 South Fairview Avenue, Goleta",
+   "website": "https://www.progressivesurfboards.com/",
+   "phone": "+1 805-967-1340",
+   "rental_listed": false
+  }
+ ],
+ "Rincon": [
+  {
+   "name": "Ventura Surf Shop",
+   "lat": 34.2780327,
+   "lon": -119.2995232,
+   "shop": "surf",
+   "address": "88 East Thompson Boulevard, Ventura",
+   "website": "https://shopvss.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rincon Designs Surf Shop",
+   "lat": 34.3968253,
+   "lon": -119.5212227,
+   "shop": "water_sports",
+   "address": "659 Linden Avenue, Carpinteria",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "C-Street (Ventura Point)": [
+  {
+   "name": "Ventura Surf Shop",
+   "lat": 34.2780327,
+   "lon": -119.2995232,
+   "shop": "surf",
+   "address": "88 East Thompson Boulevard, Ventura",
+   "website": "https://shopvss.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf N Wear's Beach House",
+   "lat": 34.4128096,
+   "lon": -119.6892702,
+   "shop": "outdoor",
+   "address": "10 State Street, Santa Barbara",
+   "website": "https://surfnwearbeachhouse.com/",
+   "phone": "+1-805-963-1281",
+   "rental_listed": false
+  },
+  {
+   "name": "Rincon Designs Surf Shop",
+   "lat": 34.3968253,
+   "lon": -119.5212227,
+   "shop": "water_sports",
+   "address": "659 Linden Avenue, Carpinteria",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Silver Strand": [
+  {
+   "name": "Ventura Surf Shop",
+   "lat": 34.2780327,
+   "lon": -119.2995232,
+   "shop": "surf",
+   "address": "88 East Thompson Boulevard, Ventura",
+   "website": "https://shopvss.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Drill Surf Skate",
+   "lat": 34.0309717,
+   "lon": -118.842243,
+   "shop": "sports",
+   "address": "Pacific Coast Highway, Malibu",
+   "website": "https://drillsurfskate.com",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rincon Designs Surf Shop",
+   "lat": 34.3968253,
+   "lon": -119.5212227,
+   "shop": "water_sports",
+   "address": "659 Linden Avenue, Carpinteria",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "County Line": [
+  {
+   "name": "Drill Surf Skate",
+   "lat": 34.0309717,
+   "lon": -118.842243,
+   "shop": "sports",
+   "address": "Pacific Coast Highway, Malibu",
+   "website": "https://drillsurfskate.com",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Kennedy Surf Skate Bikes",
+   "lat": 34.1683246,
+   "lon": -118.6069895,
+   "shop": "sports",
+   "address": "22026 Ventura Boulevard, Los Angeles",
+   "website": "",
+   "phone": "+1-818-225-1999",
+   "rental_listed": false
+  },
+  {
+   "name": "Safari Surf",
+   "lat": 34.2570363,
+   "lon": -118.5905595,
+   "shop": "sports",
+   "address": "Independence Avenue, Los Angeles",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Ventura Surf Shop",
+   "lat": 34.2780327,
+   "lon": -119.2995232,
+   "shop": "surf",
+   "address": "88 East Thompson Boulevard, Ventura",
+   "website": "https://shopvss.com/",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Malibu Surfrider (First Point)": [
+  {
+   "name": "Kennedy Surf Skate Bikes",
+   "lat": 34.1683246,
+   "lon": -118.6069895,
+   "shop": "sports",
+   "address": "22026 Ventura Boulevard, Los Angeles",
+   "website": "",
+   "phone": "+1-818-225-1999",
+   "rental_listed": false
+  },
+  {
+   "name": "Drill Surf Skate",
+   "lat": 34.0309717,
+   "lon": -118.842243,
+   "shop": "sports",
+   "address": "Pacific Coast Highway, Malibu",
+   "website": "https://drillsurfskate.com",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Zuma Beach": [
+  {
+   "name": "Drill Surf Skate",
+   "lat": 34.0309717,
+   "lon": -118.842243,
+   "shop": "sports",
+   "address": "Pacific Coast Highway, Malibu",
+   "website": "https://drillsurfskate.com",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack's Surfboards",
+   "lat": 34.0112206,
+   "lon": -118.4823707,
+   "shop": "sports",
+   "address": "Bay Street, Santa Monica",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Venice Breakwater": [
+  {
+   "name": "Maui and Sons Surf and Skate Shop",
+   "lat": 33.9877064,
+   "lon": -118.4742598,
+   "shop": "sports",
+   "address": "Ocean Front Walk, Los Angeles",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Dive n Surf",
+   "lat": 33.8475164,
+   "lon": -118.3912815,
+   "shop": "sports",
+   "address": "North Broadway, Redondo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Redondo Skate & Surf",
+   "lat": 33.8378,
+   "lon": -118.3845235,
+   "shop": "sports",
+   "address": "310 Torrance Boulevard, Redondo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack's Surfboards",
+   "lat": 34.0112206,
+   "lon": -118.4823707,
+   "shop": "sports",
+   "address": "Bay Street, Santa Monica",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack's Surfboards",
+   "lat": 33.8669651,
+   "lon": -118.3933449,
+   "shop": "water_sports",
+   "address": "Pacific Coast Highway, Hermosa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Spyder Surfboards",
+   "lat": 33.8720615,
+   "lon": -118.3954096,
+   "shop": "water_sports",
+   "address": "24th Place, Hermosa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "El Porto": [
+  {
+   "name": "Maui and Sons Surf and Skate Shop",
+   "lat": 33.9877064,
+   "lon": -118.4742598,
+   "shop": "sports",
+   "address": "Ocean Front Walk, Los Angeles",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Dive n Surf",
+   "lat": 33.8475164,
+   "lon": -118.3912815,
+   "shop": "sports",
+   "address": "North Broadway, Redondo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Redondo Skate & Surf",
+   "lat": 33.8378,
+   "lon": -118.3845235,
+   "shop": "sports",
+   "address": "310 Torrance Boulevard, Redondo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack's Surfboards",
+   "lat": 34.0112206,
+   "lon": -118.4823707,
+   "shop": "sports",
+   "address": "Bay Street, Santa Monica",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack's Surfboards",
+   "lat": 33.8669651,
+   "lon": -118.3933449,
+   "shop": "water_sports",
+   "address": "Pacific Coast Highway, Hermosa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Spyder Surfboards",
+   "lat": 33.8720615,
+   "lon": -118.3954096,
+   "shop": "water_sports",
+   "address": "24th Place, Hermosa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Manhattan Beach Pier": [
+  {
+   "name": "Maui and Sons Surf and Skate Shop",
+   "lat": 33.9877064,
+   "lon": -118.4742598,
+   "shop": "sports",
+   "address": "Ocean Front Walk, Los Angeles",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Dive n Surf",
+   "lat": 33.8475164,
+   "lon": -118.3912815,
+   "shop": "sports",
+   "address": "North Broadway, Redondo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Redondo Skate & Surf",
+   "lat": 33.8378,
+   "lon": -118.3845235,
+   "shop": "sports",
+   "address": "310 Torrance Boulevard, Redondo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack's Surfboards",
+   "lat": 34.0112206,
+   "lon": -118.4823707,
+   "shop": "sports",
+   "address": "Bay Street, Santa Monica",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack's Surfboards",
+   "lat": 33.8669651,
+   "lon": -118.3933449,
+   "shop": "water_sports",
+   "address": "Pacific Coast Highway, Hermosa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Spyder Surfboards",
+   "lat": 33.8720615,
+   "lon": -118.3954096,
+   "shop": "water_sports",
+   "address": "24th Place, Hermosa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Hermosa Beach Pier": [
+  {
+   "name": "Maui and Sons Surf and Skate Shop",
+   "lat": 33.9877064,
+   "lon": -118.4742598,
+   "shop": "sports",
+   "address": "Ocean Front Walk, Los Angeles",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Dive n Surf",
+   "lat": 33.8475164,
+   "lon": -118.3912815,
+   "shop": "sports",
+   "address": "North Broadway, Redondo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Redondo Skate & Surf",
+   "lat": 33.8378,
+   "lon": -118.3845235,
+   "shop": "sports",
+   "address": "310 Torrance Boulevard, Redondo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack's Surfboards",
+   "lat": 34.0112206,
+   "lon": -118.4823707,
+   "shop": "sports",
+   "address": "Bay Street, Santa Monica",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack's Surfboards",
+   "lat": 33.8669651,
+   "lon": -118.3933449,
+   "shop": "water_sports",
+   "address": "Pacific Coast Highway, Hermosa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Spyder Surfboards",
+   "lat": 33.8720615,
+   "lon": -118.3954096,
+   "shop": "water_sports",
+   "address": "24th Place, Hermosa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Lunada Bay": [
+  {
+   "name": "Dive n Surf",
+   "lat": 33.8475164,
+   "lon": -118.3912815,
+   "shop": "sports",
+   "address": "North Broadway, Redondo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Redondo Skate & Surf",
+   "lat": 33.8378,
+   "lon": -118.3845235,
+   "shop": "sports",
+   "address": "310 Torrance Boulevard, Redondo Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack's Surfboards",
+   "lat": 33.8669651,
+   "lon": -118.3933449,
+   "shop": "water_sports",
+   "address": "Pacific Coast Highway, Hermosa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Spyder Surfboards",
+   "lat": 33.8720615,
+   "lon": -118.3954096,
+   "shop": "water_sports",
+   "address": "24th Place, Hermosa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Seal Beach Pier": [
+  {
+   "name": "Curl Surf",
+   "lat": 33.8085898,
+   "lon": -117.9220789,
+   "shop": "clothes",
+   "address": "1570 South Disneyland Drive, Anaheim",
+   "website": "https://curlsurf.com/password",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "15th St Surf and Supply",
+   "lat": 33.606417,
+   "lon": -117.9209417,
+   "shop": "sports",
+   "address": "103 15th Street, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "15th St. Surf Shop",
+   "lat": 33.6145648,
+   "lon": -117.9317075,
+   "shop": "clothes",
+   "address": "3138 West Balboa Boulevard, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Huntington Surf And Sport",
+   "lat": 33.7323744,
+   "lon": -117.9925681,
+   "shop": "clothes",
+   "address": "Center Avenue, Huntington Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Inflight Surf & Sail Inc",
+   "lat": 33.7426786,
+   "lon": -118.0995527,
+   "shop": "water_sports",
+   "address": "1250 Pacific Coast Highway, Seal Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack\u2019s Surfboards",
+   "lat": 33.612162,
+   "lon": -117.9296693,
+   "shop": "sports",
+   "address": "2727 Newport Boulevard, Newport Beach",
+   "website": "https://www.jackssurfboards.com",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Huntington Beach Pier": [
+  {
+   "name": "Curl Surf",
+   "lat": 33.8085898,
+   "lon": -117.9220789,
+   "shop": "clothes",
+   "address": "1570 South Disneyland Drive, Anaheim",
+   "website": "https://curlsurf.com/password",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "15th St. Surf Shop",
+   "lat": 33.6145648,
+   "lon": -117.9317075,
+   "shop": "clothes",
+   "address": "3138 West Balboa Boulevard, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Main Street Surf Shop",
+   "lat": 33.6014588,
+   "lon": -117.8998553,
+   "shop": "clothes",
+   "address": "105 Main Street, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "15th St Surf and Supply",
+   "lat": 33.606417,
+   "lon": -117.9209417,
+   "shop": "sports",
+   "address": "103 15th Street, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Huntington Surf And Sport",
+   "lat": 33.7323744,
+   "lon": -117.9925681,
+   "shop": "clothes",
+   "address": "Center Avenue, Huntington Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Inflight Surf & Sail Inc",
+   "lat": 33.7426786,
+   "lon": -118.0995527,
+   "shop": "water_sports",
+   "address": "1250 Pacific Coast Highway, Seal Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack\u2019s Surfboards",
+   "lat": 33.6057637,
+   "lon": -117.8750955,
+   "shop": "clothes",
+   "address": "900 Avocado Avenue, Newport Beach",
+   "website": "",
+   "phone": "+1-949-718-0001",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack\u2019s Surfboards",
+   "lat": 33.612162,
+   "lon": -117.9296693,
+   "shop": "sports",
+   "address": "2727 Newport Boulevard, Newport Beach",
+   "website": "https://www.jackssurfboards.com",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Newport Beach (Blackies)": [
+  {
+   "name": "Curl Surf",
+   "lat": 33.8085898,
+   "lon": -117.9220789,
+   "shop": "clothes",
+   "address": "1570 South Disneyland Drive, Anaheim",
+   "website": "https://curlsurf.com/password",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "15th St. Surf Shop",
+   "lat": 33.6145648,
+   "lon": -117.9317075,
+   "shop": "clothes",
+   "address": "3138 West Balboa Boulevard, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Main Street Surf Shop",
+   "lat": 33.6014588,
+   "lon": -117.8998553,
+   "shop": "clothes",
+   "address": "105 Main Street, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "15th St Surf and Supply",
+   "lat": 33.606417,
+   "lon": -117.9209417,
+   "shop": "sports",
+   "address": "103 15th Street, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Huntington Surf And Sport",
+   "lat": 33.7323744,
+   "lon": -117.9925681,
+   "shop": "clothes",
+   "address": "Center Avenue, Huntington Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Inflight Surf & Sail Inc",
+   "lat": 33.7426786,
+   "lon": -118.0995527,
+   "shop": "water_sports",
+   "address": "1250 Pacific Coast Highway, Seal Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack\u2019s Surfboards",
+   "lat": 33.6057637,
+   "lon": -117.8750955,
+   "shop": "clothes",
+   "address": "900 Avocado Avenue, Newport Beach",
+   "website": "",
+   "phone": "+1-949-718-0001",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack\u2019s Surfboards",
+   "lat": 33.612162,
+   "lon": -117.9296693,
+   "shop": "sports",
+   "address": "2727 Newport Boulevard, Newport Beach",
+   "website": "https://www.jackssurfboards.com",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "The Wedge": [
+  {
+   "name": "Curl Surf",
+   "lat": 33.8085898,
+   "lon": -117.9220789,
+   "shop": "clothes",
+   "address": "1570 South Disneyland Drive, Anaheim",
+   "website": "https://curlsurf.com/password",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "15th St. Surf Shop",
+   "lat": 33.6145648,
+   "lon": -117.9317075,
+   "shop": "clothes",
+   "address": "3138 West Balboa Boulevard, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Main Street Surf Shop",
+   "lat": 33.6014588,
+   "lon": -117.8998553,
+   "shop": "clothes",
+   "address": "105 Main Street, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "15th St Surf and Supply",
+   "lat": 33.606417,
+   "lon": -117.9209417,
+   "shop": "sports",
+   "address": "103 15th Street, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Huntington Surf And Sport",
+   "lat": 33.7323744,
+   "lon": -117.9925681,
+   "shop": "clothes",
+   "address": "Center Avenue, Huntington Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Inflight Surf & Sail Inc",
+   "lat": 33.7426786,
+   "lon": -118.0995527,
+   "shop": "water_sports",
+   "address": "1250 Pacific Coast Highway, Seal Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack\u2019s Surfboards",
+   "lat": 33.6057637,
+   "lon": -117.8750955,
+   "shop": "clothes",
+   "address": "900 Avocado Avenue, Newport Beach",
+   "website": "",
+   "phone": "+1-949-718-0001",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack\u2019s Surfboards",
+   "lat": 33.612162,
+   "lon": -117.9296693,
+   "shop": "sports",
+   "address": "2727 Newport Boulevard, Newport Beach",
+   "website": "https://www.jackssurfboards.com",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Salt Creek": [
+  {
+   "name": "Main Street Surf Shop",
+   "lat": 33.6014588,
+   "lon": -117.8998553,
+   "shop": "clothes",
+   "address": "105 Main Street, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hobie's Surf Shop",
+   "lat": 33.5435904,
+   "lon": -117.7825713,
+   "shop": "clothes",
+   "address": "294 Forest Avenue, Laguna Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Laguna Surf Sport",
+   "lat": 33.5343594,
+   "lon": -117.7769791,
+   "shop": "sports",
+   "address": "Oak Street, Laguna Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hobie Surf Shop",
+   "lat": 33.4259003,
+   "lon": -117.6146582,
+   "shop": "clothes",
+   "address": "165 Avenida del Mar, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Used Surf",
+   "lat": 33.4344665,
+   "lon": -117.6241061,
+   "shop": "sports",
+   "address": "216 Calle de Los Molinos, San Clemente",
+   "website": "https://usedsurf.com",
+   "phone": "+1-949-310-6602",
+   "rental_listed": false
+  },
+  {
+   "name": "Catalyst Surf Shop",
+   "lat": 33.4330226,
+   "lon": -117.6321877,
+   "shop": "sports",
+   "address": "1755 North El Camino Real, San Clemente",
+   "website": "https://catalystshop.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Album Surf",
+   "lat": 33.4329534,
+   "lon": -117.6298889,
+   "shop": "clothes;surf",
+   "address": "1705 North El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "All Swell Surf",
+   "lat": 33.4332271,
+   "lon": -117.624752,
+   "shop": "clothes",
+   "address": "Calle Valle, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "SoCal Surf Shop",
+   "lat": 33.4629323,
+   "lon": -117.5976859,
+   "shop": "water_sports",
+   "address": "802 Avenida Talega, San Clemente",
+   "website": "https://www.socalsurfshop.com/",
+   "phone": "+1-949-388-7663",
+   "rental_listed": false
+  },
+  {
+   "name": "Icons of Surf",
+   "lat": 33.430092,
+   "lon": -117.6182747,
+   "shop": "sports",
+   "address": "710 North El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Catch Surf",
+   "lat": 33.4270119,
+   "lon": -117.6137393,
+   "shop": "clothes",
+   "address": "128 Avenida del Mar, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Killer Dana Surf Shop",
+   "lat": 33.4656847,
+   "lon": -117.6999813,
+   "shop": "clothes",
+   "address": "Del Prado Avenue, Dana Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hobie Surf Shop",
+   "lat": 33.4674196,
+   "lon": -117.698758,
+   "shop": "clothes",
+   "address": "34174 Pacific Coast Highway, Dana Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Trestles Surf Outlet",
+   "lat": 33.4036169,
+   "lon": -117.5966207,
+   "shop": "surf",
+   "address": "3011 South El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack\u2019s Surfboards",
+   "lat": 33.6057637,
+   "lon": -117.8750955,
+   "shop": "clothes",
+   "address": "900 Avocado Avenue, Newport Beach",
+   "website": "",
+   "phone": "+1-949-718-0001",
+   "rental_listed": false
+  },
+  {
+   "name": "Stewart Surfboards",
+   "lat": 33.4162815,
+   "lon": -117.6018879,
+   "shop": "sports",
+   "address": "2102 South El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Doheny State Beach": [
+  {
+   "name": "Main Street Surf Shop",
+   "lat": 33.6014588,
+   "lon": -117.8998553,
+   "shop": "clothes",
+   "address": "105 Main Street, Newport Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hobie's Surf Shop",
+   "lat": 33.5435904,
+   "lon": -117.7825713,
+   "shop": "clothes",
+   "address": "294 Forest Avenue, Laguna Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Laguna Surf Sport",
+   "lat": 33.5343594,
+   "lon": -117.7769791,
+   "shop": "sports",
+   "address": "Oak Street, Laguna Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hobie Surf Shop",
+   "lat": 33.4259003,
+   "lon": -117.6146582,
+   "shop": "clothes",
+   "address": "165 Avenida del Mar, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Used Surf",
+   "lat": 33.4344665,
+   "lon": -117.6241061,
+   "shop": "sports",
+   "address": "216 Calle de Los Molinos, San Clemente",
+   "website": "https://usedsurf.com",
+   "phone": "+1-949-310-6602",
+   "rental_listed": false
+  },
+  {
+   "name": "Catalyst Surf Shop",
+   "lat": 33.4330226,
+   "lon": -117.6321877,
+   "shop": "sports",
+   "address": "1755 North El Camino Real, San Clemente",
+   "website": "https://catalystshop.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Album Surf",
+   "lat": 33.4329534,
+   "lon": -117.6298889,
+   "shop": "clothes;surf",
+   "address": "1705 North El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "All Swell Surf",
+   "lat": 33.4332271,
+   "lon": -117.624752,
+   "shop": "clothes",
+   "address": "Calle Valle, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "SoCal Surf Shop",
+   "lat": 33.4629323,
+   "lon": -117.5976859,
+   "shop": "water_sports",
+   "address": "802 Avenida Talega, San Clemente",
+   "website": "https://www.socalsurfshop.com/",
+   "phone": "+1-949-388-7663",
+   "rental_listed": false
+  },
+  {
+   "name": "Icons of Surf",
+   "lat": 33.430092,
+   "lon": -117.6182747,
+   "shop": "sports",
+   "address": "710 North El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Catch Surf",
+   "lat": 33.4270119,
+   "lon": -117.6137393,
+   "shop": "clothes",
+   "address": "128 Avenida del Mar, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Killer Dana Surf Shop",
+   "lat": 33.4656847,
+   "lon": -117.6999813,
+   "shop": "clothes",
+   "address": "Del Prado Avenue, Dana Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hobie Surf Shop",
+   "lat": 33.4674196,
+   "lon": -117.698758,
+   "shop": "clothes",
+   "address": "34174 Pacific Coast Highway, Dana Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Trestles Surf Outlet",
+   "lat": 33.4036169,
+   "lon": -117.5966207,
+   "shop": "surf",
+   "address": "3011 South El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Jack\u2019s Surfboards",
+   "lat": 33.6057637,
+   "lon": -117.8750955,
+   "shop": "clothes",
+   "address": "900 Avocado Avenue, Newport Beach",
+   "website": "",
+   "phone": "+1-949-718-0001",
+   "rental_listed": false
+  },
+  {
+   "name": "Stewart Surfboards",
+   "lat": 33.4162815,
+   "lon": -117.6018879,
+   "shop": "sports",
+   "address": "2102 South El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Lower Trestles": [
+  {
+   "name": "Hobie's Surf Shop",
+   "lat": 33.5435904,
+   "lon": -117.7825713,
+   "shop": "clothes",
+   "address": "294 Forest Avenue, Laguna Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Laguna Surf Sport",
+   "lat": 33.5343594,
+   "lon": -117.7769791,
+   "shop": "sports",
+   "address": "Oak Street, Laguna Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hobie Surf Shop",
+   "lat": 33.4259003,
+   "lon": -117.6146582,
+   "shop": "clothes",
+   "address": "165 Avenida del Mar, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Used Surf",
+   "lat": 33.4344665,
+   "lon": -117.6241061,
+   "shop": "sports",
+   "address": "216 Calle de Los Molinos, San Clemente",
+   "website": "https://usedsurf.com",
+   "phone": "+1-949-310-6602",
+   "rental_listed": false
+  },
+  {
+   "name": "Catalyst Surf Shop",
+   "lat": 33.4330226,
+   "lon": -117.6321877,
+   "shop": "sports",
+   "address": "1755 North El Camino Real, San Clemente",
+   "website": "https://catalystshop.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Album Surf",
+   "lat": 33.4329534,
+   "lon": -117.6298889,
+   "shop": "clothes;surf",
+   "address": "1705 North El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "All Swell Surf",
+   "lat": 33.4332271,
+   "lon": -117.624752,
+   "shop": "clothes",
+   "address": "Calle Valle, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Icons of Surf",
+   "lat": 33.430092,
+   "lon": -117.6182747,
+   "shop": "sports",
+   "address": "710 North El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "SoCal Surf Shop",
+   "lat": 33.4629323,
+   "lon": -117.5976859,
+   "shop": "water_sports",
+   "address": "802 Avenida Talega, San Clemente",
+   "website": "https://www.socalsurfshop.com/",
+   "phone": "+1-949-388-7663",
+   "rental_listed": false
+  },
+  {
+   "name": "Catch Surf",
+   "lat": 33.4270119,
+   "lon": -117.6137393,
+   "shop": "clothes",
+   "address": "128 Avenida del Mar, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Killer Dana Surf Shop",
+   "lat": 33.4656847,
+   "lon": -117.6999813,
+   "shop": "clothes",
+   "address": "Del Prado Avenue, Dana Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hobie Surf Shop",
+   "lat": 33.4674196,
+   "lon": -117.698758,
+   "shop": "clothes",
+   "address": "34174 Pacific Coast Highway, Dana Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Trestles Surf Outlet",
+   "lat": 33.4036169,
+   "lon": -117.5966207,
+   "shop": "surf",
+   "address": "3011 South El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Stewart Surfboards",
+   "lat": 33.4162815,
+   "lon": -117.6018879,
+   "shop": "sports",
+   "address": "2102 South El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "San Onofre (Old Man's)": [
+  {
+   "name": "Hobie's Surf Shop",
+   "lat": 33.5435904,
+   "lon": -117.7825713,
+   "shop": "clothes",
+   "address": "294 Forest Avenue, Laguna Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Laguna Surf Sport",
+   "lat": 33.5343594,
+   "lon": -117.7769791,
+   "shop": "sports",
+   "address": "Oak Street, Laguna Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hobie Surf Shop",
+   "lat": 33.4259003,
+   "lon": -117.6146582,
+   "shop": "clothes",
+   "address": "165 Avenida del Mar, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Used Surf",
+   "lat": 33.4344665,
+   "lon": -117.6241061,
+   "shop": "sports",
+   "address": "216 Calle de Los Molinos, San Clemente",
+   "website": "https://usedsurf.com",
+   "phone": "+1-949-310-6602",
+   "rental_listed": false
+  },
+  {
+   "name": "Catalyst Surf Shop",
+   "lat": 33.4330226,
+   "lon": -117.6321877,
+   "shop": "sports",
+   "address": "1755 North El Camino Real, San Clemente",
+   "website": "https://catalystshop.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Album Surf",
+   "lat": 33.4329534,
+   "lon": -117.6298889,
+   "shop": "clothes;surf",
+   "address": "1705 North El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "All Swell Surf",
+   "lat": 33.4332271,
+   "lon": -117.624752,
+   "shop": "clothes",
+   "address": "Calle Valle, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Icons of Surf",
+   "lat": 33.430092,
+   "lon": -117.6182747,
+   "shop": "sports",
+   "address": "710 North El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "SoCal Surf Shop",
+   "lat": 33.4629323,
+   "lon": -117.5976859,
+   "shop": "water_sports",
+   "address": "802 Avenida Talega, San Clemente",
+   "website": "https://www.socalsurfshop.com/",
+   "phone": "+1-949-388-7663",
+   "rental_listed": false
+  },
+  {
+   "name": "Catch Surf",
+   "lat": 33.4270119,
+   "lon": -117.6137393,
+   "shop": "clothes",
+   "address": "128 Avenida del Mar, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Killer Dana Surf Shop",
+   "lat": 33.4656847,
+   "lon": -117.6999813,
+   "shop": "clothes",
+   "address": "Del Prado Avenue, Dana Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hobie Surf Shop",
+   "lat": 33.4674196,
+   "lon": -117.698758,
+   "shop": "clothes",
+   "address": "34174 Pacific Coast Highway, Dana Point",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Trestles Surf Outlet",
+   "lat": 33.4036169,
+   "lon": -117.5966207,
+   "shop": "surf",
+   "address": "3011 South El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Stewart Surfboards",
+   "lat": 33.4162815,
+   "lon": -117.6018879,
+   "shop": "sports",
+   "address": "2102 South El Camino Real, San Clemente",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Oceanside Pier": [
+  {
+   "name": "Real Surf Shop",
+   "lat": 33.1849893,
+   "lon": -117.3706736,
+   "shop": "surf",
+   "address": "Eucalyptus Street, Oceanside",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Ride",
+   "lat": 33.1730957,
+   "lon": -117.3606644,
+   "shop": "water_sports",
+   "address": "Pacific Coast Highway, Oceanside",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Swami's": [
+  {
+   "name": "Surf Ride",
+   "lat": 33.1730957,
+   "lon": -117.3606644,
+   "shop": "water_sports",
+   "address": "Pacific Coast Highway, Oceanside",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Real Surf Shop",
+   "lat": 33.1849893,
+   "lon": -117.3706736,
+   "shop": "surf",
+   "address": "Eucalyptus Street, Oceanside",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Mitch's Surf Shop",
+   "lat": 32.9964626,
+   "lon": -117.2735175,
+   "shop": "water_sports",
+   "address": "West Cliff Street, Solana Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rusty Surfboards",
+   "lat": 32.95928,
+   "lon": -117.266112,
+   "shop": "surfboards;clothes",
+   "address": "Stratford Court, Del Mar",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Cardiff Reef": [
+  {
+   "name": "Surf Ride",
+   "lat": 33.1730957,
+   "lon": -117.3606644,
+   "shop": "water_sports",
+   "address": "Pacific Coast Highway, Oceanside",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Real Surf Shop",
+   "lat": 33.1849893,
+   "lon": -117.3706736,
+   "shop": "surf",
+   "address": "Eucalyptus Street, Oceanside",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Mitch's Surf Shop",
+   "lat": 32.9964626,
+   "lon": -117.2735175,
+   "shop": "water_sports",
+   "address": "West Cliff Street, Solana Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rusty Surfboards",
+   "lat": 32.95928,
+   "lon": -117.266112,
+   "shop": "surfboards;clothes",
+   "address": "Stratford Court, Del Mar",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Black's Beach": [
+  {
+   "name": "Clairemont Surf Shop",
+   "lat": 32.8196059,
+   "lon": -117.1736677,
+   "shop": "sports",
+   "address": "Mount Rias Place, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Diva",
+   "lat": 32.8541294,
+   "lon": -117.2564736,
+   "shop": "surf",
+   "address": "2164 Avenida de la Playa, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "La Jolla Surf Systems",
+   "lat": 32.8542134,
+   "lon": -117.2569484,
+   "shop": "surf",
+   "address": "2132 Avenida de la Playa, San Diego",
+   "website": "https://ljsurfsystems.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "South Coast Surf Shop",
+   "lat": 32.7975959,
+   "lon": -117.2563491,
+   "shop": "clothes",
+   "address": "Felspar Street, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Bird Rock Surf Shop",
+   "lat": 32.812785,
+   "lon": -117.2681806,
+   "shop": "outdoor",
+   "address": "La Jolla Boulevard, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf & Turf Tennis Club",
+   "lat": 32.9771195,
+   "lon": -117.2530824,
+   "shop": "sports",
+   "address": "Turf Road, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Ocean Beach Surf & Skate",
+   "lat": 32.7463311,
+   "lon": -117.2498909,
+   "shop": "sports",
+   "address": "Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Wahines Surf Boutique",
+   "lat": 32.7471757,
+   "lon": -117.2519,
+   "shop": "clothes",
+   "address": "5037 Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "South Coast Surf Shop",
+   "lat": 32.7470086,
+   "lon": -117.2516101,
+   "shop": "water_sports",
+   "address": "5023 Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Mitch's Surf Shop",
+   "lat": 32.9964626,
+   "lon": -117.2735175,
+   "shop": "water_sports",
+   "address": "West Cliff Street, Solana Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rusty Surfboards",
+   "lat": 32.95928,
+   "lon": -117.266112,
+   "shop": "surfboards;clothes",
+   "address": "Stratford Court, Del Mar",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Windansea": [
+  {
+   "name": "Clairemont Surf Shop",
+   "lat": 32.8196059,
+   "lon": -117.1736677,
+   "shop": "sports",
+   "address": "Mount Rias Place, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Diva",
+   "lat": 32.8541294,
+   "lon": -117.2564736,
+   "shop": "surf",
+   "address": "2164 Avenida de la Playa, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "La Jolla Surf Systems",
+   "lat": 32.8542134,
+   "lon": -117.2569484,
+   "shop": "surf",
+   "address": "2132 Avenida de la Playa, San Diego",
+   "website": "https://ljsurfsystems.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "South Coast Surf Shop",
+   "lat": 32.7975959,
+   "lon": -117.2563491,
+   "shop": "clothes",
+   "address": "Felspar Street, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Bird Rock Surf Shop",
+   "lat": 32.812785,
+   "lon": -117.2681806,
+   "shop": "outdoor",
+   "address": "La Jolla Boulevard, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf & Turf Tennis Club",
+   "lat": 32.9771195,
+   "lon": -117.2530824,
+   "shop": "sports",
+   "address": "Turf Road, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Ocean Beach Surf & Skate",
+   "lat": 32.7463311,
+   "lon": -117.2498909,
+   "shop": "sports",
+   "address": "Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Wahines Surf Boutique",
+   "lat": 32.7471757,
+   "lon": -117.2519,
+   "shop": "clothes",
+   "address": "5037 Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "South Coast Surf Shop",
+   "lat": 32.7470086,
+   "lon": -117.2516101,
+   "shop": "water_sports",
+   "address": "5023 Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Mitch's Surf Shop",
+   "lat": 32.9964626,
+   "lon": -117.2735175,
+   "shop": "water_sports",
+   "address": "West Cliff Street, Solana Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rusty Surfboards",
+   "lat": 32.95928,
+   "lon": -117.266112,
+   "shop": "surfboards;clothes",
+   "address": "Stratford Court, Del Mar",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Pacific Beach (Crystal Pier)": [
+  {
+   "name": "Clairemont Surf Shop",
+   "lat": 32.8196059,
+   "lon": -117.1736677,
+   "shop": "sports",
+   "address": "Mount Rias Place, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Diva",
+   "lat": 32.8541294,
+   "lon": -117.2564736,
+   "shop": "surf",
+   "address": "2164 Avenida de la Playa, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "La Jolla Surf Systems",
+   "lat": 32.8542134,
+   "lon": -117.2569484,
+   "shop": "surf",
+   "address": "2132 Avenida de la Playa, San Diego",
+   "website": "https://ljsurfsystems.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "South Coast Surf Shop",
+   "lat": 32.7975959,
+   "lon": -117.2563491,
+   "shop": "clothes",
+   "address": "Felspar Street, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Bird Rock Surf Shop",
+   "lat": 32.812785,
+   "lon": -117.2681806,
+   "shop": "outdoor",
+   "address": "La Jolla Boulevard, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf & Turf Tennis Club",
+   "lat": 32.9771195,
+   "lon": -117.2530824,
+   "shop": "sports",
+   "address": "Turf Road, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Ocean Beach Surf & Skate",
+   "lat": 32.7463311,
+   "lon": -117.2498909,
+   "shop": "sports",
+   "address": "Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Wahines Surf Boutique",
+   "lat": 32.7471757,
+   "lon": -117.2519,
+   "shop": "clothes",
+   "address": "5037 Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "South Coast Surf Shop",
+   "lat": 32.7470086,
+   "lon": -117.2516101,
+   "shop": "water_sports",
+   "address": "5023 Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Mitch's Surf Shop",
+   "lat": 32.9964626,
+   "lon": -117.2735175,
+   "shop": "water_sports",
+   "address": "West Cliff Street, Solana Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rusty Surfboards",
+   "lat": 32.95928,
+   "lon": -117.266112,
+   "shop": "surfboards;clothes",
+   "address": "Stratford Court, Del Mar",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Ocean Beach San Diego": [
+  {
+   "name": "Clairemont Surf Shop",
+   "lat": 32.8196059,
+   "lon": -117.1736677,
+   "shop": "sports",
+   "address": "Mount Rias Place, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Diva",
+   "lat": 32.8541294,
+   "lon": -117.2564736,
+   "shop": "surf",
+   "address": "2164 Avenida de la Playa, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "La Jolla Surf Systems",
+   "lat": 32.8542134,
+   "lon": -117.2569484,
+   "shop": "surf",
+   "address": "2132 Avenida de la Playa, San Diego",
+   "website": "https://ljsurfsystems.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "South Coast Surf Shop",
+   "lat": 32.7975959,
+   "lon": -117.2563491,
+   "shop": "clothes",
+   "address": "Felspar Street, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Bird Rock Surf Shop",
+   "lat": 32.812785,
+   "lon": -117.2681806,
+   "shop": "outdoor",
+   "address": "La Jolla Boulevard, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf & Turf Tennis Club",
+   "lat": 32.9771195,
+   "lon": -117.2530824,
+   "shop": "sports",
+   "address": "Turf Road, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Ocean Beach Surf & Skate",
+   "lat": 32.7463311,
+   "lon": -117.2498909,
+   "shop": "sports",
+   "address": "Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Wahines Surf Boutique",
+   "lat": 32.7471757,
+   "lon": -117.2519,
+   "shop": "clothes",
+   "address": "5037 Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "South Coast Surf Shop",
+   "lat": 32.7470086,
+   "lon": -117.2516101,
+   "shop": "water_sports",
+   "address": "5023 Newport Avenue, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Mitch's Surf Shop",
+   "lat": 32.9964626,
+   "lon": -117.2735175,
+   "shop": "water_sports",
+   "address": "West Cliff Street, Solana Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rusty Surfboards",
+   "lat": 32.95928,
+   "lon": -117.266112,
+   "shop": "surfboards;clothes",
+   "address": "Stratford Court, Del Mar",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Imperial Beach": [
+  {
+   "name": "Pastel Surf",
+   "lat": 32.7211931,
+   "lon": -117.1305822,
+   "shop": "sports",
+   "address": "East Beech Street, San Diego",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Shop",
+   "lat": 32.5831029,
+   "lon": -117.1318184,
+   "shop": "outdoor",
+   "address": "Seacoast Drive, Imperial Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Hut",
+   "lat": 32.5827797,
+   "lon": -117.1318463,
+   "shop": "sports",
+   "address": "710 Seacoast Drive, Imperial Beach",
+   "website": "https://thesurfhut.com",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Banzai Pipeline": [
+  {
+   "name": "Patagonia Surf",
+   "lat": 21.5863926,
+   "lon": -158.1028036,
+   "shop": "clothes",
+   "address": "66-250 Kamehameha Highway, Haleiwa",
+   "website": "",
+   "phone": "+1-808-751-1477",
+   "rental_listed": false
+  },
+  {
+   "name": "Hawaii Surf & Sail",
+   "lat": 21.5890927,
+   "lon": -158.1027466,
+   "shop": "clothes",
+   "address": "66-160 Kamehameha Highway, Haleiwa",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Shop",
+   "lat": 21.5739466,
+   "lon": -158.1244676,
+   "shop": "sports",
+   "address": "67-106 Kealohanui Street, Waialua",
+   "website": "https://www.waialuasurfshop.com/",
+   "phone": "+1-808-888-3462",
+   "rental_listed": false
+  },
+  {
+   "name": "Haleiwa Surf Shop",
+   "lat": 21.5910993,
+   "lon": -158.1087604,
+   "shop": "surf",
+   "address": "66-214 Hale'iwa Road, Haleiwa",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Schaper Surf Shop",
+   "lat": 21.5743174,
+   "lon": -158.126521,
+   "shop": "sports",
+   "address": "67-106 Kealohanui Street, Waialua",
+   "website": "https://www.schaperhawaii.com/",
+   "phone": "+1-808-638-0050",
+   "rental_listed": false
+  },
+  {
+   "name": "Town & Country Surf",
+   "lat": 21.5911103,
+   "lon": -158.1030945,
+   "shop": "sports",
+   "address": "66-111 Kamehameha Highway, Haleiwa",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hale'iwa Surf Boutique",
+   "lat": 21.5879457,
+   "lon": -158.1028622,
+   "shop": "clothes",
+   "address": "66-200 Kamehameha Highway, Haleiwa",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Snoopy's Surf Shop",
+   "lat": 21.5912547,
+   "lon": -158.1029306,
+   "shop": "clothes",
+   "address": "Kamehameha Highway, Haleiwa",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Xcel Surf Shop",
+   "lat": 21.5777391,
+   "lon": -158.1052564,
+   "shop": "clothes",
+   "address": "66-590 Kamehameha Highway, Haleiwa",
+   "website": "https://xcelwetsuits.com/",
+   "phone": "+1-808-940-0699",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf N Sea",
+   "lat": 21.5947342,
+   "lon": -158.1032833,
+   "shop": "sports",
+   "address": "62-595 Kamehameha Highway, Haleiwa",
+   "website": "https://www.surfnsea.net/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "North Shore Surf Shop",
+   "lat": 21.5893004,
+   "lon": -158.1026424,
+   "shop": "surf",
+   "address": "66-150 Kamehameha Highway, Haleiwa",
+   "website": "https://northshoresurfshop.com/",
+   "phone": "+1-808-637-5002",
+   "rental_listed": false
+  },
+  {
+   "name": "T&C Surf Designs",
+   "lat": 21.5910837,
+   "lon": -158.1030767,
+   "shop": "clothes",
+   "address": "66-111 Kamehameha Highway, Haleiwa",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Sparrow Surfboards",
+   "lat": 21.5739249,
+   "lon": -158.1247035,
+   "shop": "sports",
+   "address": "67-106 Kealohanui Street, Waialua",
+   "website": "https://sparrowsurfboardshawaii.com/",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Pyzel Surfboards",
+   "lat": 21.5727638,
+   "lon": -158.1257222,
+   "shop": "sports",
+   "address": "67-106 Kealohanui Street, Waialua",
+   "website": "https://pyzelsurfboards.com/",
+   "phone": "+1-808-223-3305",
+   "rental_listed": false
+  },
+  {
+   "name": "Eric Arakawa Surfboards",
+   "lat": 21.5734305,
+   "lon": -158.1238155,
+   "shop": "sports",
+   "address": "67-106 Kealohanui Street, Waialua",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Third Stone Surfboards",
+   "lat": 21.5734892,
+   "lon": -158.1244567,
+   "shop": "sports",
+   "address": "67-106 Kealohanui Street, Waialua",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Amaury Scognamillo Surfboards",
+   "lat": 21.5731617,
+   "lon": -158.1264711,
+   "shop": "sports",
+   "address": "67-106 Kealohanui Street, Waialua",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Waikiki (Queens)": [
+  {
+   "name": "Honolua Surf & Co",
+   "lat": 21.2834145,
+   "lon": -157.8369875,
+   "shop": "clothes",
+   "address": "2005 Kalia Road, East Honolulu",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "T&C Surf Designs",
+   "lat": 21.2774371,
+   "lon": -157.7872158,
+   "shop": "clothes",
+   "address": "4211 Waialae Avenue, East Honolulu",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Snoopy\u2019s Surf Shop",
+   "lat": 21.2778139,
+   "lon": -157.8133314,
+   "shop": "sports",
+   "address": "3302 Campbell Avenue, East Honolulu",
+   "website": "https://snoopysurf.com/",
+   "phone": "+1 808-734-3011",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Camp",
+   "lat": 21.2770538,
+   "lon": -157.7869006,
+   "shop": "clothes",
+   "address": "4211 Waialae Avenue, East Honolulu",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Sand Island Surf Shop",
+   "lat": 21.3303098,
+   "lon": -157.8885667,
+   "shop": "sports",
+   "address": "2290 Alahao Place, Honolulu",
+   "website": "https://www.sandislandsurfshop.com",
+   "phone": "+1-808-591-9995",
+   "rental_listed": false
+  },
+  {
+   "name": "T&C Surf Design",
+   "lat": 21.2915027,
+   "lon": -157.8450679,
+   "shop": "clothes",
+   "address": "Kona Iki Street, East Honolulu",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Garage",
+   "lat": 21.2907786,
+   "lon": -157.8196604,
+   "shop": "sports",
+   "address": "South King Street, East Honolulu",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Honolua Surf & Co",
+   "lat": 21.2780201,
+   "lon": -157.8260072,
+   "shop": "clothes",
+   "address": "120 Ka\u02bbiulani Avenue, East Honolulu",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Quality Surfboards Hawaii",
+   "lat": 21.2853266,
+   "lon": -157.8357739,
+   "shop": "water_sports",
+   "address": "Ena Road, East Honolulu",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Cocoa Beach": [
+  {
+   "name": "Ron Jon Surf Shop",
+   "lat": 28.3563104,
+   "lon": -80.6076651,
+   "shop": "outdoor",
+   "address": "4151 North Atlantic Avenue, Cocoa Beach",
+   "website": "http://www.ronjonsurfshop.com/",
+   "phone": "+1 321-799-8820",
+   "rental_listed": false
+  },
+  {
+   "name": "3A Rides Surf & Bicycle",
+   "lat": 28.3221615,
+   "lon": -80.6103346,
+   "shop": "sports",
+   "address": "North 2nd Street, Cocoa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Neilson Surf Shop",
+   "lat": 28.3218498,
+   "lon": -80.6097338,
+   "shop": "sports",
+   "address": "North 2nd Street, Cocoa Beach",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Cocoa Beach Surf",
+   "lat": 28.283767,
+   "lon": -80.60817,
+   "shop": "clothes",
+   "address": "South Orlando Avenue",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Rockaway Beach": [
+  {
+   "name": "Breezy Point Surf Shop",
+   "lat": 40.5590995,
+   "lon": -73.9198178,
+   "shop": "water_sports",
+   "address": "61 Point Breeze Avenue, New York",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rockaway Surf Shop",
+   "lat": 40.5792429,
+   "lon": -73.8370901,
+   "shop": "sports",
+   "address": "177 Beach 116th Street, New York",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Kuta Beach": [
+  {
+   "name": "Surfboards",
+   "lat": -8.6598257,
+   "lon": 115.1306705,
+   "shop": "sports",
+   "address": "Jalan Pantai Batu Bolong, Kuta Utara",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Cover Shop",
+   "lat": -8.6523848,
+   "lon": 115.1331752,
+   "shop": "sports",
+   "address": "Jalan Pantai Batu Bolong, Kuta Utara",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rip Curl Surf Shop Legian",
+   "lat": -8.7117034,
+   "lon": 115.1727946,
+   "shop": "sports",
+   "address": "Jalan Raya Legian, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Toko Selancar Surf Shop",
+   "lat": -8.6896298,
+   "lon": 115.1617436,
+   "shop": "surf",
+   "address": "Jalan Drupadi, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "FIXME Surf Shop",
+   "lat": -8.7167621,
+   "lon": 115.172499,
+   "shop": "sports",
+   "address": "Jalan Benesari, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hot Banana Surf Shop",
+   "lat": -8.7174356,
+   "lon": 115.172132,
+   "shop": "sports",
+   "address": "Jalan Poppies II, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Zealous Women's Surf Shop",
+   "lat": -8.8169142,
+   "lon": 115.0950899,
+   "shop": "clothes",
+   "address": "Jalan Labuan Sait- Pecatu, Kuta Selatan",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "White Monkey Surf Shop",
+   "lat": -8.8139778,
+   "lon": 115.1101618,
+   "shop": "surf",
+   "address": "Jalan Labuan Sait- Pecatu, Kuta Selatan",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Batu Bolong (Canggu)": [
+  {
+   "name": "Surfboards",
+   "lat": -8.6598257,
+   "lon": 115.1306705,
+   "shop": "sports",
+   "address": "Jalan Pantai Batu Bolong, Kuta Utara",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Surf Cover Shop",
+   "lat": -8.6523848,
+   "lon": 115.1331752,
+   "shop": "sports",
+   "address": "Jalan Pantai Batu Bolong, Kuta Utara",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rip Curl Surf Shop Legian",
+   "lat": -8.7117034,
+   "lon": 115.1727946,
+   "shop": "sports",
+   "address": "Jalan Raya Legian, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Toko Selancar Surf Shop",
+   "lat": -8.6896298,
+   "lon": 115.1617436,
+   "shop": "surf",
+   "address": "Jalan Drupadi, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "FIXME Surf Shop",
+   "lat": -8.7167621,
+   "lon": 115.172499,
+   "shop": "sports",
+   "address": "Jalan Benesari, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hot Banana Surf Shop",
+   "lat": -8.7174356,
+   "lon": 115.172132,
+   "shop": "sports",
+   "address": "Jalan Poppies II, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Zealous Women's Surf Shop",
+   "lat": -8.8169142,
+   "lon": 115.0950899,
+   "shop": "clothes",
+   "address": "Jalan Labuan Sait- Pecatu, Kuta Selatan",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "White Monkey Surf Shop",
+   "lat": -8.8139778,
+   "lon": 115.1101618,
+   "shop": "surf",
+   "address": "Jalan Labuan Sait- Pecatu, Kuta Selatan",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Keramas": [
+  {
+   "name": "Haleiwa Surf Lessons",
+   "lat": -8.6748084,
+   "lon": 115.4471588,
+   "shop": "sports",
+   "address": "Jalan Mushroom Bay 2, Nusa Penida",
+   "website": "",
+   "phone": "",
+   "rental_listed": true
+  },
+  {
+   "name": "Monkey surf school",
+   "lat": -8.6760946,
+   "lon": 115.4470317,
+   "shop": "sports",
+   "address": "Jalan Mushroom Bay 2, Nusa Penida",
+   "website": "",
+   "phone": "",
+   "rental_listed": true
+  }
+ ],
+ "Uluwatu": [
+  {
+   "name": "Surfboards",
+   "lat": -8.6598257,
+   "lon": 115.1306705,
+   "shop": "sports",
+   "address": "Jalan Pantai Batu Bolong, Kuta Utara",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "FIXME Surf Shop",
+   "lat": -8.7167621,
+   "lon": 115.172499,
+   "shop": "sports",
+   "address": "Jalan Benesari, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Toko Selancar Surf Shop",
+   "lat": -8.6896298,
+   "lon": 115.1617436,
+   "shop": "surf",
+   "address": "Jalan Drupadi, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rip Curl Surf Shop Legian",
+   "lat": -8.7117034,
+   "lon": 115.1727946,
+   "shop": "sports",
+   "address": "Jalan Raya Legian, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hot Banana Surf Shop",
+   "lat": -8.7174356,
+   "lon": 115.172132,
+   "shop": "sports",
+   "address": "Jalan Poppies II, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "White Monkey Surf Shop",
+   "lat": -8.8139778,
+   "lon": 115.1101618,
+   "shop": "surf",
+   "address": "Jalan Labuan Sait- Pecatu, Kuta Selatan",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Zealous Women's Surf Shop",
+   "lat": -8.8169142,
+   "lon": 115.0950899,
+   "shop": "clothes",
+   "address": "Jalan Labuan Sait- Pecatu, Kuta Selatan",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Padang Padang": [
+  {
+   "name": "Surfboards",
+   "lat": -8.6598257,
+   "lon": 115.1306705,
+   "shop": "sports",
+   "address": "Jalan Pantai Batu Bolong, Kuta Utara",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "FIXME Surf Shop",
+   "lat": -8.7167621,
+   "lon": 115.172499,
+   "shop": "sports",
+   "address": "Jalan Benesari, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Toko Selancar Surf Shop",
+   "lat": -8.6896298,
+   "lon": 115.1617436,
+   "shop": "surf",
+   "address": "Jalan Drupadi, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Rip Curl Surf Shop Legian",
+   "lat": -8.7117034,
+   "lon": 115.1727946,
+   "shop": "sports",
+   "address": "Jalan Raya Legian, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Hot Banana Surf Shop",
+   "lat": -8.7174356,
+   "lon": 115.172132,
+   "shop": "sports",
+   "address": "Jalan Poppies II, Kuta",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "White Monkey Surf Shop",
+   "lat": -8.8139778,
+   "lon": 115.1101618,
+   "shop": "surf",
+   "address": "Jalan Labuan Sait- Pecatu, Kuta Selatan",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  },
+  {
+   "name": "Zealous Women's Surf Shop",
+   "lat": -8.8169142,
+   "lon": 115.0950899,
+   "shop": "clothes",
+   "address": "Jalan Labuan Sait- Pecatu, Kuta Selatan",
+   "website": "",
+   "phone": "",
+   "rental_listed": false
+  }
+ ],
+ "Playa Zicatela": [
+  {
+   "name": "Surf Shop Punto M\u00e1gico",
+   "lat": 15.8330707,
+   "lon": -97.0447758,
+   "shop": "sports",
+   "address": "Calle Alejandro C\u00e1rdenas Peralta, Brisas de Zicatela",
+   "website": "",
+   "phone": "+52 954 183 8291",
+   "rental_listed": false
+  },
+  {
+   "name": "Juicy Papaya - Surfboards and Apparel",
+   "lat": 15.8347513,
+   "lon": -97.0444855,
+   "shop": "sports",
+   "address": "660 Calle Alejandro C\u00e1rdenas Peralta, Puerto Escondido",
+   "website": "https://juicypapaya.com/",
+   "phone": "+52 744 457 8952",
+   "rental_listed": false
+  }
+ ],
+ "La Punta": [
+  {
+   "name": "Surf Shop Punto M\u00e1gico",
+   "lat": 15.8330707,
+   "lon": -97.0447758,
+   "shop": "sports",
+   "address": "Calle Alejandro C\u00e1rdenas Peralta, Brisas de Zicatela",
+   "website": "",
+   "phone": "+52 954 183 8291",
+   "rental_listed": false
+  },
+  {
+   "name": "Juicy Papaya - Surfboards and Apparel",
+   "lat": 15.8347513,
+   "lon": -97.0444855,
+   "shop": "sports",
+   "address": "660 Calle Alejandro C\u00e1rdenas Peralta, Puerto Escondido",
+   "website": "https://juicypapaya.com/",
+   "phone": "+52 744 457 8952",
+   "rental_listed": false
+  }
+ ]
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiver Match: share your sessions</title>
+<style>
+  :root { --sand: #fff7ec; --sand2: #fdebd3; --line: #f1dcc2; --coral: #ff6b4a; --sunset: #ff9a52; --teal: #0f8a94; --deep: #0b4f5c;
+          --ink: #3b2618; --head: #5a2e14; --muted: #8a6b55; --ok: #1f7a52; --bad: #c4372a; --shadow: 0 10px 30px rgba(122, 64, 24, 0.10); }
+  * { box-sizing: border-box; }
+  html { background: var(--sand); }
+  body { margin: 0; font-family: "Avenir Next", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--ink);
+         background: linear-gradient(180deg, #ffe9cf 0, var(--sand) 420px); }
+  header { background: linear-gradient(180deg, #ff9e6d, #ffc27a 60%, #ffe2ad); padding: 26px clamp(18px, 4vw, 56px) 54px; position: relative; overflow: hidden; }
+  header h1 { margin: 0; color: #4a1f0c; font-size: clamp(26px, 3.4vw, 40px); }
+  header p { margin: 6px 0 0; color: #6b3416; max-width: 640px; }
+  header a { color: #4a1f0c; font-weight: 700; }
+  header svg { position: absolute; left: 0; bottom: -2px; width: 100%; height: 46px; }
+  main { max-width: 900px; margin: -26px auto 60px; padding: 0 18px; position: relative; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+  .tabs button { border: 0; padding: 10px 18px; border-radius: 999px; font: inherit; font-weight: 800; cursor: pointer; background: #fffdf9; color: var(--muted); box-shadow: var(--shadow); }
+  .tabs button.on { background: linear-gradient(90deg, var(--sunset), var(--coral)); color: #fff; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); padding: 20px 22px; margin-bottom: 16px; }
+  h2 { font-size: 15px; margin: 0 0 12px; color: var(--head); text-transform: uppercase; letter-spacing: 1px; }
+  label, .lbl { display: block; font-size: 13px; font-weight: 700; color: var(--muted); margin: 12px 0 6px; }
+  input, select, textarea { width: 100%; padding: 10px 12px; border: 1.5px solid var(--line); border-radius: 12px; font: inherit; color: var(--ink); background: #fffdf9; }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--sunset); box-shadow: 0 0 0 3px rgba(255, 154, 82, 0.25); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .rowbox { display: grid; gap: 6px; padding: 10px; border: 1.5px solid var(--line); border-radius: 12px; margin-bottom: 8px; background: #fffdf9; }
+  .board { grid-template-columns: 1.4fr 1.5fr .6fr .6fr 34px; }
+  .sess { grid-template-columns: 1fr 1.4fr .7fr .7fr 1.5fr 34px; }
+  .sess .note { grid-column: 1 / -1; }
+  @media (max-width: 640px) { .board, .sess { grid-template-columns: 1fr 1fr; } }
+  .rowbox input, .rowbox select { padding: 8px 9px; font-size: 13px; border-radius: 9px; }
+  .mini { border: 1.5px solid var(--line); background: #fffdf9; color: var(--head); font: inherit; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px; cursor: pointer; }
+  .mini:hover { border-color: var(--coral); color: var(--coral); }
+  .go { margin-top: 16px; width: 100%; padding: 14px; border: 0; border-radius: 999px; background: linear-gradient(90deg, var(--sunset), var(--coral));
+        color: #fff; font-size: 17px; font-weight: 800; cursor: pointer; box-shadow: 0 8px 20px rgba(255, 107, 74, 0.35); }
+  .hint { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .msg { padding: 12px 16px; border-radius: 14px; margin: 12px 0; font-weight: 600; }
+  .msg.ok { background: #e4f6ee; color: var(--ok); } .msg.bad { background: #fdecea; color: var(--bad); }
+  .resp { border: 1.5px solid var(--line); border-radius: 14px; padding: 12px 14px; margin-bottom: 10px; background: #fffdf9; }
+  .resp .top { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .resp .check { background: #fff3c4; border: 1px dashed #d4a20b; color: #6b4e00; padding: 6px 10px; border-radius: 8px; font-size: 13px; margin-top: 8px; }
+  .muted { color: var(--muted); font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 10px; }
+  th { background: var(--deep); color: #fff; text-align: left; padding: 7px 8px; }
+  td { border-bottom: 1px solid var(--line); padding: 6px 8px; }
+  td.yes { color: var(--ok); font-weight: 800; } td.no { color: var(--bad); font-weight: 800; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Help test Quiver Match</h1>
+  <p>Tell us about you, the boards you own, and a few recent sessions with the board that worked best. We'll check whether
+     the app would have picked the same board. Use initials: answers are stored for a class project. <a href="/">Back to the app</a></p>
+  <svg viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0,30 C240,6 480,46 720,26 C960,6 1200,40 1440,22 L1440,46 L0,46 Z" fill="#fff7ec"/></svg>
+</header>
+<main>
+  <div class="tabs"><button type="button" class="on" data-tab="share">Share your sessions</button><button type="button" data-tab="responses">Responses (author)</button></div>
+
+  <section id="share">
+    <form class="card" id="form" autocomplete="off">
+      <h2 id="formTitle">About you</h2>
+      <div class="grid">
+        <div><label for="who">Initials or nickname</label><input id="who" maxlength="40" required placeholder="e.g. A.L."></div>
+        <div><label for="lb">Weight (lb)</label><input id="lb" type="number" min="55" max="400" required></div>
+        <div><span class="lbl">Height</span><div class="grid" style="grid-template-columns:1fr 1fr;gap:6px"><input id="ft" type="number" min="4" max="7" placeholder="ft" required aria-label="feet"><input id="inch" type="number" min="0" max="11" placeholder="in" aria-label="inches"></div></div>
+        <div><label for="skill">Skill</label><select id="skill"><option>beginner</option><option>novice</option><option selected>intermediate</option><option>advanced</option><option>expert</option></select></div>
+        <div><label for="fitness">Paddle fitness</label><select id="fitness"><option>low</option><option selected>average</option><option>high</option></select></div>
+      </div>
+
+      <h2 style="margin-top:22px">Boards you own</h2>
+      <div id="boards"></div>
+      <button type="button" class="mini" id="addBoard">+ Add a board</button>
+      <div class="hint">Just the type and length: we estimate the liters.</div>
+
+      <h2 style="margin-top:22px">Recent sessions</h2>
+      <div id="sessions"></div>
+      <button type="button" class="mini" id="addSession">+ Add a session</button>
+      <div class="hint">Wave size is optional: for sessions in the last ~3 months we can look up the recorded forecast.</div>
+
+      <label for="review">Anything to double-check? (author only)</label>
+      <textarea id="review" maxlength="300" rows="2" placeholder="e.g. board shape guessed from a text message"></textarea>
+
+      <div id="formMsg"></div>
+      <button class="go" type="submit" id="submit">Send my sessions</button>
+    </form>
+  </section>
+
+  <section id="responses" class="hidden">
+    <div class="card">
+      <h2>Responses</h2>
+      <div id="list" class="muted">Loading...</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+        <button type="button" class="mini" id="runCode">Run evidence (code only, free)</button>
+        <button type="button" class="mini" id="runLLM">Run with ChatGPT comparison (uses tokens)</button>
+      </div>
+      <div id="results"></div>
+    </div>
+  </section>
+</main>
+<datalist id="spotlist"></datalist>
+<script>
+const $ = (id) => document.getElementById(id);
+function el(tag, attrs = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) k === "class" ? (n.className = v) : n.setAttribute(k, v);
+  for (const kid of kids) if (kid != null) n.append(kid instanceof Node ? kid : document.createTextNode(String(kid)));
+  return n;
+}
+const TYPES = ["fish", "groveler", "hybrid shortboard", "performance shortboard", "step-up", "mid-length", "funboard", "longboard", "foam longboard"];
+const label = (b) => b.name || `${Math.floor(b.length_in / 12)}'${Math.round(b.length_in % 12)}" ${b.board_type}`;
+let editing = null;
+
+document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => {
+  document.querySelectorAll(".tabs button").forEach((x) => x.classList.toggle("on", x === b));
+  $("share").classList.toggle("hidden", b.dataset.tab !== "share");
+  $("responses").classList.toggle("hidden", b.dataset.tab !== "responses");
+  if (b.dataset.tab === "responses") loadList();
+}));
+fetch("/api/spots").then((r) => r.json()).then((s) => s.forEach((x) => $("spotlist").append(el("option", { value: x.name }))));
+
+// ---------------------------------------------------------------- boards + sessions
+function boards() {
+  return [...document.querySelectorAll(".board")].map((r) => {
+    const ft = +r.querySelector(".ft").value;
+    return ft ? { name: r.querySelector(".nm").value.trim(), board_type: r.querySelector(".ty").value,
+                  length_in: ft * 12 + (+r.querySelector(".in").value || 0), volume_l: b0(r) } : null;
+  }).filter(Boolean);
+}
+// keep liters an old entry already has; new boards are estimated from type + length
+const b0 = (row) => (row.dataset.vol ? +row.dataset.vol : null);
+let seq = 0;
+// Label a board row the same way the server does: its name, or length + type.
+function rowLabel(r) {
+  const nm = r.querySelector(".nm").value.trim(), ty = r.querySelector(".ty").value, ft = +r.querySelector(".ft").value;
+  if (nm) return nm;
+  return ft ? label({ board_type: ty, length_in: ft * 12 + (+r.querySelector(".in").value || 0) }) : `${ty} (add length)`;
+}
+function refreshBoardChoices() {
+  const rows = [...document.querySelectorAll(".board")];
+  document.querySelectorAll(".sess .best").forEach((sel) => {
+    const keep = sel.value;
+    sel.replaceChildren(el("option", { value: "" }, rows.length ? "best board..." : "add a board above first"),
+      ...rows.map((r) => el("option", { value: r.dataset.key }, rowLabel(r))));
+    if (rows.some((r) => r.dataset.key === keep)) sel.value = keep;
+  });
+}
+function addBoard(b = {}) {
+  const ty = el("select", { class: "ty", "aria-label": "type" }, ...TYPES.map((t) => el("option", { value: t }, t)));
+  ty.value = b.board_type || "fish";
+  const x = el("button", { type: "button", class: "mini", "aria-label": "remove" }, "✕");
+  const row = el("div", { class: "rowbox board" },
+    el("input", { class: "nm", placeholder: "name (optional)", maxlength: 40, value: b.name || "" }), ty,
+    el("input", { class: "ft", type: "number", min: 4, max: 12, placeholder: "ft", value: b.length_in ? Math.floor(b.length_in / 12) : "" }),
+    el("input", { class: "in", type: "number", min: 0, max: 11, placeholder: "in", value: b.length_in ? Math.round(b.length_in % 12) : "" }), x);
+  if (b.volume_l) row.dataset.vol = b.volume_l;
+  row.dataset.key = "b" + ++seq;
+  x.addEventListener("click", () => { row.remove(); refreshBoardChoices(); });
+  row.addEventListener("input", refreshBoardChoices); row.addEventListener("change", refreshBoardChoices);
+  $("boards").append(row); refreshBoardChoices();
+}
+function addSession(s = {}) {
+  const best = el("select", { class: "best", "aria-label": "best board" });
+  const x = el("button", { type: "button", class: "mini", "aria-label": "remove" }, "✕");
+  const row = el("div", { class: "rowbox sess" },
+    el("input", { class: "date", type: "date", value: s.date || "", "aria-label": "date" }),
+    el("input", { class: "spot", list: "spotlist", placeholder: "spot", maxlength: 80, value: s.spot || "" }),
+    el("input", { class: "face", type: "number", min: 0.5, max: 40, step: 0.5, placeholder: "ft", value: s.face_ft ?? "", "aria-label": "wave height ft" }),
+    el("input", { class: "per", type: "number", min: 3, max: 25, placeholder: "sec", value: s.period_s ?? "", "aria-label": "period seconds" }),
+    best, x, el("input", { class: "note", placeholder: "note (optional): e.g. punchy, mushy, crowded", maxlength: 200, value: s.note || "" }));
+  x.addEventListener("click", () => row.remove());
+  $("sessions").append(row); refreshBoardChoices();
+  const match = [...document.querySelectorAll(".board")].find((r) => rowLabel(r) === s.best_board);
+  if (match) best.value = match.dataset.key;
+}
+$("addBoard").addEventListener("click", () => addBoard());
+$("addSession").addEventListener("click", () => addSession());
+
+function resetForm() {
+  editing = null; $("form").reset(); $("boards").replaceChildren(); $("sessions").replaceChildren();
+  addBoard(); addBoard({ board_type: "longboard" }); addSession(); addSession();
+  $("formTitle").textContent = "About you"; $("submit").textContent = "Send my sessions";
+}
+resetForm();
+
+$("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const body = {
+    who: $("who").value.trim(), weight_kg: +$("lb").value * 0.453592, height_cm: ((+$("ft").value) * 12 + (+$("inch").value || 0)) * 2.54,
+    skill: $("skill").value, fitness: $("fitness").value, quiver: boards(), review_note: $("review").value.trim(),
+    sessions: [...document.querySelectorAll(".sess")].map((r) => ({
+      date: r.querySelector(".date").value, spot: r.querySelector(".spot").value.trim(),
+      face_ft: r.querySelector(".face").value ? +r.querySelector(".face").value : null,
+      period_s: r.querySelector(".per").value ? +r.querySelector(".per").value : null,
+      best_board: (() => { const k = r.querySelector(".best").value, row = document.querySelector(`.board[data-key="${k}"]`); return row ? rowLabel(row) : ""; })(),
+      note: r.querySelector(".note").value.trim() })).filter((s) => s.date || s.spot),
+  };
+  const missing = body.sessions.find((x) => !x.best_board || x.best_board.endsWith("(add length)"));
+  if (missing) { $("formMsg").replaceChildren(el("div", { class: "msg bad" }, "Pick the best board for each session (and give that board a length).")); return; }
+  const r = await fetch(editing ? `/api/survey/${editing}` : "/api/survey", { method: editing ? "PUT" : "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  const res = await r.json();
+  $("formMsg").replaceChildren(el("div", { class: "msg " + (res.ok ? "ok" : "bad") }, res.ok ? (editing ? "Saved your changes." : "Thanks! Your sessions were saved.") : res.error));
+  if (res.ok) { const wasEditing = editing; resetForm(); if (wasEditing) document.querySelector('[data-tab="responses"]').click(); }
+});
+
+// ---------------------------------------------------------------- responses (author)
+async function loadList() {
+  const r = await fetch("/api/survey"), res = await r.json();
+  if (!res.ok) { $("list").textContent = res.error; return; }
+  if (!res.surfers.length) { $("list").textContent = "No responses yet."; return; }
+  $("list").replaceChildren(...res.surfers.map((s) => {
+    const edit = el("button", { type: "button", class: "mini" }, "Edit"), del = el("button", { type: "button", class: "mini" }, "Delete");
+    edit.addEventListener("click", () => startEdit(s));
+    del.addEventListener("click", async () => { if (confirm(`Delete ${s.who}'s response?`)) { await fetch(`/api/survey/${s.id}`, { method: "DELETE" }); loadList(); } });
+    return el("div", { class: "resp" },
+      el("div", { class: "top" }, el("b", {}, `${s.id} · ${s.who} · ${s.skill}`), el("span", {}, edit, " ", del)),
+      el("div", { class: "muted" }, `${Math.round(s.weight_kg / 0.453592)} lb · boards: ${s.quiver.map(label).join(", ")}`),
+      el("div", { class: "muted" }, `${s.sessions.length} session(s): ` + s.sessions.map((x) => `${x.date} ${x.spot}${x.face_ft ? " " + x.face_ft + " ft" : ""} → ${x.best_board}`).join("; ")),
+      s.quiver.length < 2 ? el("div", { class: "check" }, "Only one board: these sessions are shown but not scored (the pick is automatic).") : null,
+      s.review_note ? el("div", { class: "check" }, "Please check: " + s.review_note) : null);
+  }));
+}
+function startEdit(s) {
+  document.querySelector('[data-tab="share"]').click();
+  resetForm(); editing = s.id;
+  $("formTitle").textContent = `Editing ${s.id} (${s.who})`; $("submit").textContent = "Save changes";
+  $("who").value = s.who; $("lb").value = Math.round(s.weight_kg / 0.453592);
+  const tin = Math.round(s.height_cm / 2.54); $("ft").value = Math.floor(tin / 12); $("inch").value = tin % 12;
+  $("skill").value = s.skill; $("fitness").value = s.fitness; $("review").value = s.review_note || "";
+  $("boards").replaceChildren(); s.quiver.forEach((b) => addBoard(b));
+  $("sessions").replaceChildren(); s.sessions.forEach((x) => addSession(x));
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+async function run(llm) {
+  $("results").replaceChildren(el("p", { class: "muted" }, llm ? "Running (asks gpt-6-luna once per session)..." : "Running..."));
+  const r = await fetch("/api/survey/evaluate", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ llm }) });
+  const res = await r.json();
+  if (!res.ok) { $("results").replaceChildren(el("div", { class: "msg bad" }, res.error)); return; }
+  const sm = res.summary;
+  const t = el("table", {}, el("tr", {}, ...["Picker", "Matches the board that worked"].map((h) => el("th", {}, h))),
+    ...[["Quiver Match (top pick)", sm.quiver_match_top1], ["Quiver Match (top two)", sm.quiver_match_top2], ["Plain gpt-6-luna", sm.plain_llm], ["Always the biggest board", sm.biggest_board]]
+      .map(([a, b]) => el("tr", {}, el("td", {}, a), el("td", {}, b))));
+  const rows = el("table", {}, el("tr", {}, ...["Surfer", "Date", "Spot", "Waves", "Worked best", "Quiver Match", "Plain LLM"].map((h) => el("th", {}, h))),
+    ...res.rows.map((x) => el("tr", {}, el("td", {}, x.who || x.surfer), el("td", {}, x.date), el("td", {}, x.spot), el("td", {}, x.waves), el("td", {}, x.actual),
+      el("td", { class: x.quiver_size > 1 ? (x.ours === x.actual ? "yes" : "no") : "" }, x.ours), el("td", { class: x.llm ? (x.llm === x.actual ? "yes" : "no") : "" }, x.llm || "-"))));
+  $("results").replaceChildren(el("p", { class: "muted" }, `Scored ${sm.scored_sessions} of ${sm.sessions} sessions (surfers with 2+ boards). Results saved for the report.`), t, rows);
+}
+$("runCode").addEventListener("click", () => run(false));
+$("runLLM").addEventListener("click", () => run(true));
+</script>
+</body>
+</html>

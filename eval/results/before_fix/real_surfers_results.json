@@ -1,0 +1,102 @@
+{
+  "summary": {
+    "sessions": 4,
+    "scored_sessions": 4,
+    "surfers": 2,
+    "quiver_match_top1": "3/4 (75%)",
+    "quiver_match_top2": "4/4 (100%)",
+    "biggest_board": "2/4 (50%)",
+    "plain_llm": "3/4 (75%)",
+    "llm_tokens": 790
+  },
+  "rows": [
+    {
+      "surfer": "S1",
+      "who": "A.L.",
+      "date": "2026-10-12",
+      "spot": "El Porto",
+      "waves": "2.4-3.0 ft @ 10s (surfer's report)",
+      "actual": "5'10\" quad fin",
+      "ours": "5'10\" quad fin",
+      "ours_top2": [
+        "5'10\" quad fin",
+        "6'2\" shortboard"
+      ],
+      "biggest": "5'10\" quad fin",
+      "quiver_size": 2,
+      "fits": {
+        "5'10\" quad fin": 84,
+        "6'2\" shortboard": 76
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "5'10\" quad fin"
+    },
+    {
+      "surfer": "S1",
+      "who": "A.L.",
+      "date": "2026-10-05",
+      "spot": "El Porto",
+      "waves": "4.8-6.0 ft @ 10s (surfer's report)",
+      "actual": "6'2\" shortboard",
+      "ours": "6'2\" shortboard",
+      "ours_top2": [
+        "6'2\" shortboard",
+        "5'10\" quad fin"
+      ],
+      "biggest": "5'10\" quad fin",
+      "quiver_size": 2,
+      "fits": {
+        "6'2\" shortboard": 79,
+        "5'10\" quad fin": 78
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "6'2\" shortboard"
+    },
+    {
+      "surfer": "S2",
+      "who": "M L",
+      "date": "2026-09-09",
+      "spot": "San Onofre (Old Man's)",
+      "waves": "3.4-3.9 ft @ 11.2s (Open-Meteo record)",
+      "actual": "9'0\" longboard",
+      "ours": "Blue Ripper",
+      "ours_top2": [
+        "Blue Ripper",
+        "9'0\" longboard"
+      ],
+      "biggest": "9'0\" longboard",
+      "quiver_size": 2,
+      "fits": {
+        "Blue Ripper": 56,
+        "9'0\" longboard": 56
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "9'0\" longboard"
+    },
+    {
+      "surfer": "S2",
+      "who": "M L",
+      "date": "2026-10-18",
+      "spot": "Hermosa Beach Pier",
+      "waves": "3.0-3.7 ft @ 14.6s (Open-Meteo record)",
+      "actual": "Blue Ripper",
+      "ours": "Blue Ripper",
+      "ours_top2": [
+        "Blue Ripper",
+        "9'0\" longboard"
+      ],
+      "biggest": "9'0\" longboard",
+      "quiver_size": 2,
+      "fits": {
+        "Blue Ripper": 57,
+        "9'0\" longboard": 57
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "9'0\" longboard"
+    }
+  ]
+}

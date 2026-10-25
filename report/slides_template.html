@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quiver Match: slides</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+<style>
+  :root { --r-main-font: "Avenir Next", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          --r-heading-font: var(--r-main-font); --r-heading-color: #5a2e14; --r-main-color: #3b2618; --r-link-color: #ff6b4a;
+          --r-heading-text-transform: none; --r-main-font-size: 32px; --r-heading1-size: 2.3em; --r-heading2-size: 1.5em; }
+  .reveal h2 { border-bottom: 4px solid #ff6b4a; display: inline-block; padding-bottom: 6px; margin-bottom: 24px; }
+  .reveal .lead { font-size: 1.05em; color: #6b3416; }
+  .reveal .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; text-align: left; }
+  .reveal .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .reveal .card { background: #fff3e2; border-radius: 16px; padding: 20px 22px; text-align: left; }
+  .reveal .card b { color: #ff6b4a; }
+  .reveal .big { font-size: 2.1em; font-weight: 800; color: #0b4f5c; line-height: 1.1; display: block; }
+  .reveal .lbl { font-size: 0.6em; color: #8a6b55; }
+  .reveal img.shot { max-height: 470px; width: auto; max-width: 100%; border: 2px solid #f1dcc2; border-radius: 12px; box-shadow: 0 8px 26px rgba(122,64,24,0.14); margin: 0; }
+  .reveal table { font-size: 0.6em; margin: 0 auto; }
+  .reveal table th { background: #0b4f5c; color: #fff; border: 0; padding: 10px 14px; }
+  .reveal table td { border-bottom: 1px solid #f1dcc2; padding: 9px 14px; }
+  .reveal td.yes { color: #1b7f4b; font-weight: 700; } .reveal td.no { color: #b3261e; font-weight: 700; } .reveal td.part { color: #b4540b; font-weight: 700; }
+  .reveal ul { font-size: 0.82em; } .reveal li { margin: 10px 0; }
+  .reveal .small { font-size: 0.55em; color: #8a6b55; }
+  .reveal .todo { background: #fff3c4; border: 2px dashed #d4a20b; padding: 2px 8px; border-radius: 6px; color: #6b4e00; font-size: 0.7em; }
+  .reveal .title-slide h1 { color: #4a1f0c; margin-bottom: 8px; }
+  .reveal .wave { position: absolute; left: -25%; width: 150%; bottom: -110px; height: 210px; z-index: -1; }
+  .reveal .accent { color: #ff6b4a; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+
+<section class="title-slide" data-background-image="{{TITLE_BG}}" data-background-size="cover" data-background-position="bottom">
+  <div style="margin-top:-160px">
+  <h1>Quiver Match</h1>
+  <p class="lead">The right surfboard for your body, your skill,<br>and the waves at your spot <b>this week</b>.</p>
+  <p class="small">{{AUTHOR}} · MGT 409 AI Foundations for Managers · Final project</p>
+  </div>
+</section>
+
+<section>
+  <h2>The question before every session and trip</h2>
+  <div class="cols3">
+    <div class="card"><b>My quiver</b><br>fish, shortboard, mid, log: which one?</div>
+    <div class="card"><b>This week's real waves</b><br>at that spot, on those dates</div>
+    <div class="card"><b>Is it safe for me?</b><br>heavy reef, big swell, my level</div>
+  </div>
+  <ul>
+    <li>Calculators give one volume. Forecast apps give waves. Nobody connects <i>your</i> boards to <i>this week's</i> waves.</li>
+    <li>Travelers carry one or two boards and rent the rest, so a wrong pick costs a trip of missed waves.</li>
+    <li>Beginners paddle out at Uluwatu or Black's because nobody connected the forecast to their level.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What's new</h2>
+  <table>
+    <tr><th></th><th>Volume calculators</th><th>Surfline</th><th>ChatGPT (measured)</th><th>Quiver Match</th></tr>
+    <tr><td>Ranks the boards you own, per day</td><td class="no">No</td><td class="no">No</td><td class="part">Unverified</td><td class="yes">Yes</td></tr>
+    <tr><td>Real forecast for your trip dates</td><td class="no">No</td><td class="yes">Yes</td><td class="no">0/11</td><td class="yes">11/11</td></tr>
+    <tr><td>Go / caution / no-go for your level</td><td class="no">No</td><td class="part">Spot guides</td><td class="part">Generic</td><td class="yes">Code-rated</td></tr>
+    <tr><td>Safer spots from real data</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Safety Agent</td></tr>
+    <tr><td>Your boards on the forecast waves</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">3D + meters</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>How the agents work</h2>
+  <div style="width:96%;margin:0 auto">{{DIAGRAM}}</div>
+  <p class="small">Code decides the safety ratings, meters and sizes. Agents judge and explain. The validator checks every pick, number and safer spot.</p>
+</section>
+
+<section>
+  <h2>Demo: which board, each day</h2>
+  <div class="cols">
+    <div><img class="shot" src="{{IMG_trip_plan}}"><p class="small">El Porto, 3 days, small and soft: ride the mid, pack one board</p></div>
+    <div><img class="shot" src="{{IMG_viz}}"><p class="small">Your boards on each day's forecast waves (illustrative), with meters</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Safety from data, not guesses</h2>
+  <div class="cols">
+    <img class="shot" src="{{IMG_safety_trip}}">
+    <ul>
+      <li>Code rates each day from wave height, spot power and skill floor</li>
+      <li>Beginner at Black's: <b>no-go</b> all 3 days, so "Skip"</li>
+      <li>The <b>Safety Agent</b> finds Pacific Beach on days its own forecast rates "go"</li>
+      <li>The validator fixed the agent's board thickness live (yellow box)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Cost to run</h2>
+  <div class="cols3">
+    <div class="card"><span class="big">{{AVG_TOKENS}}</span><span class="lbl">tokens per trip plan ({{CACHE_SHARE}} of input cached)</span></div>
+    <div class="card"><span class="big">{{COST_RUN}}</span><span class="lbl">per plan</span></div>
+    <div class="card"><span class="big">{{COST_10K}}</span><span class="lbl">per month at 10,000 users ({{RUNS_PER_MONTH}} plans each)</span></div>
+  </div>
+  <ul>
+    <li>Low reasoning effort: <span class="accent">{{OUT_SAVING}} fewer output tokens</span> than medium, with no quality loss</li>
+    <li>Math, meters and safety ratings in code (0 tokens); the Safety Agent runs only on risky trips</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Safety: {{SAFETY_PASSED}} defenses held</h2>
+  <div class="cols">
+    <img class="shot" src="{{IMG_blocked}}">
+    <ul>
+      <li><b>Prompt injection</b> blocked before any AI call</li>
+      <li><b>Unsafe plan</b>: a session on a no-go day is forced to "Skip"</li>
+      <li><b>Invented safer spot</b> ("Totally Safe Beach") removed</li>
+      <li><b>Invented numbers</b> overwritten with the calculator's</li>
+      <li><b>Loops and overspending</b> stopped by limits and budgets</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Evidence</h2>
+  <div class="cols3">
+    <div class="card"><span class="big">{{RS_TOP1}}</span><span class="lbl">real sessions: our pick = the board that worked</span></div>
+    <div class="card"><span class="big">{{RS_LLM}}</span><span class="lbl">plain ChatGPT, same info</span></div>
+    <div class="card"><span class="big">{{RS_BIG}}</span><span class="lbl">"always bring the biggest board"</span></div>
+  </div>
+  <p style="margin-top:18px" class="small">Stress test on 10 <b>synthetic</b> personas (labeled, not users): it found a big-wave blind spot (step-ups under-picked). After the fix our picks went {{SYN_BEFORE}} → {{SYN_OURS}} (ChatGPT {{SYN_LLM}}). Real sessions are reported separately and weren't used to tune.</p>
+  <p class="small">Synthetic trips: board type {{EV_type_ok_agent_low}} vs. {{EV_type_ok_baseline}} for ChatGPT · forecast used {{EV_uses_live_forecast_agent_low}} vs. {{EV_uses_live_forecast_baseline}} · risky trips flagged {{EV_trip_flagged_agent_low}}</p>
+</section>
+
+<section>
+  <h2>What's next</h2>
+  <ul>
+    <li><b>Surf shop pilot (Tier 3):</b> staff vs. Quiver Match on real customers, starting with Jack's Surfboards, whose owner suggested the "where to rent / buy nearby" feature</li>
+    <li><b>NOAA buoys</b> plus wind and tide, and a "best hour to surf" pick</li>
+    <li><b>Feedback button</b>: "this board worked", so every session improves the formula</li>
+    <li><b>Rental inventory</b>: reserve the right board at your destination</li>
+  </ul>
+  <p class="lead" style="margin-top:30px">Quiver Match: the right board from your quiver, for the waves you'll actually ride.</p>
+</section>
+
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>Reveal.initialize({ hash: true, slideNumber: "c/t", width: 1280, height: 720, margin: 0.06, transition: "slide" });</script>
+</body>
+</html>

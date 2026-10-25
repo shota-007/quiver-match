@@ -1,0 +1,184 @@
+{
+  "prices_per_1m": {
+    "input": 0.1,
+    "cached_input": 0.01,
+    "output": 0.5
+  },
+  "runs_per_user_per_month": 4,
+  "variants": {
+    "agent-low": {
+      "runs": 88,
+      "input": {
+        "mean": 7608.1,
+        "median": 7463.0,
+        "p90": 9684,
+        "min": 4825,
+        "max": 13307
+      },
+      "cached_input": {
+        "mean": 2530.2,
+        "median": 2311.0,
+        "p90": 4677,
+        "min": 0,
+        "max": 6806
+      },
+      "output": {
+        "mean": 836.0,
+        "median": 793.0,
+        "p90": 1097,
+        "min": 550,
+        "max": 1391
+      },
+      "total": {
+        "mean": 8444.1,
+        "median": 8098.5,
+        "p90": 10781,
+        "min": 5530,
+        "max": 14607
+      },
+      "cost_per_run_usd": 0.0009510920000000001,
+      "per_agent_total_tokens": {
+        "conditions": {
+          "mean": 2748.2,
+          "median": 2719.0,
+          "p90": 2851,
+          "min": 2600,
+          "max": 2925
+        },
+        "safety": {
+          "mean": 2115.1,
+          "median": 2266.5,
+          "p90": 2425,
+          "min": 1565,
+          "max": 2425
+        },
+        "shaper": {
+          "mean": 5359.4,
+          "median": 4839.5,
+          "p90": 7443,
+          "min": 2924,
+          "max": 9438
+        }
+      }
+    },
+    "agent-medium": {
+      "runs": 52,
+      "input": {
+        "mean": 8355.5,
+        "median": 8134.5,
+        "p90": 11278,
+        "min": 6081,
+        "max": 13714
+      },
+      "cached_input": {
+        "mean": 2984.1,
+        "median": 2433.0,
+        "p90": 4608,
+        "min": 1047,
+        "max": 6861
+      },
+      "output": {
+        "mean": 1337.8,
+        "median": 1151.0,
+        "p90": 2009,
+        "min": 816,
+        "max": 2223
+      },
+      "total": {
+        "mean": 9693.3,
+        "median": 9266.0,
+        "p90": 13145,
+        "min": 7022,
+        "max": 15461
+      },
+      "cost_per_run_usd": 0.0012358809999999999,
+      "per_agent_total_tokens": {
+        "conditions": {
+          "mean": 2891.4,
+          "median": 2840.5,
+          "p90": 3027,
+          "min": 2772,
+          "max": 3068
+        },
+        "safety": {
+          "mean": 2189.5,
+          "median": 2365.5,
+          "p90": 2473,
+          "min": 1751,
+          "max": 2473
+        },
+        "shaper": {
+          "mean": 6296.6,
+          "median": 6482.0,
+          "p90": 7809,
+          "min": 4243,
+          "max": 10705
+        }
+      }
+    },
+    "baseline": {
+      "runs": 62,
+      "input": {
+        "mean": 149.5,
+        "median": 149.0,
+        "p90": 151,
+        "min": 148,
+        "max": 152
+      },
+      "cached_input": {
+        "mean": 0,
+        "median": 0.0,
+        "p90": 0,
+        "min": 0,
+        "max": 0
+      },
+      "output": {
+        "mean": 254.1,
+        "median": 218.0,
+        "p90": 399,
+        "min": 190,
+        "max": 518
+      },
+      "total": {
+        "mean": 403.6,
+        "median": 367.0,
+        "p90": 549,
+        "min": 341,
+        "max": 666
+      },
+      "cost_per_run_usd": 0.000142
+    }
+  },
+  "scale": {
+    "1": {
+      "runs_per_month": 4,
+      "tokens_per_month": 33776,
+      "cost_per_month_usd": 0.0038,
+      "avg_tokens_per_day": 1126,
+      "fits_daily_budget": true
+    },
+    "100": {
+      "runs_per_month": 400,
+      "tokens_per_month": 3377640,
+      "cost_per_month_usd": 0.3804,
+      "avg_tokens_per_day": 112588,
+      "fits_daily_budget": true
+    },
+    "10000": {
+      "runs_per_month": 40000,
+      "tokens_per_month": 337764000,
+      "cost_per_month_usd": 38.0437,
+      "avg_tokens_per_day": 11258800,
+      "fits_daily_budget": false
+    }
+  },
+  "reasoning_effort_saving": 0.129,
+  "reasoning_effort_output_saving": 0.375,
+  "forecast_payload": {
+    "raw_hourly_chars": 3618,
+    "summarized_chars": 531,
+    "raw_tokens_est": 904,
+    "summarized_tokens_est": 132,
+    "note": "Token counts estimated at ~4 characters per token."
+  }
+}

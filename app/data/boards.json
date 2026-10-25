@@ -1,0 +1,16 @@
+[
+  {"model": "Wavestorm Classic 8'", "type": "foam longboard", "rental_common": true, "notes": "The most common rental and first board; very stable soft-top."},
+  {"model": "Catch Surf Odysea Log (8'0\"/9'0\")", "type": "foam longboard", "rental_common": true, "notes": "Soft-top with more glide; also fun for experienced surfers on tiny days."},
+  {"model": "Torq Mod Fun", "type": "funboard", "rental_common": true, "notes": "Durable epoxy funboard; a common surf-school step up from foam."},
+  {"model": "NSP Funboard", "type": "funboard", "rental_common": true, "notes": "Wide, forgiving funboard in tough epoxy construction."},
+  {"model": "Harbour Surfboards Banana", "type": "longboard", "rental_common": false, "notes": "Classic Seal Beach traditional log for point breaks."},
+  {"model": "Bing Elevator", "type": "longboard", "rental_common": false, "notes": "Noserider for gentle, peeling waves like Malibu and San Onofre."},
+  {"model": "Christenson C-Bucket", "type": "mid-length", "rental_common": false, "notes": "Versatile mid-length; glides into soft waves and still turns."},
+  {"model": "Firewire Seaside", "type": "fish", "rental_common": false, "notes": "Quad/quint fish by Rob Machado; fast and loose in small to medium surf."},
+  {"model": "Channel Islands Fishbeard", "type": "fish", "rental_common": false, "notes": "Modern fish that keeps speed in mushy beach breaks."},
+  {"model": "Lost Puddle Jumper", "type": "groveler", "rental_common": false, "notes": "Wide, flat-rocker groveler for knee-to-chest-high days."},
+  {"model": "Firewire Dominator 2.0", "type": "groveler", "rental_common": false, "notes": "Shortboard feel with groveler volume; good for weak beach breaks."},
+  {"model": "Channel Islands Happy Everyday", "type": "hybrid shortboard", "rental_common": false, "notes": "Everyday hybrid for average beach-break conditions."},
+  {"model": "JS Monsta Box", "type": "performance shortboard", "rental_common": false, "notes": "Performance shortboard for good, punchy waves."},
+  {"model": "Pyzel Ghost", "type": "step-up", "rental_common": false, "notes": "Step-up for overhead, hollow, powerful surf."}
+]

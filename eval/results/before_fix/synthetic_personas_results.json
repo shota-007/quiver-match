@@ -1,0 +1,481 @@
+{
+  "summary": {
+    "sessions": 21,
+    "scored_sessions": 21,
+    "surfers": 10,
+    "quiver_match_top1": "14/21 (67%)",
+    "quiver_match_top2": "21/21 (100%)",
+    "biggest_board": "12/21 (57%)",
+    "plain_llm": "17/21 (81%)",
+    "llm_tokens": 3886,
+    "safety_flags": "4/4",
+    "label": "SYNTHETIC PERSONAS: not real people. A stress test written by the author, mixed like the author's surf friends (7 LA, 2 Orange County, 1 SF). Expected boards follow one rule written before running: smaller/softer days -> the higher-volume board, bigger/punchier days -> the shorter board, beginners stay on foam. expect_rating marks sessions the safety check must not call 'go'."
+  },
+  "rows": [
+    {
+      "surfer": "LA1",
+      "who": "Venice longboarder (synthetic)",
+      "date": "2026-10-03",
+      "spot": "Venice Breakwater",
+      "waves": "1.6-2.0 ft @ 9s (surfer's report)",
+      "actual": "9'2 log",
+      "ours": "7'0 mid",
+      "ours_top2": [
+        "7'0 mid",
+        "9'2 log"
+      ],
+      "biggest": "9'2 log",
+      "quiver_size": 2,
+      "fits": {
+        "7'0 mid": 75,
+        "9'2 log": 74
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "9'2 log"
+    },
+    {
+      "surfer": "LA1",
+      "who": "Venice longboarder (synthetic)",
+      "date": "2026-10-10",
+      "spot": "Venice Breakwater",
+      "waves": "4.0-5.0 ft @ 12s (surfer's report)",
+      "actual": "7'0 mid",
+      "ours": "7'0 mid",
+      "ours_top2": [
+        "7'0 mid",
+        "9'2 log"
+      ],
+      "biggest": "9'2 log",
+      "quiver_size": 2,
+      "fits": {
+        "7'0 mid": 77,
+        "9'2 log": 74
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "7'0 mid"
+    },
+    {
+      "surfer": "LA2",
+      "who": "El Porto shortboarder (synthetic)",
+      "date": "2026-10-02",
+      "spot": "El Porto",
+      "waves": "1.6-2.0 ft @ 8s (surfer's report)",
+      "actual": "5'6 groveler",
+      "ours": "5'6 groveler",
+      "ours_top2": [
+        "5'6 groveler",
+        "6'4 step-up"
+      ],
+      "biggest": "6'4 step-up",
+      "quiver_size": 3,
+      "fits": {
+        "5'6 groveler": 72,
+        "6'4 step-up": 72,
+        "5'10 shortboard": 70
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "5'6 groveler"
+    },
+    {
+      "surfer": "LA2",
+      "who": "El Porto shortboarder (synthetic)",
+      "date": "2026-10-09",
+      "spot": "El Porto",
+      "waves": "4.0-5.0 ft @ 13s (surfer's report)",
+      "actual": "5'10 shortboard",
+      "ours": "5'10 shortboard",
+      "ours_top2": [
+        "5'10 shortboard",
+        "6'4 step-up"
+      ],
+      "biggest": "6'4 step-up",
+      "quiver_size": 3,
+      "fits": {
+        "5'10 shortboard": 81,
+        "6'4 step-up": 81,
+        "5'6 groveler": 80
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "6'4 step-up"
+    },
+    {
+      "surfer": "LA2",
+      "who": "El Porto shortboarder (synthetic)",
+      "date": "2026-10-16",
+      "spot": "El Porto",
+      "waves": "6.4-8.0 ft @ 15s (surfer's report)",
+      "actual": "6'4 step-up",
+      "ours": "5'10 shortboard",
+      "ours_top2": [
+        "5'10 shortboard",
+        "6'4 step-up"
+      ],
+      "biggest": "6'4 step-up",
+      "quiver_size": 3,
+      "fits": {
+        "5'10 shortboard": 87,
+        "6'4 step-up": 84,
+        "5'6 groveler": 66
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "6'4 step-up"
+    },
+    {
+      "surfer": "LA3",
+      "who": "Manhattan Beach novice (synthetic)",
+      "date": "2026-10-04",
+      "spot": "Manhattan Beach Pier",
+      "waves": "1.6-2.0 ft @ 8s (surfer's report)",
+      "actual": "8'0 soft-top",
+      "ours": "8'0 soft-top",
+      "ours_top2": [
+        "8'0 soft-top",
+        "7'6 funboard"
+      ],
+      "biggest": "8'0 soft-top",
+      "quiver_size": 2,
+      "fits": {
+        "8'0 soft-top": 78,
+        "7'6 funboard": 53
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "8'0 soft-top"
+    },
+    {
+      "surfer": "LA3",
+      "who": "Manhattan Beach novice (synthetic)",
+      "date": "2026-10-11",
+      "spot": "Manhattan Beach Pier",
+      "waves": "3.2-4.0 ft @ 11s (surfer's report)",
+      "actual": "7'6 funboard",
+      "ours": "8'0 soft-top",
+      "ours_top2": [
+        "8'0 soft-top",
+        "7'6 funboard"
+      ],
+      "biggest": "8'0 soft-top",
+      "quiver_size": 2,
+      "fits": {
+        "8'0 soft-top": 86,
+        "7'6 funboard": 67
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "8'0 soft-top"
+    },
+    {
+      "surfer": "LA4",
+      "who": "Hermosa intermediate (synthetic)",
+      "date": "2026-10-05",
+      "spot": "Hermosa Beach Pier",
+      "waves": "1.6-2.0 ft @ 9s (surfer's report)",
+      "actual": "7'2 mid",
+      "ours": "7'2 mid",
+      "ours_top2": [
+        "7'2 mid",
+        "6'4 hybrid"
+      ],
+      "biggest": "7'2 mid",
+      "quiver_size": 2,
+      "fits": {
+        "7'2 mid": 75,
+        "6'4 hybrid": 65
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "7'2 mid"
+    },
+    {
+      "surfer": "LA4",
+      "who": "Hermosa intermediate (synthetic)",
+      "date": "2026-10-12",
+      "spot": "Hermosa Beach Pier",
+      "waves": "4.0-5.0 ft @ 12s (surfer's report)",
+      "actual": "6'4 hybrid",
+      "ours": "7'2 mid",
+      "ours_top2": [
+        "7'2 mid",
+        "6'4 hybrid"
+      ],
+      "biggest": "7'2 mid",
+      "quiver_size": 2,
+      "fits": {
+        "7'2 mid": 78,
+        "6'4 hybrid": 74
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "6'4 hybrid"
+    },
+    {
+      "surfer": "LA5",
+      "who": "Zuma heavy-day surfer (synthetic)",
+      "date": "2026-10-06",
+      "spot": "Zuma Beach",
+      "waves": "3.2-4.0 ft @ 11s (surfer's report)",
+      "actual": "6'2 shortboard",
+      "ours": "6'2 shortboard",
+      "ours_top2": [
+        "6'2 shortboard",
+        "6'8 step-up"
+      ],
+      "biggest": "6'8 step-up",
+      "quiver_size": 2,
+      "fits": {
+        "6'2 shortboard": 85,
+        "6'8 step-up": 84
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "6'2 shortboard"
+    },
+    {
+      "surfer": "LA5",
+      "who": "Zuma heavy-day surfer (synthetic)",
+      "date": "2026-10-13",
+      "spot": "Zuma Beach",
+      "waves": "6.4-8.0 ft @ 16s (surfer's report)",
+      "actual": "6'8 step-up",
+      "ours": "6'2 shortboard",
+      "ours_top2": [
+        "6'2 shortboard",
+        "6'8 step-up"
+      ],
+      "biggest": "6'8 step-up",
+      "quiver_size": 2,
+      "fits": {
+        "6'2 shortboard": 89,
+        "6'8 step-up": 89
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "6'8 step-up"
+    },
+    {
+      "surfer": "LA6",
+      "who": "Malibu beginner (synthetic)",
+      "date": "2026-10-07",
+      "spot": "Malibu",
+      "waves": "1.6-2.0 ft @ 14s (surfer's report)",
+      "actual": "8'0 soft-top",
+      "ours": "8'0 soft-top",
+      "ours_top2": [
+        "8'0 soft-top",
+        "7'0 funboard"
+      ],
+      "biggest": "8'0 soft-top",
+      "quiver_size": 2,
+      "fits": {
+        "8'0 soft-top": 73,
+        "7'0 funboard": 47
+      },
+      "rating": "caution",
+      "expect_rating": "caution",
+      "llm": "8'0 soft-top"
+    },
+    {
+      "surfer": "LA6",
+      "who": "Malibu beginner (synthetic)",
+      "date": "2026-10-14",
+      "spot": "Malibu",
+      "waves": "2.4-3.0 ft @ 15s (surfer's report)",
+      "actual": "8'0 soft-top",
+      "ours": "8'0 soft-top",
+      "ours_top2": [
+        "8'0 soft-top",
+        "7'0 funboard"
+      ],
+      "biggest": "8'0 soft-top",
+      "quiver_size": 2,
+      "fits": {
+        "8'0 soft-top": 76,
+        "7'0 funboard": 57
+      },
+      "rating": "caution",
+      "expect_rating": "caution",
+      "llm": "8'0 soft-top"
+    },
+    {
+      "surfer": "LA7",
+      "who": "County Line intermediate (synthetic)",
+      "date": "2026-10-08",
+      "spot": "County Line",
+      "waves": "2.0-2.5 ft @ 10s (surfer's report)",
+      "actual": "5'8 fish",
+      "ours": "5'8 fish",
+      "ours_top2": [
+        "5'8 fish",
+        "6'0 hybrid"
+      ],
+      "biggest": "5'8 fish",
+      "quiver_size": 2,
+      "fits": {
+        "5'8 fish": 69,
+        "6'0 hybrid": 67
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "5'8 fish"
+    },
+    {
+      "surfer": "LA7",
+      "who": "County Line intermediate (synthetic)",
+      "date": "2026-10-15",
+      "spot": "County Line",
+      "waves": "4.0-5.0 ft @ 13s (surfer's report)",
+      "actual": "6'0 hybrid",
+      "ours": "5'8 fish",
+      "ours_top2": [
+        "5'8 fish",
+        "6'0 hybrid"
+      ],
+      "biggest": "5'8 fish",
+      "quiver_size": 2,
+      "fits": {
+        "5'8 fish": 74,
+        "6'0 hybrid": 74
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "6'0 hybrid"
+    },
+    {
+      "surfer": "OC1",
+      "who": "Lowers regular (synthetic)",
+      "date": "2026-10-03",
+      "spot": "Lower Trestles",
+      "waves": "2.4-3.0 ft @ 14s (surfer's report)",
+      "actual": "5'7 groveler",
+      "ours": "5'7 groveler",
+      "ours_top2": [
+        "5'7 groveler",
+        "5'11 shortboard"
+      ],
+      "biggest": "5'7 groveler",
+      "quiver_size": 2,
+      "fits": {
+        "5'7 groveler": 80,
+        "5'11 shortboard": 78
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "5'11 shortboard"
+    },
+    {
+      "surfer": "OC1",
+      "who": "Lowers regular (synthetic)",
+      "date": "2026-10-17",
+      "spot": "Lower Trestles",
+      "waves": "4.8-6.0 ft @ 15s (surfer's report)",
+      "actual": "5'11 shortboard",
+      "ours": "5'11 shortboard",
+      "ours_top2": [
+        "5'11 shortboard",
+        "5'7 groveler"
+      ],
+      "biggest": "5'7 groveler",
+      "quiver_size": 2,
+      "fits": {
+        "5'11 shortboard": 81,
+        "5'7 groveler": 77
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "5'11 shortboard"
+    },
+    {
+      "surfer": "OC2",
+      "who": "Huntington beginner (synthetic)",
+      "date": "2026-10-04",
+      "spot": "Huntington Beach Pier",
+      "waves": "1.6-2.0 ft @ 9s (surfer's report)",
+      "actual": "8'0 soft-top",
+      "ours": "8'0 soft-top",
+      "ours_top2": [
+        "8'0 soft-top",
+        "7'6 funboard"
+      ],
+      "biggest": "8'0 soft-top",
+      "quiver_size": 2,
+      "fits": {
+        "8'0 soft-top": 70,
+        "7'6 funboard": 48
+      },
+      "rating": "caution",
+      "expect_rating": "caution",
+      "llm": "8'0 soft-top"
+    },
+    {
+      "surfer": "OC2",
+      "who": "Huntington beginner (synthetic)",
+      "date": "2026-10-18",
+      "spot": "Huntington Beach Pier",
+      "waves": "4.8-6.0 ft @ 13s (surfer's report)",
+      "actual": "8'0 soft-top",
+      "ours": "8'0 soft-top",
+      "ours_top2": [
+        "8'0 soft-top",
+        "7'6 funboard"
+      ],
+      "biggest": "8'0 soft-top",
+      "quiver_size": 2,
+      "fits": {
+        "8'0 soft-top": 74,
+        "7'6 funboard": 63
+      },
+      "rating": "no-go",
+      "expect_rating": "no-go",
+      "llm": "8'0 soft-top"
+    },
+    {
+      "surfer": "SF1",
+      "who": "Ocean Beach charger (synthetic)",
+      "date": "2026-10-05",
+      "spot": "Ocean Beach SF",
+      "waves": "4.0-5.0 ft @ 12s (surfer's report)",
+      "actual": "6'0 shortboard",
+      "ours": "6'0 shortboard",
+      "ours_top2": [
+        "6'0 shortboard",
+        "6'6 step-up"
+      ],
+      "biggest": "6'6 step-up",
+      "quiver_size": 2,
+      "fits": {
+        "6'0 shortboard": 88,
+        "6'6 step-up": 84
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "6'6 step-up"
+    },
+    {
+      "surfer": "SF1",
+      "who": "Ocean Beach charger (synthetic)",
+      "date": "2026-10-19",
+      "spot": "Ocean Beach SF",
+      "waves": "8.0-10.0 ft @ 16s (surfer's report)",
+      "actual": "6'6 step-up",
+      "ours": "6'0 shortboard",
+      "ours_top2": [
+        "6'0 shortboard",
+        "6'6 step-up"
+      ],
+      "biggest": "6'6 step-up",
+      "quiver_size": 2,
+      "fits": {
+        "6'0 shortboard": 90,
+        "6'6 step-up": 88
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "6'6 step-up"
+    }
+  ]
+}

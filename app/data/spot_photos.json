@@ -1,0 +1,257 @@
+{
+ "_default": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Teahupoo1.jpg/960px-Teahupoo1.jpg",
+  "title": "Tube riding",
+  "page": "https://en.wikipedia.org/wiki/Tube_riding"
+ },
+ "South Beach (Crescent City)": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Crescent_City%2C_CA.jpg/960px-Crescent_City%2C_CA.jpg",
+  "title": "Crescent City, California",
+  "page": "https://en.wikipedia.org/wiki/Crescent_City%2C_California"
+ },
+ "Point Arena": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Point_Arena_Lighthouse_August_2019.jpg/960px-Point_Arena_Lighthouse_August_2019.jpg",
+  "title": "Point Arena, California",
+  "page": "https://en.wikipedia.org/wiki/Point_Arena%2C_California"
+ },
+ "Salmon Creek": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/SalmonCreekEdit2774.jpg/960px-SalmonCreekEdit2774.jpg",
+  "title": "Salmon Creek (Sonoma County, California)",
+  "page": "https://en.wikipedia.org/wiki/Salmon_Creek_(Sonoma_County%2C_California)"
+ },
+ "Bolinas": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Bolinas%2C_CA_3422.jpg/960px-Bolinas%2C_CA_3422.jpg",
+  "title": "Bolinas, California",
+  "page": "https://en.wikipedia.org/wiki/Bolinas%2C_California"
+ },
+ "Ocean Beach SF": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cliff_House_from_Ocean_Beach.jpg/960px-Cliff_House_from_Ocean_Beach.jpg",
+  "title": "Ocean Beach, San Francisco",
+  "page": "https://en.wikipedia.org/wiki/Ocean_Beach%2C_San_Francisco"
+ },
+ "Linda Mar (Pacifica)": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Pacifica_state_beach.jpg/960px-Pacifica_state_beach.jpg",
+  "title": "Pacifica State Beach",
+  "page": "https://en.wikipedia.org/wiki/Pacifica_State_Beach"
+ },
+ "Mavericks": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Mavericks_wave_breaks.jpg/960px-Mavericks_wave_breaks.jpg",
+  "title": "Mavericks Beach",
+  "page": "https://en.wikipedia.org/wiki/Mavericks_Beach"
+ },
+ "Cowell's Beach": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Under_the_Santa_Cruz_Wharf.JPG/960px-Under_the_Santa_Cruz_Wharf.JPG",
+  "title": "Santa Cruz Wharf",
+  "page": "https://en.wikipedia.org/wiki/Santa_Cruz_Wharf"
+ },
+ "Pleasure Point": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Pleasure_Point_Capitola_2021.jpg/960px-Pleasure_Point_Capitola_2021.jpg",
+  "title": "Pleasure Point, California",
+  "page": "https://en.wikipedia.org/wiki/Pleasure_Point%2C_California"
+ },
+ "Steamer Lane": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Steamer_Lane_11-08-09.jpg/960px-Steamer_Lane_11-08-09.jpg",
+  "title": "Steamer Lane",
+  "page": "https://en.wikipedia.org/wiki/Steamer_Lane"
+ },
+ "Asilomar": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Rocks_at_the_Asilomar_State_Beach.jpg/960px-Rocks_at_the_Asilomar_State_Beach.jpg",
+  "title": "Asilomar State Beach",
+  "page": "https://en.wikipedia.org/wiki/Asilomar_State_Beach"
+ },
+ "Sand Dollar Beach (Big Sur)": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Sand_Dollar_Beach_waves.jpg/960px-Sand_Dollar_Beach_waves.jpg",
+  "title": "Sand Dollar Beach",
+  "page": "https://en.wikipedia.org/wiki/Sand_Dollar_Beach"
+ },
+ "Morro Bay (The Rock)": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Morro_Rock_1.jpg/960px-Morro_Rock_1.jpg",
+  "title": "Morro Rock",
+  "page": "https://en.wikipedia.org/wiki/Morro_Rock"
+ },
+ "Pismo Beach Pier": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Pismobeach02032022.jpg/960px-Pismobeach02032022.jpg",
+  "title": "Pismo Beach, California",
+  "page": "https://en.wikipedia.org/wiki/Pismo_Beach%2C_California"
+ },
+ "Jalama Beach": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Jalama_Beach_County_Park.jpg/960px-Jalama_Beach_County_Park.jpg",
+  "title": "Jalama Beach County Park",
+  "page": "https://en.wikipedia.org/wiki/Jalama_Beach_County_Park"
+ },
+ "Leadbetter Point": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Leadbetter_beach.jpg/960px-Leadbetter_beach.jpg",
+  "title": "Leadbetter Beach",
+  "page": "https://en.wikipedia.org/wiki/Leadbetter_Beach"
+ },
+ "C-Street (Ventura Point)": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Aerial_view_of_the_pier%2C_Ventura%2C_California_LCCN2013631292.tiff/lossy-page1-330px-Aerial_view_of_the_pier%2C_Ventura%2C_California_LCCN2013631292.tiff.jpg",
+  "title": "Ventura, California",
+  "page": "https://en.wikipedia.org/wiki/Ventura%2C_California"
+ },
+ "Silver Strand": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Embassy_Suites_Lobby_Front%2C_Oxnard%2C_CA%2CUSA_May_2009_-_panoramio_%28cropped%29.jpg/960px-Embassy_Suites_Lobby_Front%2C_Oxnard%2C_CA%2CUSA_May_2009_-_panoramio_%28cropped%29.jpg",
+  "title": "Oxnard, California",
+  "page": "https://en.wikipedia.org/wiki/Oxnard%2C_California"
+ },
+ "County Line": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/LeoCarrilloBeachCave-01.jpg/960px-LeoCarrilloBeachCave-01.jpg",
+  "title": "Leo Carrillo State Park",
+  "page": "https://en.wikipedia.org/wiki/Leo_Carrillo_State_Park"
+ },
+ "Malibu Surfrider (First Point)": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Beach_Scene_at_Malibu_Lagoon_-_Greater_Los_Angeles%2C_CA_-_USA_-_03_%286930664221%29.jpg/960px-Beach_Scene_at_Malibu_Lagoon_-_Greater_Los_Angeles%2C_CA_-_USA_-_03_%286930664221%29.jpg",
+  "title": "Malibu Lagoon State Beach",
+  "page": "https://en.wikipedia.org/wiki/Malibu_Lagoon_State_Beach"
+ },
+ "Zuma Beach": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/ZumaBeachCountyPark.jpg/960px-ZumaBeachCountyPark.jpg",
+  "title": "Zuma Beach",
+  "page": "https://en.wikipedia.org/wiki/Zuma_Beach"
+ },
+ "El Porto": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Manhattan_Pier.jpg/960px-Manhattan_Pier.jpg",
+  "title": "Manhattan Beach, California",
+  "page": "https://en.wikipedia.org/wiki/Manhattan_Beach%2C_California"
+ },
+ "Manhattan Beach Pier": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Manhattanbeachpier.jpg/960px-Manhattanbeachpier.jpg",
+  "title": "Manhattan Beach Pier",
+  "page": "https://en.wikipedia.org/wiki/Manhattan_Beach_Pier"
+ },
+ "Hermosa Beach Pier": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Hermosa_beach_summer_day.jpg/960px-Hermosa_beach_summer_day.jpg",
+  "title": "Hermosa Beach Pier",
+  "page": "https://en.wikipedia.org/wiki/Hermosa_Beach_Pier"
+ },
+ "Lunada Bay": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Malaga_Cove_by_Abby_Lanes.jpg/960px-Malaga_Cove_by_Abby_Lanes.jpg",
+  "title": "Palos Verdes Estates, California",
+  "page": "https://en.wikipedia.org/wiki/Palos_Verdes_Estates%2C_California"
+ },
+ "Seal Beach Pier": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Sealbeach-th-01_%28cropped%29.jpg/960px-Sealbeach-th-01_%28cropped%29.jpg",
+  "title": "Seal Beach, California",
+  "page": "https://en.wikipedia.org/wiki/Seal_Beach%2C_California"
+ },
+ "Huntington Beach Pier": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Huntington_Pier_Terminus.jpg/960px-Huntington_Pier_Terminus.jpg",
+  "title": "Huntington Beach Pier",
+  "page": "https://en.wikipedia.org/wiki/Huntington_Beach_Pier"
+ },
+ "Newport Beach (Blackies)": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/The_City_of_Newport_Beach_July_2014_photo_Don_Ramey_Logan.jpg/960px-The_City_of_Newport_Beach_July_2014_photo_Don_Ramey_Logan.jpg",
+  "title": "Newport Beach, California",
+  "page": "https://en.wikipedia.org/wiki/Newport_Beach%2C_California"
+ },
+ "The Wedge": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Wedge%2C_The.jpg/960px-Wedge%2C_The.jpg",
+  "title": "The Wedge (surfing)",
+  "page": "https://en.wikipedia.org/wiki/The_Wedge_(surfing)"
+ },
+ "Salt Creek": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Salt_Creek_Beach%2C_Laguna_Niguel%2C_CA_9-16_%2829189918944%29.jpg/960px-Salt_Creek_Beach%2C_Laguna_Niguel%2C_CA_9-16_%2829189918944%29.jpg",
+  "title": "Salt Creek Beach Park",
+  "page": "https://en.wikipedia.org/wiki/Salt_Creek_Beach_Park"
+ },
+ "Doheny State Beach": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/OhanaSep18-17_%2843410500760%29.jpg/960px-OhanaSep18-17_%2843410500760%29.jpg",
+  "title": "Doheny State Beach",
+  "page": "https://en.wikipedia.org/wiki/Doheny_State_Beach"
+ },
+ "San Onofre (Old Man's)": {
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/21/San_onofre_sb_photo.jpg",
+  "title": "San Onofre State Beach",
+  "page": "https://en.wikipedia.org/wiki/San_Onofre_State_Beach"
+ },
+ "Oceanside Pier": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Oceansidepier.jpg/960px-Oceansidepier.jpg",
+  "title": "Oceanside Pier",
+  "page": "https://en.wikipedia.org/wiki/Oceanside_Pier"
+ },
+ "Swami's": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Swami%27s_Surf_Spot_in_Encinitas%2C_California.jpg/960px-Swami%27s_Surf_Spot_in_Encinitas%2C_California.jpg",
+  "title": "Swami's",
+  "page": "https://en.wikipedia.org/wiki/Swami's"
+ },
+ "Cardiff Reef": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Cardiff_State_Beach_-_April_2024.jpg/960px-Cardiff_State_Beach_-_April_2024.jpg",
+  "title": "Cardiff State Beach",
+  "page": "https://en.wikipedia.org/wiki/Cardiff_State_Beach"
+ },
+ "Black's Beach": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Overlooking_the_steep_Torrey_Sandstone_cliffs_of_Torrey_Pines_State_Natural_Resever_and_Black%27s_Beach_below.jpg/960px-Overlooking_the_steep_Torrey_Sandstone_cliffs_of_Torrey_Pines_State_Natural_Resever_and_Black%27s_Beach_below.jpg",
+  "title": "Black's Beach",
+  "page": "https://en.wikipedia.org/wiki/Black's_Beach"
+ },
+ "Windansea": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Windansea_Beach_-_1.jpg/960px-Windansea_Beach_-_1.jpg",
+  "title": "Windansea Beach",
+  "page": "https://en.wikipedia.org/wiki/Windansea_Beach"
+ },
+ "Pacific Beach (Crystal Pier)": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Cafe_Nat_Goodwin_Santa_Monica_1915.jpg/960px-Cafe_Nat_Goodwin_Santa_Monica_1915.jpg",
+  "title": "Crystal Pier",
+  "page": "https://en.wikipedia.org/wiki/Crystal_Pier"
+ },
+ "Ocean Beach San Diego": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Sunset_pier.jpg/960px-Sunset_pier.jpg",
+  "title": "Ocean Beach, San Diego",
+  "page": "https://en.wikipedia.org/wiki/Ocean_Beach%2C_San_Diego"
+ },
+ "Imperial Beach": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Imperial_beach_ca_1.jpg/960px-Imperial_beach_ca_1.jpg",
+  "title": "Imperial Beach, California",
+  "page": "https://en.wikipedia.org/wiki/Imperial_Beach%2C_California"
+ },
+ "Banzai Pipeline": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Empty_wave_at_Banzai_Pipeline.jpeg/960px-Empty_wave_at_Banzai_Pipeline.jpeg",
+  "title": "Banzai Pipeline",
+  "page": "https://en.wikipedia.org/wiki/Banzai_Pipeline"
+ },
+ "Waikiki (Queens)": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/City_of_Waikiki_view.jpg/960px-City_of_Waikiki_view.jpg",
+  "title": "Waik\u012bk\u012b",
+  "page": "https://en.wikipedia.org/wiki/Waik%C4%ABk%C4%AB"
+ },
+ "Cocoa Beach": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Cocoa_Beach_FL.jpg/960px-Cocoa_Beach_FL.jpg",
+  "title": "Cocoa Beach, Florida",
+  "page": "https://en.wikipedia.org/wiki/Cocoa_Beach%2C_Florida"
+ },
+ "Rockaway Beach": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Rockaway_Beach_Queens.JPG/960px-Rockaway_Beach_Queens.JPG",
+  "title": "Rockaway Beach, Queens",
+  "page": "https://en.wikipedia.org/wiki/Rockaway_Beach%2C_Queens"
+ },
+ "Kuta Beach": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Kuta_Beach_%286924448550%29.jpg/960px-Kuta_Beach_%286924448550%29.jpg",
+  "title": "Kuta, Bali",
+  "page": "https://en.wikipedia.org/wiki/Kuta%2C_Bali"
+ },
+ "Batu Bolong (Canggu)": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Beach_Club_Canggu.jpg/960px-Beach_Club_Canggu.jpg",
+  "title": "Canggu",
+  "page": "https://en.wikipedia.org/wiki/Canggu"
+ },
+ "Uluwatu": {
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Uluwatu_-_panoramio.jpg",
+  "title": "Uluwatu, Bali",
+  "page": "https://en.wikipedia.org/wiki/Uluwatu%2C_Bali"
+ },
+ "Padang Padang": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Padang_Padang_Beach_Bali.jpg/960px-Padang_Padang_Beach_Bali.jpg",
+  "title": "Padang Padang Beach",
+  "page": "https://en.wikipedia.org/wiki/Padang_Padang_Beach"
+ },
+ "Playa Zicatela": {
+  "image": "https://thumb.wikimedia.org/wikipedia/en/thumb/3/31/Mexico_167.jpg/960px-Mexico_167.jpg",
+  "title": "Puerto Escondido",
+  "page": "https://en.wikipedia.org/wiki/Puerto_Escondido"
+ },
+ "La Punta": {
+  "image": "https://thumb.wikimedia.org/wikipedia/en/thumb/3/31/Mexico_167.jpg/960px-Mexico_167.jpg",
+  "title": "Puerto Escondido",
+  "page": "https://en.wikipedia.org/wiki/Puerto_Escondido"
+ }
+}

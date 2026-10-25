@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quiver Match: Final Project Report</title>
+<style>
+  @page { size: letter; margin: 0.7in; }
+  :root { --navy: #0b4f5c; --blue: #ff6b4a; --sky: #ff9a52; --ice: #fff3e2; --line: #f1dcc2; --ink: #3b2618; --muted: #8a6b55; }
+  body { font-family: "Avenir Next", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--ink);
+         max-width: 860px; margin: 0 auto; padding: 28px 24px 60px; line-height: 1.55; font-size: 15px; }
+  .cover { background: linear-gradient(180deg, #ff9e6d, #ffc27a 45%, #fff1d8); border-radius: 16px; padding: 30px 32px 26px; margin-bottom: 26px; position: relative; overflow: hidden; }
+  .cover h1 { margin: 0; font-size: 38px; color: #4a1f0c; letter-spacing: -0.5px; }
+  .cover .sub { font-size: 18px; color: #6b3416; margin: 6px 0 14px; }
+  .cover .meta { font-size: 14px; color: #4a1f0c; }
+  .cover .meta a { color: var(--blue); }
+  .cover svg { position: absolute; right: -10px; bottom: -6px; opacity: 0.9; }
+  h2 { color: var(--navy); font-size: 23px; border-bottom: 3px solid var(--blue); padding-bottom: 4px; margin: 34px 0 12px; }
+  h3 { color: var(--blue); font-size: 17px; margin: 22px 0 8px; }
+  p { margin: 8px 0; }
+  a { color: var(--blue); }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0 14px; font-size: 13px; page-break-inside: avoid; }
+  th { background: var(--navy); color: #fff; text-align: left; padding: 7px 8px; font-weight: 600; }
+  td { border-bottom: 1px solid var(--line); padding: 6px 8px; vertical-align: top; }
+  tr:nth-child(even) td { background: #fffaf3; }
+  td.yes { color: #1b7f4b; font-weight: 700; } td.no { color: #b3261e; font-weight: 700; } td.part { color: #b4540b; font-weight: 700; }
+  figure { margin: 14px 0 18px; page-break-inside: avoid; }
+  figure img { width: 100%; border: 1px solid var(--line); border-radius: 10px; display: block; }
+  figure.half img { width: 70%; margin: 0 auto; }
+  figcaption { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .callout { background: var(--ice); border-left: 4px solid var(--blue); padding: 10px 14px; border-radius: 6px; margin: 12px 0; }
+  .todo { background: #fff3c4; border: 1px dashed #d4a20b; padding: 1px 6px; border-radius: 4px; font-weight: 600; color: #6b4e00; }
+  .todo-block { background: #fff8db; border: 2px dashed #d4a20b; padding: 12px 16px; border-radius: 8px; margin: 12px 0; color: #5b4300; }
+  code { background: var(--ice); padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; }
+  .kpi { border: 1px solid var(--line); border-radius: 10px; padding: 10px; text-align: center; }
+  .kpi b { display: block; font-size: 22px; color: var(--navy); }
+  .kpi span { font-size: 12px; color: var(--muted); }
+  .pb { page-break-before: always; }
+  @media print {
+    body { font-size: 12.5px; padding: 0; max-width: none; line-height: 1.45; }
+    h2 { font-size: 19px; margin: 22px 0 8px; } h3 { font-size: 15px; margin: 14px 0 6px; }
+    table { font-size: 11px; } td, th { padding: 4px 6px; }
+    figure { margin: 10px 0 12px; } figure.half img { width: 58%; }
+    .cover { padding: 22px 24px 18px; } .cover h1 { font-size: 32px; }
+    .kpi b { font-size: 18px; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+  ul { padding-left: 22px; } li { margin: 4px 0; }
+  .small { font-size: 12.5px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>Quiver Match</h1>
+  <div class="sub">Which of my boards do I bring, or what should I rent, for the real waves on my trip? And is it safe for me?</div>
+  <div class="meta">
+    {{AUTHOR}} · MGT 409 AI Foundations for Managers · Final project, October 2026<br>
+    GitHub: {{REPO_LINK}} · Runs locally (see README)
+  </div>
+  <svg width="300" height="120" viewBox="0 0 300 120" aria-hidden="true">
+    <path d="M0,120 L0,100 C60,96 120,80 160,58 C190,40 220,32 248,36 C276,40 296,62 292,88 C288,104 272,108 262,100 C274,86 268,66 250,62 C236,60 226,72 230,86 C200,96 120,108 0,110 Z" fill="#17a2a8"/>
+    <path d="M150,62 C190,38 236,26 270,44 C292,58 300,84 288,100" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </svg>
+</div>
+
+<p><b>In one sentence:</b> you enter your body, skill, the boards you own, and where and when you're surfing. Three AI agents read the
+real swell forecast for those dates, check whether it's safe for you, and tell you which board to ride each day (or what to rent).
+Code computes and checks every number and every safety call.</p>
+
+<div class="kpis">
+  <div class="kpi"><b>{{RS_TOP1}}</b><span>real surfers' sessions where our pick matched the board that worked</span></div>
+  <div class="kpi"><b>{{SAFETY_PASSED}}</b><span>safety tests passed</span></div>
+  <div class="kpi"><b>{{AVG_TOKENS}}</b><span>tokens per trip plan (measured)</span></div>
+  <div class="kpi"><b>{{AVG_LATENCY}} s</b><span>median time to a plan (all logged runs)</span></div>
+</div>
+
+<h2>1. Motivation</h2>
+<p><b>Who has the problem.</b> Most regular surfers own two to four boards, a "quiver": say a fish for small days, a shortboard for good
+days and a longboard for mush. Before every session, and especially before a trip, they face the same question: <i>which board, for
+these waves?</i> Travelers face a harder version. Airline board bags hold one or two boards, rental shops abroad are hit or miss, and the
+waves at a new spot are unknown. The right answer depends on three things at once: the surfer (weight, skill, fitness), the boards they
+own (length, volume, shape), and the real forecast for those days at that break.</p>
+<p><b>How they handle it today.</b> Surfers check a forecast app (Surfline), look up a brand volume calculator (Firewire, Channel Islands,
+Lost), ask friends or a shop, or now ask ChatGPT. None of these connects <i>your</i> quiver to <i>this week's</i> forecast at <i>that</i> spot.</p>
+<p><b>What it costs them.</b> Bringing the wrong board means a trip of missed waves or a rental fee on top of the board you carried.
+Buying the wrong board is a large purchase (a new board typically costs hundreds of dollars; careful estimate from common retail prices). The worst
+cost is safety: beginners on trips paddle out at heavy reefs (Uluwatu, Pipeline) or big beach breaks (Black's) because nobody connected the
+forecast to their level.</p>
+<p><b>Real people.</b> {{RS_PERSON}}</p>
+<div class="callout"><b>Industry input:</b> the owner of Jack's Surfboards, a local surf shop and the father of one of the author's friends, suggested linking every recommendation to real shops near the break that rent or sell boards. That request became the "Where to rent / where to buy nearby" feature.</div>
+
+<h2>2. What is new</h2>
+<p>Board volume calculators exist and are a formula: height, weight and skill in, liters out. Quiver Match's twist is to <b>combine the
+surfer's own quiver, the real forecast for the trip dates, the break type, and a safety check</b> into one answer: what to ride each day,
+what to pack, what to rent, and where it's safe. The ChatGPT column is measured (section 6). The others describe published features.</p>
+<table>
+  <tr><th>Capability</th><th>Firewire / CI / Lost calculators</th><th>Boardline app</th><th>Surfline</th><th>ChatGPT (measured)</th><th>Quiver Match</th></tr>
+  <tr><td>Uses your weight, skill, fitness</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+  <tr><td>Uses the boards you own</td><td class="no">No</td><td class="part">Logs them</td><td class="no">No</td><td class="part">If you type them</td><td class="yes">Ranks them per day</td></tr>
+  <tr><td>Real forecast for your trip dates</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="no">No (0/10)</td><td class="yes">Yes (Open-Meteo)</td></tr>
+  <tr><td>Day-by-day "ride this / pack this / rent this"</td><td class="no">No</td><td class="part">Not verified</td><td class="no">No</td><td class="part">Unverified</td><td class="yes">Yes, checked by code</td></tr>
+  <tr><td>Go / caution / no-go for <i>your</i> level, with safer spots from real data</td><td class="no">No</td><td class="no">No</td><td class="part">Spot guides</td><td class="part">Generic</td><td class="yes">Yes</td></tr>
+  <tr><td>Real shops near the break to rent or buy</td><td class="part">Brand dealers</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes (OpenStreetMap)</td></tr>
+  <tr><td>Boards on the forecast waves, with meters</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">3D, illustrative</td></tr>
+</table>
+<p><b>Not a generic trip planner.</b> Quiver Match doesn't plan itineraries, flights or hotels. It makes one equipment and safety decision,
+which board for which wave on which day and whether it's safe for this surfer, from real ocean data and the surfer's own boards. That is the part
+travel planners and chatbots can't do, because they have no forecast, no board math and no safety rules.</p>
+<p class="small">Sources: Firewire's calculator (<a href="https://downthelinesurf.co.uk/blogs/news/firewire-mobile-volume-calculator">Down the Line Surf</a>,
+<a href="https://kalonsurf.com/blog/calculate-surfboard-volume-vs-shape">Kalon Surf</a>); Boardline and Surfline (<a href="https://www.rapturecamps.com/blog/best-apps-for-surfers">Rapture Camps</a>). We did not test those products ourselves.
+Honest caveat: a plain ChatGPT answer costs about {{RATIO}}x fewer tokens than a Quiver Match plan; the extra tokens buy the real forecast, the per-day safety call and verified numbers.</p>
+
+<h2>3. The agents</h2>
+<figure>{{DIAGRAM}}
+<figcaption>Figure 1. Three AI agents in a fixed order. Code computes the forecast summary, safety ratings, board meters and dimensions, and validates everything the agents say.</figcaption></figure>
+<table>
+  <tr><th>Part</th><th>What it does</th><th>Tools</th></tr>
+  <tr><td><b>Guardrails</b> (code)</td><td>Input ranges (including each quiver board), prompt-injection screen, per-client rate limit, daily token budget.</td><td>n/a</td></tr>
+  <tr><td><b>Conditions Agent</b> (AI)</td><td>Finds the spot and reads the forecast for the trip dates; returns a typed <code>ConditionsReport</code>.</td><td><code>lookup_spot</code> ({{N_SPOTS}} curated spots, {{N_CA_SPOTS}} in California, plus Bali and Mexico; geocoding for others)<br><code>get_forecast</code> (Open-Meteo Marine: wave height, period, water temperature for the trip dates)</td></tr>
+  <tr><td><b>Safety check</b> (code)</td><td>Rates each day go / caution / no-go from the forecast face height, the spot's power (1-5) and its skill floor versus the surfer's level. The model never decides this.</td><td>n/a</td></tr>
+  <tr><td><b>Safety Agent</b> (AI, only when a day isn't "go")</td><td>Explains the risk plainly and proposes safer options; returns <code>SafetyAdvice</code>.</td><td><code>find_safer_spots</code> (nearby curated spots for this level, each with its own real forecast and day ratings)</td></tr>
+  <tr><td><b>Shaper Agent</b> (AI)</td><td>Plans the trip: which owned board each day, what to pack, whether to rent, plus the ideal board; returns a typed plan.</td><td><code>rank_quiver</code> (code meters for each owned board, per day)<br><code>calc_board</code> (deterministic sizing)<br><code>search_catalog</code></td></tr>
+  <tr><td><b>Shop finder</b> (code)</td><td>Lists real surf shops near the break from OpenStreetMap, ranked for renting (rental-tagged shops first) or buying (board shops first), with distance, address, website and a map link. It was suggested by the owner of Jack's Surfboards.</td><td>n/a (saved OpenStreetMap snapshot for 52 of 54 spots via Nominatim; live lookup for other places; Google Maps link as fallback)</td></tr>
+  <tr><td><b>Validator</b> (code)</td><td>Overwrites dimensions that drift from the calculator; replaces day picks that disagree with the ranking; forces "Skip" on no-go days; removes safer spots not rated "go" by a tool; removes invented board models.</td><td>n/a</td></tr>
+</table>
+<h3>Why it's organized this way</h3>
+<ul>
+  <li><b>Code decides; agents judge and explain.</b> Safety ratings, meters and dimensions are formulas, and the professor's rule applies: "conditions come from the forecast data, never the model guessing." The agents pick the design wave, choose between near-ties, and turn numbers into a plan a surfer can act on.</li>
+  <li><b>The Safety Agent only runs when needed.</b> On a "go" trip it never runs, which saves tokens. On risky trips it is the only part allowed to suggest alternatives, and only from tool data.</li>
+  <li><b>A fixed pipeline with typed hand-offs.</b> The order never changes, so a manager agent would add cost without value.</li>
+  <li><b>Model:</b> <code>gpt-6-luna</code> via Portkey (the course model), Responses API with function tools and structured output, low reasoning effort (section 4 shows medium effort adds {{MED_MORE_OUT}} output tokens with no quality gain).</li>
+</ul>
+<figure><img src="{{IMG_landing}}" alt="Form and live preview">
+<figcaption>Figure 2. The form (body, skill, spot, trip dates, and "your quiver" with just type and length) and the live preview. Picking a spot loads a freely licensed Wikimedia photo of it and the next days' forecast, rated for your level by code before any AI runs. Here a beginner picks Uluwatu: no-go all three days.</figcaption></figure>
+
+<h3>One real run, traced step by step</h3>
+<p>Run <code>{{TRACE_RUN_ID}}</code>: {{TRACE_PROFILE}}. It took <b>{{TRACE_LATENCY}} s</b> and <b>{{TRACE_TOKENS}} tokens</b>
+(Conditions {{TRACE_COND_TOKENS}}, Safety {{TRACE_SAFETY_TOKENS}}, Shaper {{TRACE_SHAPER_TOKENS}}). Rows come from the app's trace file.</p>
+{{TRACE_TABLE}}
+<figure><img src="{{IMG_safety_trip}}" alt="Safety plan">
+<figcaption>Figure 3. What that surfer sees. Every day at Black's Beach is no-go (powerful canyon break, waves above a beginner's 3 ft limit), so each day is "Skip". The Safety Agent proposes Pacific Beach on the days its own forecast rates "go". The yellow box at the top is the validator correcting the agent's board thickness to the calculator's value on this live run.</figcaption></figure>
+<figure class="half"><img src="{{IMG_trip_plan}}" alt="Trip plan">
+<figcaption>Figure 4. A "go" trip: an intermediate at El Porto with a fish, a mid-length and a log. The plan rides the mid all three days (small, soft surf), shows each day's fit score, and packs one board.</figcaption></figure>
+<figure><img src="{{IMG_viz}}" alt="3D visualizer">
+<figcaption>Figure 5. "Your boards on this week's waves": three.js waves shaped by each day's forecast height, period and spot power, with the surfer's boards (real outline, thickness and rocker) side by side, plus meters. It's labeled "illustrative, not a physics sim", and the meter formula is explained under it.</figcaption></figure>
+<div class="callout"><b>The meter formula.</b> r = board liters ÷ ideal liters for this surfer and day; lx = how much longer than ideal.
+Catching = 70 + 60(r−1) + 30·lx (−10 on tiny days if under-volumed). Control = 85 − 12·power·(excess volume + excess length), with flat-rocker
+boards losing hold above 3.5 ft and performance shapes gaining. On big, powerful days ("bigness" rises from 4.5 to 7.5 ft) undersized boards lose
+catching ease and control, and up to 15% extra size is not penalized. Turning = 95 − 0.9·(length − 64 in) − 0.5·(liters over 30). Fit weights them by the
+day (small/soft: catching 55%; big/powerful: control 55%; beginners weight catching more), and boards unsafe for the level are capped at 20.
+The big-day rule was added after the synthetic stress test (section 6); nothing was tuned on the real surfers' answers.</div>
+
+<h2>4. Tokenomics</h2>
+<p>Every run logs real token usage per agent (input, cached input, output) to <code>logs/runs.jsonl</code>; <code>eval/tokenomics.py</code> computes these tables from the logs. Prices: {{PRICES}}: the published gpt-6-luna list price
+(OpenAI's pricing page as reported by <a href="https://www.eesel.ai/blog/gpt-6-luna-pricing">eesel.ai</a> and
+<a href="https://anotherwrapper.com/llm-pricing/gpt-6-luna">anotherwrapper.com</a>, October 2026). The course's Portkey key may be billed differently.</p>
+{{TOKEN_TABLE}}
+<p>A typical plan uses about <b>{{AVG_IN}} input tokens</b> ({{AVG_CACHED}}, or {{CACHE_SHARE}}, cached) and <b>{{AVG_OUT}} output tokens</b>, averaged over {{N_LOW_RUNS}} logged runs.
+The Safety Agent adds tokens only on risky trips.</p>
+<figure class="half"><img src="{{IMG_under_the_hood}}" alt="Usage panel"><figcaption>Figure 6. Each result shows its own token use per agent.</figcaption></figure>
+<h3>Cost per run, per user, at scale</h3>
+<p>Assumption (not measured): an active surfer plans <b>{{RUNS_PER_MONTH}} sessions or trips a month</b>.</p>
+{{SCALE_TABLE}}
+<p>Cost per plan: <b>{{COST_RUN}}</b>. Per user per month: <b>{{COST_USER_MONTH}}</b>. 100 users: <b>{{COST_100}}</b>/month. 10,000 users: <b>{{COST_10K}}</b>/month. {{BUDGET_NOTE}}</p>
+<h3>Steps taken to reduce cost, and whether they hurt</h3>
+<table>
+  <tr><th>Step</th><th>Evidence</th><th>Quality impact</th></tr>
+  <tr><td>Low reasoning effort</td><td>{{OUT_SAVING}} fewer output tokens than medium</td><td>None on our checks (table below)</td></tr>
+  <tr><td>Meters, rankings, safety ratings and sizing in code</td><td>0 tokens for the math; the model copies results</td><td>Better: 10/10 dimension and plan checks</td></tr>
+  <tr><td>Safety Agent only on risky trips</td><td>Skipped entirely on "go" trips</td><td>None</td></tr>
+  <tr><td>Forecast summarized to daily rows</td><td>About {{FC_RAW}} → {{FC_SUM}} tokens (estimated, ~4 characters per token)</td><td>None: min/max height, period, water temperature kept</td></tr>
+  <tr><td>Stable instructions first; output caps; per-agent token limits</td><td>{{CACHE_SHARE}} of input served from the cache</td><td>No run hit a cap</td></tr>
+</table>
+{{EFFORT_TABLE}}
+
+<h2>5. Safety</h2>
+<p>This app gives advice that can put someone in dangerous water, takes free text from strangers, and spends money per call. Each defense below
+is tested by <code>tests/safety_tests.py</code>: <b>{{SAFETY_PASSED}} pass</b> ({{N_OFFLINE}} offline with a scripted fake model at 0 tokens, {{N_LIVE}} live against <code>gpt-6-luna</code>).</p>
+{{SAFETY_TABLE}}
+<div class="pair">
+  <figure><img src="{{IMG_blocked}}" alt="Blocked injection"><figcaption>Figure 7. A prompt injection in the notes field is blocked before any AI call.</figcaption></figure>
+  <div class="callout"><b>Found and fixed in testing.</b> (1) A made-up spot ("Zxqvbn Reef") once got a board sized for imaginary waves; now the run stops if no tool found the spot.
+  (2) A scripted model planned a session on a 10-12 ft no-go day for a beginner and invented "Totally Safe Beach"; the validator forced "Skip" and removed the beach.
+  (3) On a live run (Figure 3) the validator caught the agent's thickness drifting from the calculator and fixed it.</div>
+</div>
+
+<h2>6. Impact and evidence</h2>
+<h3>Real surfers: did we pick the board that actually worked?</h3>
+{{RS_BLOCK}}
+<h3>Synthetic personas: a stress test, not real users</h3>
+{{SYN_BLOCK}}
+<h3>Synthetic trips vs. "just ask ChatGPT" (own tests)</h3>
+<p>11 surfer profiles (every skill level; 9 known spots including a beginner at Uluwatu, plus Biarritz outside the database), run through the app and through a plain <code>gpt-6-luna</code> call.
+Reference ranges were set by the author from common volume charts: a sanity check, not ground truth. Latencies in this table are low because the gateway served cached responses for repeated eval prompts; the median over all {{N_LOW_RUNS}} logged runs is {{AVG_LATENCY}} s.</p>
+{{EVAL_TABLE}}
+<h3>Benefits, with sources</h3>
+<table>
+  <tr><th>Benefit</th><th>Number</th><th>Source</th></tr>
+  <tr><td>Matches the board that actually worked</td><td>{{RS_TOP1}} (top pick), {{RS_TOP2}} (top two)</td><td>Real surfers' sessions</td></tr>
+  <tr><td>Risky trips flagged by code</td><td>{{EV_trip_flagged_agent_low}}</td><td>Own tests</td></tr>
+  <tr><td>Uses the real forecast</td><td>{{EV_uses_live_forecast_agent_low}} vs. {{EV_uses_live_forecast_baseline}} for plain ChatGPT</td><td>Own tests</td></tr>
+  <tr><td>Time to a plan</td><td>{{AVG_LATENCY}} s</td><td>Own tests</td></tr>
+  <tr><td>Cost per plan</td><td>{{COST_RUN}}</td><td>Measured tokens x price</td></tr>
+</table>
+
+<h2>7. Limits and next steps</h2>
+<ul>
+  <li><b>The formula is still being tuned.</b> The persona stress test exposed a big-wave blind spot, now fixed (section 6 shows before and after). The remaining misses are small and punchy mid-size days, and the big-wave rule is sensitive to estimated liters when surfers only know their board's length.</li>
+  <li><b>Heuristics, not physics.</b> The meters, sizing factors and safety limits are transparent formulas, not validated by shapers or lifeguards. The 3D view is illustrative.</li>
+  <li><b>Forecast is a model.</b> Face height = significant wave height x a period factor, from a model grid point offshore; wind, tide and local bathymetry aren't included. NOAA buoy readings would add live ground truth for US spots.</li>
+  <li><b>Small evidence base.</b> {{RS_N}} real sessions from friends of the author; the ChatGPT comparison uses the same sessions.</li>
+  <li><b>Spot database.</b> {{N_SPOTS}} curated spots; elsewhere, safety ratings use wave height only (no power or skill floor).</li>
+</ul>
+<p><b>With another month (Tier 3 path):</b> pilot with a South Bay surf shop. Jack's Surfboards is the natural first partner, since its owner suggested the shop feature. Staff and Quiver Match both recommend for real customers, and we measure agreement and whether staff keep using it. We'd also add NOAA buoys plus wind and tide, a "best hour to surf" pick, rental inventory, and a feedback button so every session improves the formula.</p>
+
+<p class="small" style="margin-top:28px">Every number is generated from the app's logs and test outputs by <code>report/build.py</code>. AI assistance (Claude) was used to write code and draft this report; the author reviewed it.</p>
+</body>
+</html>

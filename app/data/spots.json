@@ -1,0 +1,1059 @@
+[
+ {
+  "name": "South Beach (Crescent City)",
+  "aliases": [
+   "crescent city",
+   "south beach crescent city"
+  ],
+  "region": "Crescent City, CA",
+  "lat": 41.733,
+  "lon": -124.185,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 3,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "novice",
+  "notes": "Cold North Coast water exposed to most swells. A thick wetsuit is a must."
+ },
+ {
+  "name": "Point Arena",
+  "aliases": [
+   "point arena",
+   "arena cove"
+  ],
+  "region": "Mendocino County, CA",
+  "lat": 38.913,
+  "lon": -123.711,
+  "break_type": "reef break",
+  "bottom": "rock reef",
+  "power": 4,
+  "typical_ft": [
+   3,
+   10
+  ],
+  "skill_floor": "advanced",
+  "notes": "Powerful reef waves in cold, remote Mendocino water."
+ },
+ {
+  "name": "Salmon Creek",
+  "aliases": [
+   "salmon creek",
+   "bodega bay",
+   "sonoma"
+  ],
+  "region": "Sonoma County, CA",
+  "lat": 38.351,
+  "lon": -123.07,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 4,
+  "typical_ft": [
+   3,
+   8
+  ],
+  "skill_floor": "intermediate",
+  "notes": "Exposed Sonoma beach break with strong currents and cold water."
+ },
+ {
+  "name": "Bolinas",
+  "aliases": [
+   "bolinas",
+   "marin"
+  ],
+  "region": "Marin County, CA",
+  "lat": 37.905,
+  "lon": -122.686,
+  "break_type": "beach/channel break",
+  "bottom": "sand",
+  "power": 1,
+  "typical_ft": [
+   1,
+   4
+  ],
+  "skill_floor": "beginner",
+  "notes": "Sheltered, slow waves by the lagoon channel; popular with longboarders."
+ },
+ {
+  "name": "Ocean Beach SF",
+  "aliases": [
+   "ocean beach sf",
+   "ocean beach san francisco",
+   "ob sf",
+   "san francisco"
+  ],
+  "region": "San Francisco, CA",
+  "lat": 37.759,
+  "lon": -122.513,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 5,
+  "typical_ft": [
+   3,
+   12
+  ],
+  "skill_floor": "advanced",
+  "notes": "Cold, heavy, and hard to paddle out, with strong rips. Rewards paddle power and experience."
+ },
+ {
+  "name": "Linda Mar (Pacifica)",
+  "aliases": [
+   "linda mar",
+   "pacifica",
+   "pacifica state beach"
+  ],
+  "region": "Pacifica, CA",
+  "lat": 37.594,
+  "lon": -122.504,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 2,
+  "typical_ft": [
+   2,
+   5
+  ],
+  "skill_floor": "beginner",
+  "notes": "Pacifica's go-to learning beach; more sheltered than nearby breaks."
+ },
+ {
+  "name": "Mavericks",
+  "aliases": [
+   "mavericks",
+   "maverick's",
+   "pillar point"
+  ],
+  "region": "Half Moon Bay, CA",
+  "lat": 37.493,
+  "lon": -122.501,
+  "break_type": "big-wave reef",
+  "bottom": "rock reef",
+  "power": 5,
+  "typical_ft": [
+   8,
+   25
+  ],
+  "skill_floor": "expert",
+  "notes": "World-famous big-wave reef. Only for big-wave specialists with safety support."
+ },
+ {
+  "name": "Cowell's Beach",
+  "aliases": [
+   "cowells",
+   "cowell's",
+   "cowell"
+  ],
+  "region": "Santa Cruz, CA",
+  "lat": 36.962,
+  "lon": -122.024,
+  "break_type": "point/reef break",
+  "bottom": "sand and reef",
+  "power": 1,
+  "typical_ft": [
+   1,
+   3
+  ],
+  "skill_floor": "beginner",
+  "notes": "Gentle, slow rollers inside Steamer Lane; Santa Cruz's learn-to-surf spot. Crowded."
+ },
+ {
+  "name": "Pleasure Point",
+  "aliases": [
+   "pleasure point",
+   "the hook",
+   "capitola"
+  ],
+  "region": "Santa Cruz, CA",
+  "lat": 36.958,
+  "lon": -121.971,
+  "break_type": "reef break",
+  "bottom": "rock reef",
+  "power": 2,
+  "typical_ft": [
+   2,
+   5
+  ],
+  "skill_floor": "novice",
+  "notes": "Mellow, peeling reef rights; a good place to progress."
+ },
+ {
+  "name": "Steamer Lane",
+  "aliases": [
+   "steamer lane",
+   "the lane",
+   "santa cruz"
+  ],
+  "region": "Santa Cruz, CA",
+  "lat": 36.951,
+  "lon": -122.026,
+  "break_type": "point/reef break",
+  "bottom": "rock reef",
+  "power": 4,
+  "typical_ft": [
+   3,
+   10
+  ],
+  "skill_floor": "advanced",
+  "notes": "Powerful rights below the cliffs; crowded, with tricky entry and exit."
+ },
+ {
+  "name": "Asilomar",
+  "aliases": [
+   "asilomar",
+   "pacific grove",
+   "monterey"
+  ],
+  "region": "Pacific Grove, CA",
+  "lat": 36.62,
+  "lon": -121.94,
+  "break_type": "reef and beach break",
+  "bottom": "rock reef and sand",
+  "power": 3,
+  "typical_ft": [
+   3,
+   8
+  ],
+  "skill_floor": "intermediate",
+  "notes": "Rocky reefs that pick up plenty of swell; watch for rocks and kelp."
+ },
+ {
+  "name": "Sand Dollar Beach (Big Sur)",
+  "aliases": [
+   "sand dollar",
+   "big sur"
+  ],
+  "region": "Big Sur, CA",
+  "lat": 35.925,
+  "lon": -121.469,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 3,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "intermediate",
+  "notes": "Remote Big Sur beach break with few people and no lifeguards."
+ },
+ {
+  "name": "Morro Bay (The Rock)",
+  "aliases": [
+   "morro bay",
+   "morro rock"
+  ],
+  "region": "Morro Bay, CA",
+  "lat": 35.372,
+  "lon": -120.867,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 3,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "novice",
+  "notes": "Beach-break peaks next to Morro Rock; cold water and frequent wind."
+ },
+ {
+  "name": "Pismo Beach Pier",
+  "aliases": [
+   "pismo",
+   "pismo beach"
+  ],
+  "region": "Pismo Beach, CA",
+  "lat": 35.138,
+  "lon": -120.643,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 2,
+  "typical_ft": [
+   2,
+   5
+  ],
+  "skill_floor": "beginner",
+  "notes": "Central Coast beach break around the pier; mellow on small days."
+ },
+ {
+  "name": "Jalama Beach",
+  "aliases": [
+   "jalama",
+   "lompoc"
+  ],
+  "region": "Santa Barbara County, CA",
+  "lat": 34.511,
+  "lon": -120.502,
+  "break_type": "beach break",
+  "bottom": "sand and cobble",
+  "power": 4,
+  "typical_ft": [
+   3,
+   8
+  ],
+  "skill_floor": "intermediate",
+  "notes": "Exposed and often windy; picks up swell that misses Santa Barbara."
+ },
+ {
+  "name": "Leadbetter Point",
+  "aliases": [
+   "leadbetter",
+   "santa barbara"
+  ],
+  "region": "Santa Barbara, CA",
+  "lat": 34.401,
+  "lon": -119.698,
+  "break_type": "right point break",
+  "bottom": "sand and rock",
+  "power": 1,
+  "typical_ft": [
+   1,
+   4
+  ],
+  "skill_floor": "beginner",
+  "notes": "Soft, peeling rights when winter swell wraps in; a good longboard wave."
+ },
+ {
+  "name": "Rincon",
+  "aliases": [
+   "rincon",
+   "carpinteria",
+   "queen of the coast"
+  ],
+  "region": "Carpinteria, CA",
+  "lat": 34.373,
+  "lon": -119.478,
+  "break_type": "right point break",
+  "bottom": "cobblestone",
+  "power": 3,
+  "typical_ft": [
+   2,
+   8
+  ],
+  "skill_floor": "intermediate",
+  "notes": "Long, perfect winter rights; very crowded and fast on bigger swells."
+ },
+ {
+  "name": "C-Street (Ventura Point)",
+  "aliases": [
+   "c-street",
+   "c street",
+   "ventura",
+   "ventura point"
+  ],
+  "region": "Ventura, CA",
+  "lat": 34.274,
+  "lon": -119.297,
+  "break_type": "right point break",
+  "bottom": "cobblestone",
+  "power": 2,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "novice",
+  "notes": "Long, forgiving cobblestone rights; crowded but good for longboards."
+ },
+ {
+  "name": "Silver Strand",
+  "aliases": [
+   "silver strand",
+   "oxnard"
+  ],
+  "region": "Oxnard, CA",
+  "lat": 34.155,
+  "lon": -119.222,
+  "break_type": "beach break with jetties",
+  "bottom": "sand",
+  "power": 3,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "intermediate",
+  "notes": "Jetty-shaped peaks that can get hollow; strong local crew."
+ },
+ {
+  "name": "County Line",
+  "aliases": [
+   "county line"
+  ],
+  "region": "Malibu, CA",
+  "lat": 34.051,
+  "lon": -118.964,
+  "break_type": "reef/point break",
+  "bottom": "rock reef",
+  "power": 2,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "novice",
+  "notes": "Reef peaks at the LA-Ventura line; fun on small to medium swells."
+ },
+ {
+  "name": "Malibu Surfrider (First Point)",
+  "aliases": [
+   "malibu",
+   "first point",
+   "surfrider",
+   "malibu point"
+  ],
+  "region": "Malibu, CA",
+  "lat": 34.032,
+  "lon": -118.68,
+  "break_type": "right point break",
+  "bottom": "cobblestone and sand",
+  "power": 2,
+  "typical_ft": [
+   1,
+   4
+  ],
+  "skill_floor": "novice",
+  "notes": "Long, peeling, gentle rights on south swells. Classic longboard wave; very crowded."
+ },
+ {
+  "name": "Zuma Beach",
+  "aliases": [
+   "zuma"
+  ],
+  "region": "Malibu, CA",
+  "lat": 34.015,
+  "lon": -118.822,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 4,
+  "typical_ft": [
+   2,
+   8
+  ],
+  "skill_floor": "intermediate",
+  "notes": "Heavy shorebreak and closeouts on bigger swells; strong rips."
+ },
+ {
+  "name": "Venice Breakwater",
+  "aliases": [
+   "venice",
+   "venice breakwater"
+  ],
+  "region": "Venice, CA",
+  "lat": 33.983,
+  "lon": -118.474,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 2,
+  "typical_ft": [
+   2,
+   5
+  ],
+  "skill_floor": "novice",
+  "notes": "Peak next to the Venice breakwater; consistent and crowded."
+ },
+ {
+  "name": "El Porto",
+  "aliases": [
+   "el porto",
+   "manhattan beach el porto",
+   "rosecrans"
+  ],
+  "region": "Manhattan Beach, CA",
+  "lat": 33.901,
+  "lon": -118.425,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 3,
+  "typical_ft": [
+   2,
+   5
+  ],
+  "skill_floor": "novice",
+  "notes": "South Bay swell magnet next to the Redondo submarine canyon; fast, peaky A-frames that close out when it gets big. Crowded, competitive lineup."
+ },
+ {
+  "name": "Manhattan Beach Pier",
+  "aliases": [
+   "manhattan beach",
+   "mb pier",
+   "manhattan pier"
+  ],
+  "region": "Manhattan Beach, CA",
+  "lat": 33.884,
+  "lon": -118.415,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 2,
+  "typical_ft": [
+   2,
+   4
+  ],
+  "skill_floor": "beginner",
+  "notes": "Sandbars on both sides of the pier; a little softer than El Porto. Stay well away from the pilings."
+ },
+ {
+  "name": "Hermosa Beach Pier",
+  "aliases": [
+   "hermosa",
+   "hermosa beach"
+  ],
+  "region": "Hermosa Beach, CA",
+  "lat": 33.861,
+  "lon": -118.406,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 2,
+  "typical_ft": [
+   2,
+   4
+  ],
+  "skill_floor": "beginner",
+  "notes": "Shifty beach-break peaks; mellow on small days, closes out on big ones."
+ },
+ {
+  "name": "Lunada Bay",
+  "aliases": [
+   "lunada",
+   "lunada bay",
+   "palos verdes"
+  ],
+  "region": "Palos Verdes, CA",
+  "lat": 33.771,
+  "lon": -118.425,
+  "break_type": "right point/reef",
+  "bottom": "boulder reef",
+  "power": 4,
+  "typical_ft": [
+   4,
+   12
+  ],
+  "skill_floor": "advanced",
+  "notes": "Big-swell boulder reef known for aggressive localism."
+ },
+ {
+  "name": "Seal Beach Pier",
+  "aliases": [
+   "seal beach"
+  ],
+  "region": "Seal Beach, CA",
+  "lat": 33.738,
+  "lon": -118.106,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 2,
+  "typical_ft": [
+   2,
+   5
+  ],
+  "skill_floor": "beginner",
+  "notes": "Sandbars by the pier; mellow most days. Shuffle your feet for stingrays in summer."
+ },
+ {
+  "name": "Huntington Beach Pier",
+  "aliases": [
+   "huntington",
+   "hb pier",
+   "huntington beach"
+  ],
+  "region": "Huntington Beach, CA",
+  "lat": 33.654,
+  "lon": -118.006,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 3,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "novice",
+  "notes": "Consistent peaks on both sides of the pier; gets punchy on combo swells."
+ },
+ {
+  "name": "Newport Beach (Blackies)",
+  "aliases": [
+   "blackies",
+   "newport",
+   "newport beach",
+   "newport pier"
+  ],
+  "region": "Newport Beach, CA",
+  "lat": 33.607,
+  "lon": -117.93,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 3,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "novice",
+  "notes": "Pier-area peaks; lots of surfers and surf schools nearby."
+ },
+ {
+  "name": "The Wedge",
+  "aliases": [
+   "the wedge",
+   "wedge"
+  ],
+  "region": "Newport Beach, CA",
+  "lat": 33.593,
+  "lon": -117.882,
+  "break_type": "jetty shorebreak",
+  "bottom": "sand",
+  "power": 5,
+  "typical_ft": [
+   4,
+   20
+  ],
+  "skill_floor": "expert",
+  "notes": "Violent shorebreak wedge off the jetty; experts and bodysurfers only."
+ },
+ {
+  "name": "Salt Creek",
+  "aliases": [
+   "salt creek"
+  ],
+  "region": "Dana Point, CA",
+  "lat": 33.476,
+  "lon": -117.725,
+  "break_type": "beach/reef break",
+  "bottom": "sand and reef",
+  "power": 3,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "intermediate",
+  "notes": "Peaky beach break with reef sections; works on many swell directions."
+ },
+ {
+  "name": "Doheny State Beach",
+  "aliases": [
+   "doheny",
+   "dana point"
+  ],
+  "region": "Dana Point, CA",
+  "lat": 33.46,
+  "lon": -117.687,
+  "break_type": "point/beach break",
+  "bottom": "sand and cobblestone",
+  "power": 1,
+  "typical_ft": [
+   1,
+   3
+  ],
+  "skill_floor": "beginner",
+  "notes": "Sheltered and gentle; a common place for surf schools."
+ },
+ {
+  "name": "Lower Trestles",
+  "aliases": [
+   "trestles",
+   "lowers",
+   "lower trestles",
+   "san clemente"
+  ],
+  "region": "San Clemente, CA",
+  "lat": 33.382,
+  "lon": -117.589,
+  "break_type": "cobblestone point/reef peak",
+  "bottom": "cobblestone",
+  "power": 3,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "intermediate",
+  "notes": "High-performance A-frame; rippable walls. Packed with skilled surfers."
+ },
+ {
+  "name": "San Onofre (Old Man's)",
+  "aliases": [
+   "san onofre",
+   "old mans",
+   "old man's",
+   "san o"
+  ],
+  "region": "San Clemente, CA",
+  "lat": 33.374,
+  "lon": -117.566,
+  "break_type": "reef/cobblestone point",
+  "bottom": "cobblestone",
+  "power": 1,
+  "typical_ft": [
+   1,
+   4
+  ],
+  "skill_floor": "beginner",
+  "notes": "Slow, rolling, forgiving waves. Ideal for longboards and learning."
+ },
+ {
+  "name": "Oceanside Pier",
+  "aliases": [
+   "oceanside"
+  ],
+  "region": "Oceanside, CA",
+  "lat": 33.193,
+  "lon": -117.386,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 3,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "novice",
+  "notes": "Consistent sandbars on both sides of the pier."
+ },
+ {
+  "name": "Swami's",
+  "aliases": [
+   "swamis",
+   "swami's",
+   "encinitas"
+  ],
+  "region": "Encinitas, CA",
+  "lat": 33.034,
+  "lon": -117.295,
+  "break_type": "right reef point",
+  "bottom": "reef",
+  "power": 3,
+  "typical_ft": [
+   3,
+   8
+  ],
+  "skill_floor": "intermediate",
+  "notes": "Long right-hand reef point below the bluff; crowded and competitive."
+ },
+ {
+  "name": "Cardiff Reef",
+  "aliases": [
+   "cardiff",
+   "cardiff reef"
+  ],
+  "region": "Cardiff, CA",
+  "lat": 33.015,
+  "lon": -117.284,
+  "break_type": "reef break",
+  "bottom": "reef",
+  "power": 2,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "novice",
+  "notes": "Mellow reef peaks favored by longboarders; best around mid tide."
+ },
+ {
+  "name": "Black's Beach",
+  "aliases": [
+   "blacks",
+   "black's",
+   "blacks beach",
+   "la jolla"
+  ],
+  "region": "La Jolla, CA",
+  "lat": 32.889,
+  "lon": -117.255,
+  "break_type": "beach break over submarine canyon",
+  "bottom": "sand",
+  "power": 5,
+  "typical_ft": [
+   3,
+   10
+  ],
+  "skill_floor": "advanced",
+  "notes": "The Scripps canyon focuses swell into heavy, hollow peaks. Strong currents; experts only on big days."
+ },
+ {
+  "name": "Windansea",
+  "aliases": [
+   "windansea",
+   "windansea beach"
+  ],
+  "region": "La Jolla, CA",
+  "lat": 32.83,
+  "lon": -117.281,
+  "break_type": "reef break",
+  "bottom": "reef",
+  "power": 4,
+  "typical_ft": [
+   3,
+   8
+  ],
+  "skill_floor": "advanced",
+  "notes": "Powerful reef peaks with a protective local crew."
+ },
+ {
+  "name": "Pacific Beach (Crystal Pier)",
+  "aliases": [
+   "pacific beach",
+   "crystal pier"
+  ],
+  "region": "San Diego, CA",
+  "lat": 32.797,
+  "lon": -117.258,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 2,
+  "typical_ft": [
+   2,
+   5
+  ],
+  "skill_floor": "beginner",
+  "notes": "Busy beach break around Crystal Pier; mellow on small days."
+ },
+ {
+  "name": "Ocean Beach San Diego",
+  "aliases": [
+   "ocean beach san diego",
+   "ob san diego",
+   "ob pier",
+   "san diego"
+  ],
+  "region": "San Diego, CA",
+  "lat": 32.749,
+  "lon": -117.255,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 3,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "novice",
+  "notes": "Beach-break peaks around the OB pier; rips near the pier."
+ },
+ {
+  "name": "Imperial Beach",
+  "aliases": [
+   "imperial beach"
+  ],
+  "region": "Imperial Beach, CA",
+  "lat": 32.579,
+  "lon": -117.134,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 3,
+  "typical_ft": [
+   2,
+   7
+  ],
+  "skill_floor": "novice",
+  "notes": "Southernmost California beach break; check water-quality advisories after rain."
+ },
+ {
+  "name": "Banzai Pipeline",
+  "aliases": [
+   "pipeline",
+   "pipe",
+   "north shore",
+   "ehukai"
+  ],
+  "region": "Oahu, HI",
+  "lat": 21.665,
+  "lon": -158.053,
+  "break_type": "reef break",
+  "bottom": "shallow lava reef",
+  "power": 5,
+  "typical_ft": [
+   4,
+   15
+  ],
+  "skill_floor": "expert",
+  "notes": "Hollow, heavy waves over shallow reef. Dangerous; experts only."
+ },
+ {
+  "name": "Waikiki (Queens)",
+  "aliases": [
+   "waikiki",
+   "queens",
+   "honolulu"
+  ],
+  "region": "Oahu, HI",
+  "lat": 21.272,
+  "lon": -157.828,
+  "break_type": "reef break",
+  "bottom": "reef",
+  "power": 1,
+  "typical_ft": [
+   1,
+   4
+  ],
+  "skill_floor": "beginner",
+  "notes": "Gentle, rolling south-shore waves; the classic learn-to-surf and longboard spot."
+ },
+ {
+  "name": "Cocoa Beach",
+  "aliases": [
+   "cocoa beach",
+   "cocoa",
+   "florida"
+  ],
+  "region": "Cocoa Beach, FL",
+  "lat": 28.32,
+  "lon": -80.605,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 1,
+  "typical_ft": [
+   1,
+   3
+  ],
+  "skill_floor": "beginner",
+  "notes": "Small, soft, short-period wind swell most of the year. Rewards volume and flat rocker."
+ },
+ {
+  "name": "Rockaway Beach",
+  "aliases": [
+   "rockaway",
+   "rockaways",
+   "new york",
+   "nyc"
+  ],
+  "region": "Queens, NY",
+  "lat": 40.583,
+  "lon": -73.815,
+  "break_type": "beach break with jetties",
+  "bottom": "sand",
+  "power": 2,
+  "typical_ft": [
+   1,
+   5
+  ],
+  "skill_floor": "beginner",
+  "notes": "Jetty-groomed beach-break peaks; mostly small wind swell, with hurricane swells in fall. Cold in winter."
+ },
+ {
+  "name": "Kuta Beach",
+  "aliases": [
+   "kuta",
+   "kuta beach"
+  ],
+  "region": "Kuta, Bali",
+  "lat": -8.718,
+  "lon": 115.168,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 2,
+  "typical_ft": [
+   2,
+   5
+  ],
+  "skill_floor": "beginner",
+  "notes": "Bali's classic learn-to-surf beach; sandy bottom and lots of surf schools."
+ },
+ {
+  "name": "Batu Bolong (Canggu)",
+  "aliases": [
+   "canggu",
+   "batu bolong",
+   "old mans bali"
+  ],
+  "region": "Canggu, Bali",
+  "lat": -8.659,
+  "lon": 115.13,
+  "break_type": "reef/point break",
+  "bottom": "reef and sand",
+  "power": 2,
+  "typical_ft": [
+   2,
+   5
+  ],
+  "skill_floor": "beginner",
+  "notes": "Mellow, crumbly peaks over a forgiving reef-sand mix; very crowded with longboards."
+ },
+ {
+  "name": "Keramas",
+  "aliases": [
+   "keramas"
+  ],
+  "region": "Gianyar, Bali",
+  "lat": -8.594,
+  "lon": 115.442,
+  "break_type": "right reef break",
+  "bottom": "shallow reef",
+  "power": 4,
+  "typical_ft": [
+   3,
+   8
+  ],
+  "skill_floor": "advanced",
+  "notes": "Fast, hollow rights over shallow reef on Bali's east coast."
+ },
+ {
+  "name": "Uluwatu",
+  "aliases": [
+   "uluwatu",
+   "ulu",
+   "ulus"
+  ],
+  "region": "Bukit, Bali",
+  "lat": -8.815,
+  "lon": 115.088,
+  "break_type": "left reef break",
+  "bottom": "shallow reef",
+  "power": 4,
+  "typical_ft": [
+   4,
+   12
+  ],
+  "skill_floor": "advanced",
+  "notes": "Long, powerful lefts below the cliffs; sharp reef and strong currents, entry through a cave."
+ },
+ {
+  "name": "Padang Padang",
+  "aliases": [
+   "padang padang",
+   "padang"
+  ],
+  "region": "Bukit, Bali",
+  "lat": -8.811,
+  "lon": 115.103,
+  "break_type": "left reef break",
+  "bottom": "very shallow reef",
+  "power": 5,
+  "typical_ft": [
+   4,
+   12
+  ],
+  "skill_floor": "expert",
+  "notes": "Hollow, heavy left barrel over very shallow reef. Experts only."
+ },
+ {
+  "name": "Playa Zicatela",
+  "aliases": [
+   "zicatela",
+   "puerto escondido",
+   "mexican pipeline"
+  ],
+  "region": "Puerto Escondido, Mexico",
+  "lat": 15.851,
+  "lon": -97.054,
+  "break_type": "beach break",
+  "bottom": "sand",
+  "power": 5,
+  "typical_ft": [
+   5,
+   20
+  ],
+  "skill_floor": "expert",
+  "notes": "The 'Mexican Pipeline': thick, hollow beach-break barrels. Experts only."
+ },
+ {
+  "name": "La Punta",
+  "aliases": [
+   "la punta",
+   "punta zicatela"
+  ],
+  "region": "Puerto Escondido, Mexico",
+  "lat": 15.846,
+  "lon": -97.046,
+  "break_type": "left point break",
+  "bottom": "sand and rock",
+  "power": 2,
+  "typical_ft": [
+   2,
+   6
+  ],
+  "skill_floor": "novice",
+  "notes": "Softer lefts at the end of Zicatela; the area's progression wave."
+ }
+]
