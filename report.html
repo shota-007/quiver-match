@@ -54,7 +54,7 @@
 
 <div class="cover">
   <h1>Quiver Match</h1>
-  <div class="sub">Which of my boards do I bring, or what should I rent, for the real waves on my trip? And is it safe for me?</div>
+  <div class="sub">From your first lesson to your fifth board: what to ride or rent for the real waves at your spot, where to get it nearby, and whether it's safe for you.</div>
   <div class="meta">
     S.K. · MGT 409 AI Foundations for Managers · Final project, October 2026<br>
     GitHub: <a href="https://github.com/shota-007/quiver-match">https://github.com/shota-007/quiver-match</a> · Runs locally (see README)
@@ -65,9 +65,9 @@
   </svg>
 </div>
 
-<p><b>In one sentence:</b> you enter your body, skill, the boards you own, and where and when you're surfing. Three AI agents read the
-real swell forecast for those dates, check whether it's safe for you, and tell you which board to ride each day (or what to rent).
-Code computes and checks every number and every safety call.</p>
+<p><b>In one sentence:</b> anyone, including someone who has never stood on a board, enters their body, skill and spot (plus any boards
+they own). Three AI agents read the real swell forecast, check whether it's safe for them, and tell them which board to ride or rent each
+day and which nearby shop has it. Code computes and checks every number and every safety call.</p>
 
 <div class="kpis">
   <div class="kpi"><b>2/4 (50%)</b><span>real surfers' sessions where our pick matched the board that worked</span></div>
@@ -88,6 +88,10 @@ Lost), ask friends or a shop, or now ask ChatGPT. None of these connects <i>your
 Buying the wrong board is a large purchase (a new board typically costs hundreds of dollars; careful estimate from common retail prices). The worst
 cost is safety: beginners on trips paddle out at heavy reefs (Uluwatu, Pipeline) or big beach breaks (Black's) because nobody connected the
 forecast to their level.</p>
+<p><b>Built for first-timers, not just surfers.</b> Someone who has never surfed doesn't know what "liters", "rocker" or "a 3 ft
+south swell" mean, and they're the most likely to rent the wrong board or paddle out somewhere dangerous. Quiver Match needs none of that
+vocabulary. Pick "Beginner", leave the quiver empty, and you get a soft-top sized for you, the days that are safe at your level (or a safer
+beach nearby), and the shop down the street that rents it. Experienced surfers get the same tool for their quiver.</p>
 <p><b>Real people.</b> 2 real surfers shared their quivers and sessions for this project: A.L. (2 boards); M L (2 boards). Each one faces the same question before a session or trip: which of these boards, for these waves?</p>
 <div class="callout"><b>Industry input:</b> the owner of Jack's Surfboards, a local surf shop and the father of one of the author's friends, suggested linking every recommendation to real shops near the break that rent or sell boards. That request became the "Where to rent / where to buy nearby" feature.</div>
 
@@ -284,6 +288,7 @@ Reference ranges were set by the author from common volume charts: a sanity chec
   <tr><td>Matches the board that actually worked</td><td>2/4 (50%) (top pick), 4/4 (100%) (top two)</td><td>Real surfers' sessions</td></tr>
   <tr><td>Risky trips flagged by code</td><td>3/3</td><td>Own tests</td></tr>
   <tr><td>Uses the real forecast</td><td>11/11 vs. 0/11 for plain ChatGPT</td><td>Own tests</td></tr>
+  <tr><td>First-timers served without surf knowledge</td><td>Beginner + empty quiver gives a soft-top size, safe days, and a rental shop</td><td>App behavior (Figures 2-4)</td></tr>
   <tr><td>Real shops near the break to rent or buy</td><td>52 of 54 spots (2 nearby shops each)</td><td>OpenStreetMap snapshot in the app</td></tr>
   <tr><td>Time to a plan</td><td>11.8 s</td><td>Own tests</td></tr>
   <tr><td>Cost per plan</td><td>$0.0010</td><td>Measured tokens x price</td></tr>

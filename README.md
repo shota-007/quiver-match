@@ -1,6 +1,6 @@
 # Quiver Match
 
-**An AI agent app that tells you which of your boards to ride each day of a trip, or what to rent, from the real forecast, and whether it's safe for you.**
+**An AI agent app for everyone from first-timers to experienced surfers: which board to ride or rent for the real waves at your spot, which nearby shop has it, and whether it's safe for you.**
 
 Enter your weight, height, skill, paddle fitness, the boards you own (your quiver), and a spot plus trip dates (for example *El Porto, next 3 days* or *Uluwatu, Bali*). Quiver Match:
 
