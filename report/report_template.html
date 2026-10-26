@@ -166,8 +166,8 @@ The big-day rule was added after the synthetic stress test (section 6); nothing 
 <a href="https://anotherwrapper.com/llm-pricing/gpt-6-luna">anotherwrapper.com</a>, October 2026). The course's Portkey key may be billed differently.</p>
 {{TOKEN_TABLE}}
 <p>A typical plan uses about <b>{{AVG_IN}} input tokens</b> ({{AVG_CACHED}}, or {{CACHE_SHARE}}, cached) and <b>{{AVG_OUT}} output tokens</b>, averaged over {{N_LOW_RUNS}} logged runs.
-The Safety Agent adds tokens only on risky trips.</p>
-<figure class="half"><img src="{{IMG_under_the_hood}}" alt="Usage panel"><figcaption>Figure 6. Each result shows its own token use per agent.</figcaption></figure>
+The Safety Agent adds tokens only on risky trips. The app also shows each run's own token use and cost per agent (Figure 7, right, from a real user's run).</p>
+
 <h3>Cost per run, per user, at scale</h3>
 <p>Assumption (not measured): an active surfer plans <b>{{RUNS_PER_MONTH}} sessions or trips a month</b>.</p>
 {{SCALE_TABLE}}
@@ -188,7 +188,7 @@ The Safety Agent adds tokens only on risky trips.</p>
 is tested by <code>tests/safety_tests.py</code>: <b>{{SAFETY_PASSED}} pass</b> ({{N_OFFLINE}} offline with a scripted fake model at 0 tokens, {{N_LIVE}} live against <code>gpt-6-luna</code>).</p>
 {{SAFETY_TABLE}}
 <div class="pair">
-  <figure><img src="{{IMG_blocked}}" alt="Blocked injection"><figcaption>Figure 7. A prompt injection in the notes field is blocked before any AI call.</figcaption></figure>
+  <figure><img src="{{IMG_blocked}}" alt="Blocked injection"><figcaption>Figure 6. A prompt injection in the notes field is blocked before any AI call.</figcaption></figure>
   <div class="callout"><b>Found and fixed in testing.</b> (1) A made-up spot ("Zxqvbn Reef") once got a board sized for imaginary waves; now the run stops if no tool found the spot.
   (2) A scripted model planned a session on a 10-12 ft no-go day for a beginner and invented "Totally Safe Beach"; the validator forced "Skip" and removed the beach.
   (3) On a live run (Figure 3) the validator caught the agent's thickness drifting from the calculator and fixed it.</div>

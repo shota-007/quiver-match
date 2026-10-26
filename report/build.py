@@ -23,7 +23,19 @@ REPO_URL: str | None = "https://github.com/shota-007/quiver-match"
 TRACE_RUN_ID = "c81763c946"   # beginner at Black's Beach: all three agents + a validator fix
 BEGINNER_RUN_ID = "d8b41aeace"   # beginner who asked for a shortboard
 # A real person trying the app (the rubric's Impact evidence). Fill with their actual words; leave None to hide.
-USER_TRIAL: dict | None = None
+USER_TRIAL: dict | None = {
+    "who": "V M, a beginner (one of the three real surfers)",
+    "quote": ("It was easy to follow because of the 1, 2 and 3 at the top even though I didn't really know the dimensions of my board. "
+              "If Shota wasn't there in person and I wanted to surf I think this would be a great replacement. I saw the shops at the bottom "
+              "where to rent and I would use it, I like how easy it is to follow despite being a beginner."),
+    "short_quote": "If Shota wasn't there in person and I wanted to surf I think this would be a great replacement.",
+    "before": "\"I have no idea how to do this since I'm a beginner and I probably wouldn't know what to do without it\" (needs a surfer friend)",
+    "after": "a full plan in 17.5 s once the form was filled (run f99de77483 in the app's log)",
+    "note": ("Their plan: El Porto rated caution all three days for a beginner, with Manhattan Beach Pier and Hermosa Beach Pier suggested as safer "
+             "on the Monday, their own 8'0\" soft-top as the board, and Spyder Surfboards and Jack's Surfboards to rent from. The author, a surfer, "
+             "watched the trial and agreed with the pick."),
+    "screenshot": "report/img/user_trial.jpg",
+}
 # USER_TRIAL = {"who": "J.R., first-time surfer", "quote": "...", "before": "about 20 min asking a shop",
 #               "after": "about 2 min with the app", "screenshot": "report/img/user_trial.jpg"}
 
@@ -247,12 +259,13 @@ def main() -> None:
                    ("Uses this week's live forecast", "uses_live_forecast"), ("Validator found nothing to fix", "validator_clean"),
                    ("Warns when spot is above skill", "skill_warning_ok"), ("Share of reasons citing a number", "reasons_with_numbers"),
                    ("Avg tokens per run", "tokens"), ("Avg output tokens", "output_tokens"), ("Avg latency (s)", "latency_s")]
-    eval_table = table(["Metric (10 profiles)"] + [labels[v] for v in variants],
-                       [[m] + [rate(k, v) for v in variants] for m, k in metric_rows])
-    effort_table = table(["Quality check (10 profiles)", "Low effort (shipped)", "Medium effort"],
+    n_prof = len({r["profile"] for r in ev["rows"]})
+    key_rows = ("type_ok", "volume_ok", "length_unit_error", "uses_live_forecast", "skill_warning_ok", "trip_flagged", "tokens")
+    eval_table = table([f"Metric ({n_prof} trips)"] + [labels[v] for v in variants],
+                       [[m] + [rate(k, v) for v in variants] for m, k in metric_rows if k in key_rows])
+    effort_table = table([f"Quality check ({len({r['profile'] for r in ev['rows']})} trips)", "Low effort (shipped)", "Medium effort"],
                          [[m, rate(k, "agent-low"), rate(k, "agent-medium")] for m, k in metric_rows
-                          if k in ("type_ok", "volume_ok", "dims_consistent", "validator_clean", "skill_warning_ok",
-                                   "reasons_with_numbers", "output_tokens", "tokens", "latency_s")]) if "agent-medium" in variants else ""
+                          if k in ("type_ok", "volume_ok", "validator_clean", "reasons_with_numbers", "output_tokens")]) if "agent-medium" in S.get("ok", {}) else ""
 
     rows_by = {(r["profile"], r["variant"]): r for r in ev["rows"] if r.get("ok")}
     ex = []
@@ -265,7 +278,7 @@ def main() -> None:
     baseline_examples = table(["Profile", "Source", "Board type", "Dimensions as returned", "Volume (L)", "Type and volume ok"], ex)
 
     saf_rows = [[html.escape(r["category"]), html.escape(r["test"]), html.escape(r["attack"]),
-                 "PASS" if r["passed"] else "FAIL", html.escape(r["evidence"][:150])] for r in saf["results"]]
+                 "PASS" if r["passed"] else "FAIL", html.escape(r["evidence"][:85] + ("..." if len(r["evidence"]) > 85 else ""))] for r in saf["results"]]
     saf_classes = [["", "", "", "yes" if r["passed"] else "no", ""] for r in saf["results"]]
     safety_table = table(["Risk", "Defense tested", "Attack or malfunction", "Result", "Evidence (from the test)"], saf_rows, saf_classes)
 
@@ -368,10 +381,13 @@ def main() -> None:
         shot = ""
         if u.get("screenshot") and (ROOT / u["screenshot"]).exists():
             data = base64.b64encode((ROOT / u["screenshot"]).read_bytes()).decode()
-            shot = f'<figure class="half"><img src="data:image/jpeg;base64,{data}" alt="User trial"><figcaption>{html.escape(u["who"])} using Quiver Match.</figcaption></figure>'
+            shot = (f'<figure><img style="width:74%;margin:0 auto" src="data:image/jpeg;base64,{data}" alt="User trial"><figcaption>Figure 7. Screenshots from V M\'s own run: '
+                    f'the beginner safety call with safer spots, and where to rent nearby with the run\'s token use and cost.</figcaption></figure>')
         values["USER_TRIAL_BLOCK"] = (f'<h3>A real user trying the app</h3><div class="callout"><b>{html.escape(u["who"])}</b>: '
-                                      f'<i>"{html.escape(u["quote"])}"</i><br>Before: {html.escape(u["before"])} · With Quiver Match: {html.escape(u["after"])}</div>' + shot)
-        values["USER_QUOTE_SLIDE"] = f'<p class="small" style="margin-top:14px"><i>"{html.escape(u["quote"])}"</i> ({html.escape(u["who"])}; {html.escape(u["after"])} vs. {html.escape(u["before"])})</p>'
+                                      f'<i>"{html.escape(u["quote"])}"</i><br><b>Before:</b> {html.escape(u["before"])}<br>'
+                                      f'<b>With Quiver Match:</b> {html.escape(u["after"])}<br>{html.escape(u.get("note", ""))}</div>' + shot)
+        values["USER_QUOTE_SLIDE"] = (f'<p style="margin-top:12px;font-size:0.62em"><i>"{html.escape(u.get("short_quote", u["quote"]))}"</i>'
+                                      f'<br><span class="small">V M, beginner, after using the app (plan in 17.5 s)</span></p>')
     else:
         values["USER_TRIAL_BLOCK"] = values["USER_QUOTE_SLIDE"] = ""
         print("Reminder: no real-user quote yet (USER_TRIAL in report/build.py). The Impact row is capped at half without it.")
