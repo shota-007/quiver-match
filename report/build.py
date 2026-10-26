@@ -338,6 +338,7 @@ def main() -> None:
     values = {
         "AUTHOR": html.escape(AUTHOR),
         "REPO_LINK": f'<a href="{REPO_URL}">{REPO_URL}</a>' if REPO_URL else todo("GitHub repo link"),
+        "REPO_CLONE": f"git clone {REPO_URL}.git" if REPO_URL else "",
         "N_SPOTS": str(len(spots)), "N_CA_SPOTS": str(sum(s["region"].endswith(", CA") for s in spots)),
         "N_CATALOG": str(len(catalog)),
         "DIAGRAM": diagram(len(spots)),
