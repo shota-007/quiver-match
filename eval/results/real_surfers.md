@@ -1,4 +1,4 @@
-Scored sessions: 4 of 4 (surfers with 2+ boards)
+Scored sessions: 4 of 5 (surfers with 2+ boards)
 
 | Picker | Matches the board that worked |
 |---|---|
@@ -13,3 +13,4 @@ Scored sessions: 4 of 4 (surfers with 2+ boards)
 | S1 | 2026-10-05 | El Porto | 4.8-6.0 ft @ 10s (surfer's report) | 6'2" shortboard | 5'10" quad fin | 6'2" shortboard |
 | S2 | 2026-09-09 | San Onofre (Old Man's) | 3.4-3.9 ft @ 11.2s (Open-Meteo record) | 9'0" longboard | Blue Ripper | 9'0" longboard |
 | S2 | 2026-10-18 | Hermosa Beach Pier | 3.0-3.7 ft @ 14.6s (Open-Meteo record) | Blue Ripper | Blue Ripper | 9'0" longboard |
+| S3 | 2026-08-11 | Hermosa Beach Pier | 1.6-2.0 ft @ 10s (surfer's report) | 8'0" foam longboard | 8'0" foam longboard | 8'0" foam longboard |

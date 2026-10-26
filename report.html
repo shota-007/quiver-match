@@ -92,7 +92,7 @@ forecast to their level.</p>
 south swell" mean, and they're the most likely to rent the wrong board or paddle out somewhere dangerous. Quiver Match needs none of that
 vocabulary. Pick "Beginner", leave the quiver empty, and you get a soft-top sized for you, the days that are safe at your level (or a safer
 beach nearby), and the shop down the street that rents it. Experienced surfers get the same tool for their quiver.</p>
-<p><b>Real people.</b> 2 real surfers shared their quivers and sessions for this project: A.L. (2 boards); M L (2 boards). Each one faces the same question before a session or trip: which of these boards, for these waves?</p>
+<p><b>Real people.</b> 3 real surfers shared their quivers and sessions for this project: A.L. (2 boards); M L (2 boards); V M (1 boards). Each one faces the same question before a session or trip: which of these boards, for these waves?</p>
 <div class="callout"><b>Industry input:</b> the owner of Jack's Surfboards, a local surf shop and the father of one of the author's friends, suggested linking every recommendation to real shops near the break that rent or sell boards. That request became the "Where to rent / where to buy nearby" feature.</div>
 
 <h2>2. What is new</h2>
@@ -247,7 +247,7 @@ is tested by <code>tests/safety_tests.py</code>: <b>23/23 pass</b> (21 offline w
 <h2>6. Impact and evidence</h2>
 
 <h3>Real surfers: did we pick the board that actually worked?</h3>
-<p>2 real surfers (friends of the author) gave their profile, their quiver, and recent sessions with the board that actually worked best, either through the app's <code>/survey</code> page or by text message, typed in by the author and flagged for review. 4 of 4 sessions are scored (surfers with one board are excluded, because the pick is automatic). For each session we rebuilt the conditions (their reported wave size, or the Open-Meteo record), ranked their own boards with the app's formula, and compared our top pick with what worked. For comparison, a plain <code>gpt-6-luna</code> call (no tools) got the same information, and a naive rule always picks the biggest board.</p><table><tr><th>Picker</th><th>Matches the board that worked</th></tr>
+<p>3 real surfers (friends of the author) gave their profile, their quiver, and recent sessions with the board that actually worked best, either through the app's <code>/survey</code> page or by text message, typed in by the author and flagged for review. 4 of 5 sessions are scored (surfers with one board are excluded, because the pick is automatic). For each session we rebuilt the conditions (their reported wave size, or the Open-Meteo record), ranked their own boards with the app's formula, and compared our top pick with what worked. For comparison, a plain <code>gpt-6-luna</code> call (no tools) got the same information, and a naive rule always picks the biggest board.</p><table><tr><th>Picker</th><th>Matches the board that worked</th></tr>
 <tr><td>Quiver Match (top pick)</td><td>2/4 (50%)</td></tr>
 <tr><td>Quiver Match (top two)</td><td>4/4 (100%)</td></tr>
 <tr><td>Plain gpt-6-luna, no tools</td><td>3/4 (75%)</td></tr>
@@ -255,7 +255,8 @@ is tested by <code>tests/safety_tests.py</code>: <b>23/23 pass</b> (21 offline w
 <tr><td>S1</td><td>2026-10-12</td><td>El Porto</td><td>2.4-3.0 ft @ 10s (surfer&#x27;s report)</td><td>5&#x27;10&quot; quad fin</td><td class="yes">5&#x27;10&quot; quad fin</td><td class="yes">5&#x27;10&quot; quad fin</td></tr>
 <tr><td>S1</td><td>2026-10-05</td><td>El Porto</td><td>4.8-6.0 ft @ 10s (surfer&#x27;s report)</td><td>6&#x27;2&quot; shortboard</td><td class="no">5&#x27;10&quot; quad fin</td><td class="yes">6&#x27;2&quot; shortboard</td></tr>
 <tr><td>S2</td><td>2026-09-09</td><td>San Onofre (Old Man&#x27;s)</td><td>3.4-3.9 ft @ 11.2s (Open-Meteo record)</td><td>9&#x27;0&quot; longboard</td><td class="no">Blue Ripper</td><td class="yes">9&#x27;0&quot; longboard</td></tr>
-<tr><td>S2</td><td>2026-10-18</td><td>Hermosa Beach Pier</td><td>3.0-3.7 ft @ 14.6s (Open-Meteo record)</td><td>Blue Ripper</td><td class="yes">Blue Ripper</td><td class="no">9&#x27;0&quot; longboard</td></tr></table>
+<tr><td>S2</td><td>2026-10-18</td><td>Hermosa Beach Pier</td><td>3.0-3.7 ft @ 14.6s (Open-Meteo record)</td><td>Blue Ripper</td><td class="yes">Blue Ripper</td><td class="no">9&#x27;0&quot; longboard</td></tr>
+<tr><td>S3</td><td>2026-08-11</td><td>Hermosa Beach Pier</td><td>1.6-2.0 ft @ 10s (surfer&#x27;s report)</td><td>8&#x27;0&quot; foam longboard</td><td class="yes">8&#x27;0&quot; foam longboard</td><td class="yes">8&#x27;0&quot; foam longboard</td></tr></table>
 <h3>Synthetic personas: a stress test, not real users</h3>
 <div class="callout"><b>SYNTHETIC: not real people.</b> SYNTHETIC PERSONAS: not real people. A stress test written by the author, mixed like the author&#x27;s surf friends (7 LA, 2 Orange County, 1 SF). Expected boards follow one rule written before running: smaller/softer days -&gt; the higher-volume board, bigger/punchier days -&gt; the shorter board, beginners stay on foam. expect_rating marks sessions the safety check must not call &#x27;go&#x27;.</div><table><tr><th>Picker</th><th>Matches the rule-of-thumb board</th></tr>
 <tr><td>Quiver Match (top pick)</td><td>17/21 (81%)</td></tr>
@@ -300,7 +301,7 @@ Reference ranges were set by the author from common volume charts: a sanity chec
   <li><b>The formula is still being tuned.</b> The persona stress test exposed a big-wave blind spot, now fixed (section 6 shows before and after). The remaining misses are small and punchy mid-size days, and the big-wave rule is sensitive to estimated liters when surfers only know their board's length.</li>
   <li><b>Heuristics, not physics.</b> The meters, sizing factors and safety limits are transparent formulas, not validated by shapers or lifeguards. The 3D view is illustrative.</li>
   <li><b>Forecast is a model.</b> Face height = significant wave height x a period factor, from a model grid point offshore; wind, tide and local bathymetry aren't included. NOAA buoy readings would add live ground truth for US spots.</li>
-  <li><b>Small evidence base.</b> 4 real sessions from friends of the author; the ChatGPT comparison uses the same sessions.</li>
+  <li><b>Small evidence base.</b> 5 real sessions from friends of the author; the ChatGPT comparison uses the same sessions.</li>
   <li><b>Spot database.</b> 54 curated spots; elsewhere, safety ratings use wave height only (no power or skill floor).</li>
 </ul>
 <p><b>With another month (Tier 3 path):</b> pilot with a South Bay surf shop. Jack's Surfboards is the natural first partner, since its owner suggested the shop feature. Staff and Quiver Match both recommend for real customers, and we measure agreement and whether staff keep using it. We'd also add NOAA buoys plus wind and tide, a "best hour to surf" pick, rental inventory, and a feedback button so every session improves the formula.</p>

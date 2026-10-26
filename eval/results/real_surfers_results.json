@@ -1,13 +1,13 @@
 {
   "summary": {
-    "sessions": 4,
+    "sessions": 5,
     "scored_sessions": 4,
-    "surfers": 2,
+    "surfers": 3,
     "quiver_match_top1": "2/4 (50%)",
     "quiver_match_top2": "4/4 (100%)",
     "biggest_board": "2/4 (50%)",
     "plain_llm": "3/4 (75%)",
-    "llm_tokens": 790
+    "llm_tokens": 967
   },
   "rows": [
     {
@@ -97,6 +97,26 @@
       "rating": "go",
       "expect_rating": null,
       "llm": "9'0\" longboard"
+    },
+    {
+      "surfer": "S3",
+      "who": "V M",
+      "date": "2026-08-11",
+      "spot": "Hermosa Beach Pier",
+      "waves": "1.6-2.0 ft @ 10s (surfer's report)",
+      "actual": "8'0\" foam longboard",
+      "ours": "8'0\" foam longboard",
+      "ours_top2": [
+        "8'0\" foam longboard"
+      ],
+      "biggest": "8'0\" foam longboard",
+      "quiver_size": 1,
+      "fits": {
+        "8'0\" foam longboard": 51
+      },
+      "rating": "go",
+      "expect_rating": null,
+      "llm": "8'0\" foam longboard"
     }
   ]
 }

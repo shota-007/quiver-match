@@ -83,6 +83,34 @@
    ],
    "review_note": "",
    "source": "survey form"
+  },
+  {
+   "id": "S3",
+   "who": "V M",
+   "weight_kg": 88.904032,
+   "height_cm": 182.88,
+   "skill": "beginner",
+   "fitness": "low",
+   "quiver": [
+    {
+     "name": "",
+     "board_type": "foam longboard",
+     "length_in": 96.0,
+     "volume_l": null
+    }
+   ],
+   "sessions": [
+    {
+     "date": "2026-08-11",
+     "spot": "Hermosa Beach Pier",
+     "face_ft": 2.0,
+     "period_s": null,
+     "best_board": "8'0\" foam longboard",
+     "note": "I went surfing with Shota in LA before moving to New Haven. I am a beginner and was able to stand up a couple of times on the longboard."
+    }
+   ],
+   "review_note": "",
+   "source": "survey form, edited, edited"
   }
  ]
 }
