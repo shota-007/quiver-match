@@ -22,6 +22,11 @@ AUTHOR = "S.K."
 REPO_URL: str | None = "https://github.com/shota-007/quiver-match"
 TRACE_RUN_ID = "c81763c946"   # beginner at Black's Beach: all three agents + a validator fix
 BEGINNER_RUN_ID = "d8b41aeace"   # beginner who asked for a shortboard
+# A real person trying the app (the rubric's Impact evidence). Fill with their actual words; leave None to hide.
+USER_TRIAL: dict | None = None
+# USER_TRIAL = {"who": "J.R., first-time surfer", "quote": "...", "before": "about 20 min asking a shop",
+#               "after": "about 2 min with the app", "screenshot": "report/img/user_trial.jpg"}
+
 TODOS: list[str] = []
 
 
@@ -358,6 +363,18 @@ def main() -> None:
                 values[f"EV_{key}_{v.replace('-', '_')}"] = str(val)
 
     values["TITLE_BG"] = title_background()
+    if USER_TRIAL:
+        u = USER_TRIAL
+        shot = ""
+        if u.get("screenshot") and (ROOT / u["screenshot"]).exists():
+            data = base64.b64encode((ROOT / u["screenshot"]).read_bytes()).decode()
+            shot = f'<figure class="half"><img src="data:image/jpeg;base64,{data}" alt="User trial"><figcaption>{html.escape(u["who"])} using Quiver Match.</figcaption></figure>'
+        values["USER_TRIAL_BLOCK"] = (f'<h3>A real user trying the app</h3><div class="callout"><b>{html.escape(u["who"])}</b>: '
+                                      f'<i>"{html.escape(u["quote"])}"</i><br>Before: {html.escape(u["before"])} · With Quiver Match: {html.escape(u["after"])}</div>' + shot)
+        values["USER_QUOTE_SLIDE"] = f'<p class="small" style="margin-top:14px"><i>"{html.escape(u["quote"])}"</i> ({html.escape(u["who"])}; {html.escape(u["after"])} vs. {html.escape(u["before"])})</p>'
+    else:
+        values["USER_TRIAL_BLOCK"] = values["USER_QUOTE_SLIDE"] = ""
+        print("Reminder: no real-user quote yet (USER_TRIAL in report/build.py). The Impact row is capped at half without it.")
     resp = tr["response"]
     beg = json.loads((ROOT / "logs" / "traces" / f"{BEGINNER_RUN_ID}.json").read_text())["response"]
     feet = lambda inches: f"{int(inches // 12)}'{int(round(inches % 12))}\""

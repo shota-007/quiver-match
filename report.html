@@ -245,6 +245,7 @@ is tested by <code>tests/safety_tests.py</code>: <b>23/23 pass</b> (21 offline w
 </div>
 
 <h2>6. Impact and evidence</h2>
+
 <h3>Real surfers: did we pick the board that actually worked?</h3>
 <p>2 real surfers (friends of the author) gave their profile, their quiver, and recent sessions with the board that actually worked best, either through the app's <code>/survey</code> page or by text message, typed in by the author and flagged for review. 4 of 4 sessions are scored (surfers with one board are excluded, because the pick is automatic). For each session we rebuilt the conditions (their reported wave size, or the Open-Meteo record), ranked their own boards with the app's formula, and compared our top pick with what worked. For comparison, a plain <code>gpt-6-luna</code> call (no tools) got the same information, and a naive rule always picks the biggest board.</p><table><tr><th>Picker</th><th>Matches the board that worked</th></tr>
 <tr><td>Quiver Match (top pick)</td><td>2/4 (50%)</td></tr>
