@@ -171,6 +171,19 @@
   #result > *:nth-child(5) { animation-delay: 0.32s; } #result > *:nth-child(n+6) { animation-delay: 0.4s; }
   #result .card { transition: box-shadow 0.2s; } #result .card:hover { box-shadow: 0 16px 38px rgba(122, 64, 24, 0.16); }
   @media (prefers-reduced-motion: reduce) { .floaty, .sway, .flock, .bubble, .spotphoto img, #result > *, .pv-day { animation: none !important; } }
+  /* ---------- how it works ---------- */
+  .howto { grid-column: 1 / -1; display: flex; gap: 10px; align-items: stretch; background: #fffdf9; border: 1px solid var(--line);
+           border-radius: 18px; box-shadow: var(--shadow); padding: 10px; }
+  .howto button { flex: 1; display: flex; align-items: center; gap: 10px; border: 0; background: transparent; padding: 6px 8px;
+                  border-radius: 12px; cursor: pointer; font: inherit; text-align: left; color: var(--ink); }
+  .howto button:hover { background: #fff1e3; }
+  .howto .n { flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 800;
+              background: linear-gradient(180deg, var(--sunset), var(--coral)); }
+  .howto b { display: block; font-size: 14px; color: var(--head); }
+  .howto span.d { font-size: 12px; color: var(--muted); }
+  .howto .arrow { align-self: center; color: var(--line); font-size: 20px; }
+  @media (max-width: 760px) { .howto { flex-direction: column; } .howto .arrow { display: none; } }
+
   /* ---------- trip, quiver, 3D ---------- */
   .qrow { display: grid; grid-template-columns: 1fr 1fr 30px; gap: 6px; padding: 8px; border: 1.5px solid var(--line); border-radius: 12px; margin-bottom: 8px; background: #fffdf9; }
   .qrow input, .qrow select { padding: 7px 9px; font-size: 13px; border-radius: 9px; }
@@ -334,6 +347,13 @@
 <div class="toast" id="toast"></div>
 
 <main>
+  <nav class="howto" aria-label="How it works">
+    <button type="button" data-go="lb"><span class="n">1</span><span><b>Tell us about you</b><span class="d">Weight, height and skill level</span></span></button>
+    <span class="arrow" aria-hidden="true">→</span>
+    <button type="button" data-go="spot"><span class="n">2</span><span><b>Pick your spot and dates</b><span class="d">Add your boards if you own any (optional)</span></span></button>
+    <span class="arrow" aria-hidden="true">→</span>
+    <button type="button" data-go="go"><span class="n">3</span><span><b>Hit "Find my board"</b><span class="d">Get your board, safe days and shops nearby</span></span></button>
+  </nav>
   <form class="card" id="form" autocomplete="off">
     <h2>About you</h2>
     <span class="lbl">Units</span>
@@ -446,6 +466,13 @@ document.querySelectorAll(".seg, .styles").forEach((seg) => seg.addEventListener
   seg.querySelectorAll("button").forEach((x) => x.classList.toggle("on", x === b));
   state[seg.id] = b.dataset.v;
   if (seg.id === "units") { $("imp").classList.toggle("hidden", b.dataset.v !== "imperial"); $("met").classList.toggle("hidden", b.dataset.v !== "metric"); }
+}));
+
+// ---------------------------------------------------------------- how it works: jump to each step
+document.querySelectorAll(".howto button").forEach((b) => b.addEventListener("click", () => {
+  const t = $(b.dataset.go);
+  t.scrollIntoView({ behavior: REDUCE ? "auto" : "smooth", block: "center" });
+  if (b.dataset.go !== "go") setTimeout(() => t.focus({ preventScroll: true }), 300);
 }));
 
 // ---------------------------------------------------------------- trip + quiver form
