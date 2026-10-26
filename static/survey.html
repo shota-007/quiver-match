@@ -28,10 +28,11 @@
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
   .rowbox { display: grid; gap: 6px; padding: 10px; border: 1.5px solid var(--line); border-radius: 12px; margin-bottom: 8px; background: #fffdf9; }
   .board { grid-template-columns: 1.4fr 1.5fr .6fr .6fr 34px; }
-  .sess { grid-template-columns: 1fr 1.4fr .7fr .7fr 1.5fr 34px; }
+  .sess { grid-template-columns: 1fr 1.4fr .8fr 1.6fr 34px; }
   .sess .note { grid-column: 1 / -1; }
   @media (max-width: 640px) { .board, .sess { grid-template-columns: 1fr 1fr; } }
   .rowbox input, .rowbox select { padding: 8px 9px; font-size: 13px; border-radius: 9px; }
+  .rowbox > * { min-width: 0; }
   .mini { border: 1.5px solid var(--line); background: #fffdf9; color: var(--head); font: inherit; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px; cursor: pointer; }
   .mini:hover { border-color: var(--coral); color: var(--coral); }
   .go { margin-top: 16px; width: 100%; padding: 14px; border: 0; border-radius: 999px; background: linear-gradient(90deg, var(--sunset), var(--coral));
@@ -79,7 +80,7 @@
       <h2 style="margin-top:22px">Recent sessions</h2>
       <div id="sessions"></div>
       <button type="button" class="mini" id="addSession">+ Add a session</button>
-      <div class="hint">Wave size is optional: for sessions in the last ~3 months we can look up the recorded forecast.</div>
+      <div class="hint">Wave size (rough face height in feet) is optional: for sessions in the last ~3 months we look up the recorded forecast.</div>
 
       <label for="review">Anything to double-check? (author only)</label>
       <textarea id="review" maxlength="300" rows="2" placeholder="e.g. board shape guessed from a text message"></textarea>
@@ -168,8 +169,7 @@ function addSession(s = {}) {
   const row = el("div", { class: "rowbox sess" },
     el("input", { class: "date", type: "date", value: s.date || "", "aria-label": "date" }),
     el("input", { class: "spot", list: "spotlist", placeholder: "spot", maxlength: 80, value: s.spot || "" }),
-    el("input", { class: "face", type: "number", min: 0.5, max: 40, step: 0.5, placeholder: "ft", value: s.face_ft ?? "", "aria-label": "wave height ft" }),
-    el("input", { class: "per", type: "number", min: 3, max: 25, placeholder: "sec", value: s.period_s ?? "", "aria-label": "period seconds" }),
+    el("input", { class: "face", type: "number", min: 0.5, max: 40, step: 0.5, placeholder: "wave ft", value: s.face_ft ?? "", "aria-label": "wave height in feet (optional)" }),
     best, x, el("input", { class: "note", placeholder: "note (optional): e.g. punchy, mushy, crowded", maxlength: 200, value: s.note || "" }));
   x.addEventListener("click", () => row.remove());
   $("sessions").append(row); refreshBoardChoices();
@@ -194,7 +194,7 @@ $("form").addEventListener("submit", async (e) => {
     sessions: [...document.querySelectorAll(".sess")].map((r) => ({
       date: r.querySelector(".date").value, spot: r.querySelector(".spot").value.trim(),
       face_ft: r.querySelector(".face").value ? +r.querySelector(".face").value : null,
-      period_s: r.querySelector(".per").value ? +r.querySelector(".per").value : null,
+      period_s: null,
       best_board: (() => { const k = r.querySelector(".best").value, row = document.querySelector(`.board[data-key="${k}"]`); return row ? rowLabel(row) : ""; })(),
       note: r.querySelector(".note").value.trim() })).filter((s) => s.date || s.spot),
   };
